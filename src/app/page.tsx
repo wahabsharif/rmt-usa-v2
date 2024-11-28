@@ -1,13 +1,9 @@
-import NavBar from "@/components/common/NavBar";
-import TopBar from "@/components/common/TopBar";
-import WebLayout from "@/components/layouts/WebLayout";
+import Banner from "@/components/home/Banner";
 
 export default function Home() {
   return (
     <>
-      <TopBar />
-      <NavBar />
-      <WebLayout />
+      <Banner />
     </>
   );
 }

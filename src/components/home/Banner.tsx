@@ -7,7 +7,7 @@ const Banner: React.FC = () => {
   return (
     <section
       className="relative w-full bg-cover bg-center h-auto md:h-screen"
-      style={{ backgroundImage: "url('/images/logo/heroImg.jpg')" }}
+      style={{ backgroundImage: "url('/images/home/home-banner.jpeg')" }}
     >
       <div className="absolute inset-0 bg-black bg-opacity-40"></div>
 

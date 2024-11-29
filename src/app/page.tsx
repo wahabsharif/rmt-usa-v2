@@ -2,6 +2,7 @@ import Subscribe from "@/components/common/Subscribe";
 import Features from "@/components/home/Features";
 import GetStartedBanner from "@/components/home/GetStartedBanner";
 import ImageGrid from "@/components/home/ImageGrid";
+import OurPartners from "@/components/home/OurPartners";
 import dynamic from "next/dynamic";
 
 // Dynamic imports
@@ -23,6 +24,7 @@ export default function Home() {
       <Subscribe />
       <Features />
       <GetStartedBanner />
+      <OurPartners />
     </>
   );
 }

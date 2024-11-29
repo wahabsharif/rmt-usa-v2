@@ -1,3 +1,4 @@
+import Subscribe from "@/components/common/Subscribe";
 import ImageGrid from "@/components/home/ImageGrid";
 import dynamic from "next/dynamic";
 
@@ -17,6 +18,7 @@ export default function Home() {
       <OurServices />
       <CapabilitiesOverview />
       <ImageGrid />
+      <Subscribe />
     </>
   );
 }

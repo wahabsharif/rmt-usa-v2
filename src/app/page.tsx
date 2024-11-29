@@ -1,3 +1,4 @@
+import ImageGrid from "@/components/home/ImageGrid";
 import dynamic from "next/dynamic";
 
 // Dynamic imports
@@ -15,6 +16,7 @@ export default function Home() {
       <AboutRMT />
       <OurServices />
       <CapabilitiesOverview />
+      <ImageGrid />
     </>
   );
 }

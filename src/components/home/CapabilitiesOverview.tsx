@@ -12,7 +12,7 @@ function CapabilitiesOverview() {
       }}
     >
       {/* Overlay */}
-      <div className="absolute inset-0 bg-black/30"></div>
+      <div className="absolute inset-0 bg-white/70"></div>
 
       {/* Content */}
       <div className="relative max-w-7xl mx-auto px-6 lg:px-12">
@@ -32,7 +32,7 @@ function CapabilitiesOverview() {
           </div>
 
           {/* Right Column */}
-          <div className="text-[#C5C5C5] space-y-8">
+          <div className="text-gray-500 space-y-8">
             {/* Description */}
             <p className="text-lg leading-relaxed">
               Our team leverages cutting-edge technology and years of expertise

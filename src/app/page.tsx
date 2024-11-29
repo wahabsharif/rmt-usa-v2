@@ -1,3 +1,4 @@
+import GoogleMap from "@/components/common/GoogleMap";
 import Subscribe from "@/components/common/Subscribe";
 import Features from "@/components/home/Features";
 import GetStartedBanner from "@/components/home/GetStartedBanner";
@@ -27,6 +28,7 @@ export default function Home() {
       <GetStartedBanner />
       <OurPartners />
       <TestimonialSlider />
+      <GoogleMap />
     </>
   );
 }

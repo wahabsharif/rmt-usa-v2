@@ -48,15 +48,16 @@ const OurPartners: React.FC = () => {
       <h2 className="text-center py-4 text-5xl text-thDarkBlue font-semibold">
         Our Strategic Partners
       </h2>
-      <section className="customer-logos">
-        <Slider {...settings}>
+      <section>
+        <Slider {...settings} className="">
           {ourPartnersData.map((partner, index) => (
-            <div key={index} className="slide">
+            <div key={index} className="slide flex justify-center items-center">
               <Image
                 src={partner.src}
                 alt={partner.alt}
                 width={1000}
                 height={1000}
+                className="w-32"
               />
             </div>
           ))}

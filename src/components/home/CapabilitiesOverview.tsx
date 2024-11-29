@@ -6,9 +6,9 @@ import { motion } from "framer-motion";
 function CapabilitiesOverview() {
   return (
     <section
-      className="relative bg-gray-100  bg-cover bg-center py-12"
+      className="relative bg-gray-100 bg-cover bg-center py-12"
       style={{
-        backgroundImage: "url('/images/logo/capabilities.jpg')", // Replace with your image path
+        backgroundImage: "url('/images/home/stethoscope.png')",
       }}
     >
       {/* Overlay */}
@@ -20,14 +20,14 @@ function CapabilitiesOverview() {
           {/* Left Column */}
           <div className="flex flex-col space-y-1">
             {/* Primary Heading */}
-            <h2 className="text-4xl font-bold text-[#023550] leading-tight text-center sm:text-left">
+            <h2 className="text-4xl font-bold text-thDarkBlue leading-tight text-center sm:text-left">
               Capabilities Overview
             </h2>
 
             {/* Secondary Heading */}
-            <h3 className="text-4xl font-bold text-[#02B3C6] leading-tight text-center sm:text-left">
+            <h3 className="text-4xl font-bold text-thLightBlue leading-tight text-center sm:text-left">
               Empowering Innovation, <br />
-              Delivering <span className="text-[#023550]">Excellence</span>
+              Delivering <span className="text-thDarkBlue">Excellence</span>
             </h3>
           </div>
 
@@ -44,7 +44,7 @@ function CapabilitiesOverview() {
             </p>
 
             {/* List of Headings */}
-            <div className="space-y-4 text-[#023550]">
+            <div className="space-y-4 text-thDarkBlue">
               <div className="border-b-2 border-[#C5C5C5] pb-2">
                 <h4 className="text-xl font-semibold">
                   ACTIVE MEDICAL DEVICES

@@ -1,6 +1,6 @@
 import GoogleMap from "@/components/common/GoogleMap";
 import Subscribe from "@/components/common/Subscribe";
-import Features from "@/components/home/Features";
+import WhyUs from "@/components/home/WhyUs";
 import GetStartedBanner from "@/components/home/GetStartedBanner";
 import ImageGrid from "@/components/home/ImageGrid";
 import OurPartners from "@/components/home/OurPartners";
@@ -24,7 +24,7 @@ export default function Home() {
       <CapabilitiesOverview />
       <ImageGrid />
       <Subscribe />
-      <Features />
+      <WhyUs />
       <GetStartedBanner />
       <OurPartners />
       <TestimonialSlider />

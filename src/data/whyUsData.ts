@@ -3,7 +3,7 @@ export interface Feature {
   description: string;
 }
 
-export const featuresData: Feature[] = [
+export const whyUsData: Feature[] = [
   {
     title: "Comprehensive Solutions",
     description:

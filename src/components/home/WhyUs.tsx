@@ -1,9 +1,9 @@
 // Features.tsx
 import React from "react";
-import { featuresData } from "@/data/featuresData";
+import { whyUsData } from "@/data/whyUsData";
 import Image from "next/image";
 
-const Features: React.FC = () => {
+const WhyUs: React.FC = () => {
   return (
     <div className="flex flex-col md:flex-row items-center gap-8 px-4 md:px-16 py-8">
       {/* Left Side Content */}
@@ -12,7 +12,7 @@ const Features: React.FC = () => {
           Why Choose Us?
         </h2>
         <ul className="space-y-6">
-          {featuresData.map((feature, index) => (
+          {whyUsData.map((feature, index) => (
             <li key={index} className="flex items-start gap-4">
               <div>
                 <Image
@@ -46,4 +46,4 @@ const Features: React.FC = () => {
   );
 };
 
-export default Features;
+export default WhyUs;

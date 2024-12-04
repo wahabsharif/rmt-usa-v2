@@ -20,7 +20,7 @@ const Footer: React.FC = () => {
   };
   return (
     <footer className="mt-10">
-      <div className="container mx-auto p-6 text-white bg-thDarkBlue rounded-xl grid grid-cols-1 md:grid-cols-3 gap-4">
+      <div className="w-full p-10 text-white bg-thDarkBlue grid grid-cols-1 md:grid-cols-3 gap-4">
         {/* Column 1: Logo and Paragraph */}
         <div className="space-y-4">
           {/* Logo */}
@@ -121,8 +121,7 @@ const Footer: React.FC = () => {
         </div>
       </div>
 
-      <div className="text-xs md:text-sm container mx-auto p-2 flex flex-col md:flex-row justify-between items-center">
-        {/* Copyright and Powered By Section */}
+      <div className="text-xs md:text-sm container mx-auto flex flex-col md:flex-row justify-between items-center">
         <div className="flex flex-col md:flex-row items-center md:space-x-2">
           <span>
             Copyright © {currentYear}{" "}

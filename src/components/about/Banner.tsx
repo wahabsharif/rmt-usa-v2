@@ -5,7 +5,7 @@ import React from "react";
 const Banner: React.FC = () => {
   return (
     <section
-      className="relative w-full bg-cover bg-center h-auto md:h-screen flex items-center justify-center text-center"
+      className="relative w-full bg-cover bg-center min-h-screen flex items-center justify-center text-center"
       style={{
         backgroundImage: "url('/images/about/Banner1.jpg')",
       }}

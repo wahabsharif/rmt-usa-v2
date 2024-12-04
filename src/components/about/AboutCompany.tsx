@@ -3,6 +3,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { FaPhone } from "react-icons/fa";
+import Link from "next/link";
 
 const AboutCompany: React.FC = () => {
   return (
@@ -85,12 +86,12 @@ const AboutCompany: React.FC = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 1.2 }}
         >
-          <a
+          <Link
             href="#"
-            className="inline-block bg-thLightBlue text-white font-semibold py-3 px-6 rounded-full text-lg transition duration-300 ease-in-out hover:bg-[#0098a1]"
+            className="inline-block text-sm bg-thLightBlue text-white font-semibold py-3 px-6 rounded-full md:text-lg transition duration-300 ease-in-out hover:bg-[#0098a1]"
           >
             More Info
-          </a>
+          </Link>
           <div className="flex items-center text-gray-800">
             <FaPhone className="mr-2" />
             <span>8-800-10-500-25</span>

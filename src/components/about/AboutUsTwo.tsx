@@ -1,10 +1,10 @@
 "use client";
 import React, { useEffect } from "react";
-import { motion, useTransform, useViewportScroll } from "framer-motion";
+import { motion, useTransform, useScroll } from "framer-motion";
 
 const AboutUsTwo = () => {
-  const { scrollY } = useViewportScroll();
-  const y = useTransform(scrollY, [0, 300], ["0%", "50%"]);
+  const { scrollY } = useScroll();
+  const y = useTransform(scrollY, [0, 300], ["0%", "100%"]);
   useEffect(() => {
     const unsubscribe = scrollY.onChange((value) => {
       console.log("Scroll Y:", value);
@@ -32,7 +32,7 @@ const AboutUsTwo = () => {
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1 }}
-          className="text-6xl md:text-8xl text-thLightBlue font-bold text-center"
+          className="text-4xl md:text-8xl text-thLightBlue font-bold text-center"
         >
           Leading & Modern <br />
           <span className="text-white">Bionic Technologies</span>
@@ -41,7 +41,7 @@ const AboutUsTwo = () => {
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 0.6 }}
-          className="mt-8 px-6 py-3 text-lg bg-thLightBlue text-white font-semibold rounded-full shadow-md hover:bg-thDarkBlue focus:outline-none"
+          className="mt-8 px-6 py-3 text-lg bg-thLightBlue text-white font-semibold rounded-full transition ease-in-out shadow-md hover:bg-thDarkBlue focus:outline-none"
         >
           Learn More
         </motion.button>

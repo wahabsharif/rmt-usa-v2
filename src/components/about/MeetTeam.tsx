@@ -5,15 +5,18 @@ import React from "react";
 const MeetTeam: React.FC = () => {
     return (
         <section
-            className="relative w-full bg-cover bg-center h-auto md:h-screen py-16 px-6 md:px-4"
+            className="relative w-full bg-cover bg-center h-auto md:h-screen py-16 px-6 md:px-4 flex"
             style={{
                 backgroundImage: "url('/images/about/About3.png')",
-                backgroundColor: "rgba(255, 255, 255, 0.5)", // White background with transparency
-                backgroundBlendMode: "overlay", // Overlay white background over the image
+                backgroundColor: "rgb(207 221 225 / 60%)", // #00B4C5 with 60% opacity
             }}
+
         >
-            {/* Content */}
-            <div className="relative z-10 max-w-4xl md:px-4 text-gray-800">
+            {/* Background Image Section (Left side) */}
+            <div className="w-1/2 bg-cover bg-center h-full"></div>
+
+            {/* Content Section (Right side) */}
+            <div className="relative z-10 w-full md:w-1/2 text-gray-800">
                 {/* Section Heading */}
                 <div className="mb-8 text-left">
                     <h2 className="text-xl mb-2 uppercase tracking-widest">

@@ -1,14 +1,34 @@
-import NavBar from "@/components/common/NavBar";
-import TopBar from "@/components/common/TopBar";
-import WebLayout from "@/components/layouts/WebLayout";
-import Image from "next/image";
+import GoogleMap from "@/components/common/GoogleMap";
+import Subscribe from "@/components/common/Subscribe";
+import Features from "@/components/home/Features";
+import GetStartedBanner from "@/components/home/GetStartedBanner";
+import ImageGrid from "@/components/home/ImageGrid";
+import OurPartners from "@/components/home/OurPartners";
+import TestimonialSlider from "@/components/home/Testimonial";
+import dynamic from "next/dynamic";
+
+// Dynamic imports
+const Banner = dynamic(() => import("@/components/home/Banner"));
+const AboutRMT = dynamic(() => import("@/components/home/AboutRMT"));
+const OurServices = dynamic(() => import("@/components/home/OurServices"));
+const CapabilitiesOverview = dynamic(
+  () => import("@/components/home/CapabilitiesOverview")
+);
 
 export default function Home() {
   return (
     <>
-      <TopBar />
-      <NavBar />
-      <WebLayout/>
+      <Banner />
+      <AboutRMT />
+      <OurServices />
+      <CapabilitiesOverview />
+      <ImageGrid />
+      <Subscribe />
+      <Features />
+      <GetStartedBanner />
+      <OurPartners />
+      <TestimonialSlider />
+      <GoogleMap />
     </>
   );
 }

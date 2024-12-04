@@ -2,7 +2,7 @@
 
 import React from "react";
 import { motion } from "framer-motion";
-import { FaPhone } from "react-icons/fa";
+import { FaPhone, FaArrowRight } from "react-icons/fa";
 
 const AboutCompany: React.FC = () => {
     return (
@@ -31,7 +31,7 @@ const AboutCompany: React.FC = () => {
             </div>
 
             {/* Right Section with Content */}
-            <div className="w-full md:w-1/2 p-6 text-left space-y-8">
+            <div className="w-full md:w-1/2 p-6 text-left space-y-6">
                 {/* Heading */}
                 <motion.h1
                     className="text-xl md:text-lg font-med text-gray-800"
@@ -48,17 +48,17 @@ const AboutCompany: React.FC = () => {
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 1, delay: 0.5 }}
                 >
-                    <h2 className="text-3xl md:text-4xl font-bold text-[#00B4C5]">
+                    <h2 className="text-3xl md:text-5xl font-bold text-gray-800">
                         High Sensitive
                     </h2>
-                    <h3 className="text-3xl md:text-4xl font-bold text-gray-800">
+                    <h3 className="text-3xl md:text-5xl font-bold text-gray-800">
                         Bionic Prosthesis
                     </h3>
                 </motion.div>
 
                 {/* Subheading with Paragraph */}
                 <motion.h4
-                    className="text-xl md:text-2xl font-semibold text-gray-800"
+                    className="text-xl md:text-xl font-semibold text-gray-800"
                     initial={{ opacity: 0, y: 30 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 1, delay: 0.8 }}
@@ -87,14 +87,22 @@ const AboutCompany: React.FC = () => {
                 >
                     <a
                         href="#"
-                        className="inline-block bg-[#00B4C5] text-white font-semibold py-3 px-6 rounded-full text-lg transition duration-300 ease-in-out hover:bg-[#0098a1]"
+                        className="inline-block bg-[#00B4C5] text-white font-semibold py-3 px-6 rounded-full text-lg transition duration-300 ease-in-out hover:bg-[#0098a1] flex items-center space-x-2"
                     >
-                        More Info
+                        <span>More Info</span>
+                        <FaArrowRight className="text-white" />
                     </a>
-                    <div className="flex items-center text-gray-800">
-                        <FaPhone className="mr-2" />
-                        <span>8-800-10-500-25</span>
+                    <div
+                        className="flex items-center text-gray-800  p-4 rounded-lg"
+                    >
+                        <div className="bg-[#00B4C5] p-2 mr-2 rounded-full">
+                            <FaPhone className="text-white" />
+                        </div>
+                        <a href="tel:8-800-10-500-25" className="text-gray-800">
+                            8-800-10-500-25
+                        </a>
                     </div>
+
                 </motion.div>
             </div>
         </section>

@@ -25,7 +25,7 @@ const Banner: React.FC = () => {
               END-TO-END SERVICE PROVIDER
             </span>
             <br />
-            <span className="text-[#00B4C5] mb-4 italic font-extrabold">
+            <span className="text-thLightBlue mb-4 italic font-extrabold">
               INNOVATIVE
             </span>{" "}
             <br />
@@ -57,7 +57,7 @@ const Banner: React.FC = () => {
         <div className="mt-8">
           <motion.a
             href="#"
-            className="inline-block bg-[#00B4C5] text-white font-semibold py-3 px-8 rounded-full text-lg transition duration-300 ease-in-out hover:bg-[#0098a1]"
+            className="inline-block bg-thLightBlue text-white font-semibold py-3 px-8 rounded-full text-lg transition duration-300 ease-in-out hover:bg-[#0098a1]"
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, delay: 1.5 }}

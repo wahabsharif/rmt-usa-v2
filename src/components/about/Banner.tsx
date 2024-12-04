@@ -7,7 +7,7 @@ const Banner: React.FC = () => {
     <section
       className="relative w-full bg-cover bg-center h-auto md:h-screen flex items-center justify-center text-center"
       style={{
-        backgroundImage: "url('/images/about/Banner1.jpg')", // Replace with your desired image
+        backgroundImage: "url('/images/about/Banner1.jpg')",
       }}
     >
       {/* Overlay */}
@@ -20,7 +20,7 @@ const Banner: React.FC = () => {
 
         {/* Breadcrumb */}
         <p className="mt-4 text-lg md:text-xl font-medium">
-          <span className="text-[#00B4C5]">Home</span> = <span>About Us</span>
+          <span className="text-thLightBlue">Home</span> / <span>About Us</span>
         </p>
       </div>
     </section>

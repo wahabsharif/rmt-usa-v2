@@ -13,7 +13,7 @@ export const navBarData: MenuItem[] = [
     label: "Company",
     href: "#",
     submenu: [
-      { label: "About", href: "#" },
+      { label: "About", href: "/about" },
       { label: "Our Team", href: "#" },
       { label: "Legacy", href: "#" },
       { label: "Certifications", href: "#" },

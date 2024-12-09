@@ -18,6 +18,9 @@ export default {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+      boxShadow: {
+        '3xl': '0 20px 50px rgba(0, 0, 0, 0.5)', // Custom shadow
+      },
       keyframes: {
         marquee: {
           from: {

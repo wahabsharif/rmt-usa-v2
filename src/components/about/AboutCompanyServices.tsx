@@ -6,6 +6,7 @@ const AboutCompanyServices: React.FC = () => {
   return (
     <section className="bg-white flex flex-col md:flex-row items-start justify-center mx-auto py-10 px-2 md:px-10 gap-x-8">
       {/* Left Section with Content */}
+
       <div className="w-full md:w-1/2 p-6 text-left space-y-6">
         {/* Heading */}
         <motion.h1
@@ -40,7 +41,8 @@ const AboutCompanyServices: React.FC = () => {
           transition={{ duration: 1, delay: 0.5 }}
         >
           <div className="border-b-2 my-5 border-gray-500 pt-8">
-            <div className="flex">
+            <div className="flex gap-4">
+              <h3 className="font-bold text-xl text-[#00B4C5]">01</h3>
               <h3 className="text-gray-800 font-bold text-xl">Our Vision</h3>
             </div>
             <p className="py-4">
@@ -55,8 +57,8 @@ const AboutCompanyServices: React.FC = () => {
           </div>
           {/* <div className="border-b-2 my-5 border-gray-500 pt-8">
             <div className="flex gap-4">
-              <h3 className="font-bold text-xl text-[#00B4C5]">02</h3>
-              <h3 className="text-gray-800 font-bold text-xl">Our Mission</h3>
+              <h3 className="font-bold text-xl text-[#00B4C5] py-2">02</h3>
+              <h3 className="text-gray-800 font-bold text-xl shadow-3xl rounded-lg p-2">Our Mission</h3>
             </div>
             <p className="py-4">
               Prosthetics is a field where science and humanity work hand in
@@ -65,8 +67,8 @@ const AboutCompanyServices: React.FC = () => {
           </div> */}
           {/* <div className="border-b-2 my-5 border-gray-500 pt-8">
             <div className="flex gap-4">
-              <h3 className="font-bold text-xl text-[#00B4C5]">03</h3>
-              <h3 className="text-gray-800 font-bold text-xl">Eco materials</h3>
+              <h3 className="font-bold text-xl text-[#00B4C5] py-2">03</h3>
+              <h3 className="text-gray-800 font-bold text-xl shadow-3xl rounded-lg p-2">Eco materials</h3>
             </div>
             <p className="py-4">
               With prosthetics, we are not just restoring physical abilities, we

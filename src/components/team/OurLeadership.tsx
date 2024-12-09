@@ -1,4 +1,5 @@
 "use client";
+import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import { FaLinkedin } from "react-icons/fa"; // Import LinkedIn icon
@@ -14,7 +15,8 @@ const directors = [
     name: "Dr. Murtaza Najabat ALi",
     title: "CEO & CO-FOUNDER",
     imageUrl: "/images/team/team4.png", // Placeholder image URL
-    linkedinUrl: "https://www.linkedin.com/in/prof-dr-murtaza-najabat-ali-ceng-uk-fimeche-pe-55a4469",
+    linkedinUrl:
+      "https://www.linkedin.com/in/prof-dr-murtaza-najabat-ali-ceng-uk-fimeche-pe-55a4469",
   },
   {
     name: "Dr. Adnan Qureshi",
@@ -44,7 +46,7 @@ const OurLeadership: React.FC = () => {
         <h2 className="text-4xl font-bold text-center text-thLightBlue mb-6">
           OUR LEADERSHIP
         </h2>
-        
+
         {/* Meet Our Directors */}
         <h3 className="text-2xl text-center text-black mb-8 md:mb-20">
           Meet Our Directors
@@ -59,7 +61,9 @@ const OurLeadership: React.FC = () => {
             >
               {/* Director Image */}
               <div className="my-6">
-                <img
+                <Image
+                  width={1000}
+                  height={1000}
                   src={director.imageUrl}
                   alt={director.name}
                   className="w-40 h-40 rounded-full mx-auto"
@@ -67,13 +71,14 @@ const OurLeadership: React.FC = () => {
               </div>
 
               {/* Director Name */}
-              <h4 className="text-xl font-bold mb-2 text-gray-800">{director.name}</h4>
+              <h4 className="text-xl font-bold mb-2 text-gray-800">
+                {director.name}
+              </h4>
 
               {/* Director Title */}
               <p className="text-gray-600 mb-4">{director.title}</p>
 
               {/* Director Description */}
-              
 
               {/* LinkedIn Icon */}
               <Link

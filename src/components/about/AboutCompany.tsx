@@ -2,7 +2,7 @@
 
 import React from "react";
 import { motion } from "framer-motion";
-import { FaPhone } from "react-icons/fa";
+import { FaArrowRight, FaPhone } from "react-icons/fa";
 import Link from "next/link";
 
 const AboutCompany: React.FC = () => {
@@ -44,18 +44,28 @@ const AboutCompany: React.FC = () => {
         </motion.h1>
 
         {/* Subheadings */}
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1, delay: 0.5 }}
-        >
-          <h2 className="text-3xl md:text-4xl font-bold text-thLightBlue">
-            High Sensitive
+        <div className="relative">
+          {/* High-Sensitive Text */}
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1, delay: 0.5 }}
+          >
+            <h2 className="text-3xl md:text-4xl font-bold text-thLightBlue">
+              High Sensitive
+            </h2>
+            <h3 className="text-3xl md:text-4xl font-bold text-gray-800">
+              Bionic Prosthesis
+            </h3>
+          </motion.div>
+
+          {/* Overlayed CEO Message */}
+          <h2 className="absolute top-0 left-[10%] transform -translate-x-1/3 -translate-y-1/2 text-lg mb-2 uppercase tracking-widest bg-white p-2 inline-block shadow-3xl rounded-lg z-10">
+            about rmt
           </h2>
-          <h3 className="text-3xl md:text-4xl font-bold text-gray-800">
-            Bionic Prosthesis
-          </h3>
-        </motion.div>
+        </div>
+
+
 
         {/* Subheading with Paragraph */}
         <motion.h4
@@ -86,17 +96,25 @@ const AboutCompany: React.FC = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 1.2 }}
         >
+          {/* More Info Button with Arrow */}
           <Link
             href="#"
-            className="inline-block text-sm bg-thLightBlue text-white font-semibold py-3 px-6 rounded-full md:text-lg transition duration-300 ease-in-out hover:bg-[#0098a1]"
+            className="inline-block text-sm bg-thLightBlue text-black  py-3 px-8 rounded-full md:text-lg transition duration-300 ease-in-out hover:bg-[#0098a1] flex items-center space-x-2"
           >
-            More Info
+            <span>More Info</span>
+            {/* Right Arrow Icon */}
+            <FaArrowRight className="text-gray-900 text-sm" />
           </Link>
-          <div className="flex items-center text-gray-800">
-            <FaPhone className="mr-2" />
+
+          {/* Phone Icon with Light Blue Background */}
+          <div className="flex items-center text-gray-800 space-x-2">
+            <div className="bg-thLightBlue text-white rounded-full p-2 flex items-center justify-center">
+              <FaPhone className="text-lg" />
+            </div>
             <span>8-800-10-500-25</span>
           </div>
         </motion.div>
+
       </div>
     </section>
   );

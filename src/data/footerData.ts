@@ -6,7 +6,7 @@ export const footerData = {
   phoneNumber: "+1 1234 5678",
   links: [
     { href: "/", text: "Home" },
-    { href: "#", text: "About Us" },
+    { href: "/about", text: "About Us" },
     { href: "#", text: "Products" },
     { href: "#", text: "Blog" },
     { href: "#", text: "Contact" },

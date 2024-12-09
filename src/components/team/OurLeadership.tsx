@@ -39,9 +39,9 @@ const directors = [
 const OurLeadership: React.FC = () => {
   return (
     <section>
-      <div className="container mx-auto px-6">
+      <div className="container mx-auto px-6 py-16">
         {/* Heading for Our Leadership */}
-        <h2 className="text-4xl font-bold text-center text-thLightBlue mb-6">
+        <h2 className="text-4xl font-bold text-center text-thLightBlue mb-2">
           OUR LEADERSHIP
         </h2>
         

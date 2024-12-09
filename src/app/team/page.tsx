@@ -13,13 +13,13 @@ const Team: React.FC = () => {
     return (
         <>
           <TeamBanner/>
-          <TeamAbout/>
-          <OurTeamImpact/>
-          <OurTeamValues/>
+          
+          {/* <OurTeamImpact/> */}
           <OurLeadership/>
           <OurTeam/>
+          {/* <OurTeamValues/>
           <OurTeamFacility/>
-          <OurTeamClients/>
+          <OurTeamClients/> */}
         </>
     );
 };

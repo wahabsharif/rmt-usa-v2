@@ -1,26 +1,32 @@
 "use client";
 
 import React from "react";
+import Image from "next/image"; // Import the Next.js Image component
 
 const MeetTeam: React.FC = () => {
   return (
-    <section
-      className="relative w-full bg-cover bg-center h-auto md:h-screen py-16 px-6 md:px-4"
-      style={{
-        backgroundImage: "url('/images/about/About3.png')",
-        backgroundColor: "rgba(255, 255, 255, 0.5)", // White background with transparency
-        backgroundBlendMode: "overlay", // Overlay white background over the image
-      }}
-    >
-      {/* Container for layout */}
-      <div className="flex justify-end items-center h-full relative">
-        {/* Content */}
-        <div className="relative z-10 max-w-4xl text-gray-800 bg-white bg-opacity-80 p-6 rounded-lg md:p-10">
+    <section className="py-16 px-6 md:px-4">
+      {/* Flex container to split the layout */}
+      <div className="flex flex-col md:flex-row justify-center items-start">
+        {/* Left Side: Image */}
+        <div className="relative w-full md:w-[40%] h-80 md:h-screen">
+          <Image
+            src="/images/about/ceo.jpeg"
+            alt="Picture of the ceo"
+            layout="fill" 
+            objectPosition="center" 
+          />
+        </div>
+
+
+        {/* Right Side: Content */}
+        <div className="flex flex-col justify-center items-start text-gray-800 p-6 md:p-10 w-full md:w-1/2">
           {/* Section Heading */}
           <div className="mb-8 text-left">
-            <h2 className="text-lg mb-2 uppercase tracking-widest">
-              MEET OUR TEAM
+            <h2 className="text-lg mb-2 uppercase tracking-widest bg-white p-2 inline-block shadow-3xl rounded-lg">
+              CEO Message
             </h2>
+
             <h1 className="text-4xl md:text-5xl font-bold text-thLightBlue">
               Our Qualified Doctors
             </h1>

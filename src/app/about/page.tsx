@@ -14,8 +14,8 @@ const AboutUsPage: React.FC = () => {
       <AboutCompany />
       <MeetTeam />
       <AboutCompanyServices />
-      <AboutUsTwo />
       <Feature />
+      <AboutUsTwo />
       <GoogleMap />
     </>
   );

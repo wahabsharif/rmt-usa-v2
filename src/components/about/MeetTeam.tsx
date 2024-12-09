@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import React from "react";
 
 const MeetTeam: React.FC = () => {
@@ -43,6 +44,15 @@ const MeetTeam: React.FC = () => {
           <div className="mt-12">
             <h3 className="text-2xl md:text-3xl font-bold">Leonardo Martens</h3>
             <p className="text-lg md:text-xl">Head Physician</p>
+          </div>
+
+          <div className="my-4">
+            <Link
+              href={"/team"}
+              className="mt-8 px-6 py-3 text-lg bg-thLightBlue text-white font-semibold rounded-full transition ease-in-out shadow-md hover:bg-thDarkBlue focus:outline-none"
+            >
+              Meet Our Team
+            </Link>
           </div>
         </div>
       </div>

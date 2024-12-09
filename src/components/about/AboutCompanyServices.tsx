@@ -26,12 +26,12 @@ const AboutCompanyServices: React.FC = () => {
           <h2 className="text-3xl md:text-5xl font-bold text-[#00B4C5]">
             Motor Skills
           </h2>
-          <h3 className="text-3xl md:text-5xl font-bold text-gray-800">
+          <h4 className="text-xl md:text-3xl font-bold text-gray-800">
             Guarantee You
-          </h3>
-          <h3 className="text-3xl md:text-5xl font-bold text-gray-800">
+          </h4>
+          <h4 className="text-xl md:text-3xl font-bold text-gray-800">
             a Comfortable Life
-          </h3>
+          </h4>
         </motion.div>
 
         <motion.div
@@ -40,16 +40,20 @@ const AboutCompanyServices: React.FC = () => {
           transition={{ duration: 1, delay: 0.5 }}
         >
           <div className="border-b-2 my-5 border-gray-500 pt-8">
-            <div className="flex gap-4">
-              <h3 className="font-bold text-xl text-[#00B4C5]">01</h3>
+            <div className="flex">
               <h3 className="text-gray-800 font-bold text-xl">Our Vision</h3>
             </div>
             <p className="py-4">
-              A prosthetic device is not just a piece of hardware, it&apos;s a
-              symbol of resilience.
+              Today, at Revive Medical Technologies Inc, we stand at the
+              forefront of healthcare technology innovation, driven by a passion
+              to transform ideas into reality. Our journey began with a vision
+              to bridge the gap between groundbreaking concepts and successful
+              commercialization. Our vision is be recognized by our global
+              clients as the most trusted partner for medical device research
+              and development.
             </p>
           </div>
-          <div className="border-b-2 my-5 border-gray-500 pt-8">
+          {/* <div className="border-b-2 my-5 border-gray-500 pt-8">
             <div className="flex gap-4">
               <h3 className="font-bold text-xl text-[#00B4C5]">02</h3>
               <h3 className="text-gray-800 font-bold text-xl">Our Mission</h3>
@@ -58,8 +62,8 @@ const AboutCompanyServices: React.FC = () => {
               Prosthetics is a field where science and humanity work hand in
               hand to change lives.
             </p>
-          </div>
-          <div className="border-b-2 my-5 border-gray-500 pt-8">
+          </div> */}
+          {/* <div className="border-b-2 my-5 border-gray-500 pt-8">
             <div className="flex gap-4">
               <h3 className="font-bold text-xl text-[#00B4C5]">03</h3>
               <h3 className="text-gray-800 font-bold text-xl">Eco materials</h3>
@@ -68,7 +72,7 @@ const AboutCompanyServices: React.FC = () => {
               With prosthetics, we are not just restoring physical abilities, we
               are restoring confidence and hope.
             </p>
-          </div>
+          </div> */}
         </motion.div>
       </div>
 

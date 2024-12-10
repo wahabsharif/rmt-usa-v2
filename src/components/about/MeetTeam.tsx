@@ -10,7 +10,7 @@ const MeetTeam: React.FC = () => {
       {/* Flex container to split the layout */}
       <div className="flex flex-col md:flex-row justify-center items-start">
         {/* Left Side: Image */}
-        <div className="relative w-full md:w-[40%] h-80 md:h-screen">
+        <div className="relative w-full md:w-[40%] h-60 md:h-72">
           <Image
             src="/images/about/ceo.jpeg"
             alt="Picture of the RMT CEO"
@@ -22,14 +22,14 @@ const MeetTeam: React.FC = () => {
         </div>
 
         {/* Right Side: Content */}
-        <div className="flex flex-col justify-center items-start text-gray-800 p-6 md:p-10 w-full md:w-1/2">
+        <div className="flex flex-col justify-center items-start py-2 text-gray-800 px-6 w-full md:w-1/2">
           {/* Section Heading */}
-          <div className="mb-8 text-left">
+          <div className="text-left">
             <h2 className="text-lg mb-2 uppercase tracking-widest bg-white p-2 inline-block shadow-3xl rounded-lg">
               CEO Message
             </h2>
 
-            <h1 className="text-4xl md:text-5xl font-bold text-thLightBlue">
+            {/* <h1 className="text-4xl md:text-5xl font-bold text-thLightBlue">
               Our Qualified Doctors
             </h1>
             <h2 className="text-2xl md:text-3xl font-semibold mt-2">
@@ -37,20 +37,22 @@ const MeetTeam: React.FC = () => {
             </h2>
             <h2 className="text-2xl md:text-3xl font-semibold mt-2">
               and Comfort
-            </h2>
+            </h2> */}
           </div>
 
           {/* Description */}
-          <p className="mt-4 text-lg md:text-xl font-light max-w-2xl leading-relaxed">
+          <p className="mt-2 text-lg md:text-xl font-light max-w-2xl leading-relaxed">
             “Prosthetics biomedicine is not just about creating replacement
             limbs. It’s about enabling people to reclaim their abilities and
             pursue their passions.”
           </p>
 
           {/* Doctor Details */}
-          <div className="mt-12">
-            <h3 className="text-2xl md:text-3xl font-bold">Leonardo Martens</h3>
-            <p className="text-lg md:text-xl">Head Physician</p>
+          <div className="mt-6">
+            <h3 className="text-2xl md:text-3xl font-bold">
+              Dr. Murtaza Najabat ALi
+            </h3>
+            <p className="text-lg md:text-xl">CEO & CO-FOUNDER</p>
           </div>
 
           <div className="my-4">

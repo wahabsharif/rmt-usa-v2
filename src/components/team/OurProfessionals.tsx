@@ -24,7 +24,7 @@ const OurProfessionals: React.FC = () => {
           {professionals.map((professional, index) => (
             <div
               key={index}
-              className="relative bg-white shadow-md rounded-lg overflow-hidden w-full max-w-xs group"
+              className="relative bg-white shadow-md rounded-lg overflow-hidden w-full md:max-w-xs group"
             >
               {/* professional Background Image */}
               <div className="relative w-full h-96 overflow-hidden">

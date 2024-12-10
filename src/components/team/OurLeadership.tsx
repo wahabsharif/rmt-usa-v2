@@ -24,7 +24,7 @@ const OurLeadership: React.FC = () => {
           {leaders.map((leader, index) => (
             <div
               key={index}
-              className="relative bg-white shadow-md rounded-lg overflow-hidden w-full max-w-xs group"
+              className="relative bg-white shadow-md rounded-lg overflow-hidden w-full max-w-md md:max-w-xs group"
             >
               {/* leader Background Image */}
               <div className="relative w-full h-96 overflow-hidden">

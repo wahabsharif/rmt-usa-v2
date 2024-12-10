@@ -12,7 +12,7 @@ function AboutRMT() {
         {/* First Image */}
         <div className="relative w-80 h-[490px] overflow-hidden rounded-lg shadow-xl">
           <Image
-            src="/images/home/rmt_img.jpg"
+            src="/images/home/rmt_image.jpg"
             alt="Picture of the rmt"
             layout="fill"
             objectFit="cover"

@@ -6,7 +6,7 @@ import Image from "next/image"; // Import the Next.js Image component
 
 const MeetTeam: React.FC = () => {
   return (
-    <section className="py-16 px-6 md:px-4">
+    <section className="py-6 md:py-16 px-6 md:px-4">
       {/* Flex container to split the layout */}
       <div className="flex flex-col md:flex-row justify-center items-start">
         {/* Left Side: Image */}
@@ -22,7 +22,7 @@ const MeetTeam: React.FC = () => {
         </div>
 
         {/* Right Side: Content */}
-        <div className="flex flex-col justify-center items-start py-2 text-gray-800 px-6 w-full md:w-1/2">
+        <div className="flex flex-col justify-center items-start py-6 md:py-2 text-gray-800 md:px-6 w-full md:w-1/2">
           {/* Section Heading */}
           <div className="text-left">
             <h2 className="text-lg mb-2 uppercase tracking-widest bg-white p-2 inline-block shadow-3xl rounded-lg">

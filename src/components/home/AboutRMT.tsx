@@ -6,31 +6,34 @@ import Image from "next/image";
 
 function AboutRMT() {
   return (
-    <section className="bg-gray-100 min-h-screen flex items-stretch flex-col md:flex-row md:justify-center items-start pt-24 pb-10 px-6">
-      <div className="w-full md:max-w-sm  md:mb-0 flex justify-end items-center relative h-[490px]">
+    <section className="bg-gray-100 min-h-screen flex items-stretch flex-col md:flex-row md:justify-center pt-24 pb-10 px-6">
+      {/* Left Section - Image */}
+      <div className="w-full md:max-w-sm flex justify-end items-center relative">
         {/* First Image */}
-        <Image
-          src="/images/home/rmt_img.jpg"
-          alt="Picture of the rmt"
-          // layout="responsive"
-          width={300}
-          height={800}
-          className="rounded-lg  shadow-xl w-80 h-[450px]"
-        />
+        <div className="relative w-80 h-[490px] overflow-hidden rounded-lg shadow-xl">
+          <Image
+            src="/images/home/rmt_img.jpg"
+            alt="Picture of the rmt"
+            layout="fill"
+            objectFit="cover"
+            className="rounded-lg"
+          />
+        </div>
 
         {/* Second Image */}
         <div className="absolute top-0 md:top-16 left-24 md:left-10 transform translate-x-[-50%] translate-y-[-50%] bg-gray-100 p-2 rounded-lg">
           <Image
             src="/images/home/rmt_img.jpg"
             alt="Overlay Picture"
-            // layout="intrinsic"
+            layout="intrinsic"
             width={250}
-            height={500}
+            height={400}
             className="shadow-lg rounded-lg"
           />
         </div>
       </div>
 
+      {/* Right Section - Content */}
       <div className="w-full md:w-1/2 p-6 text-left flex flex-col justify-center items-start space-y-6">
         <motion.h1
           className="text-2xl md:text-5xl font-bold text-[#023550] tracking-[.10em] mb-2"

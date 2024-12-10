@@ -6,16 +6,33 @@ import Image from "next/image";
 
 function AboutRMT() {
   return (
-    <section className="bg-gray-100 flex flex-col md:flex-row md:justify-between items-center py-16 px-6">
-      <div className="w-full md:w-1/2 relative mb-6 md:mb-0">
-        <Image
-          src="/images/home/rmt_img.jpg"
-          alt="Picture of the rmt"
-          layout="responsive" 
-          width={500} 
-          height={500} 
-          className="rounded-lg object-cover shadow-xl" 
-        />
+    <section className="bg-gray-100 min-h-screen flex flex-col md:flex-row md:justify-center items-start py-10 px-6">
+      <div className="w-full md:w-1/2 relative mb-6 md:mb-0 flex justify-center items-center">
+        {/* First Image */}
+        <div className="w-1/2 my-[50%]">
+          <div className="relative w-[100%]">
+            <Image
+              src="/images/home/rmt_img.jpg"
+              alt="Picture of the rmt"
+              layout="responsive"
+              width={500}
+              height={500}
+              className="rounded-lg object-cover shadow-xl w-96"
+            />
+
+            {/* Second Image positioned over the first image at the left corner */}
+            <div className="absolute top-[-60px] left-[-90px] w-[50%] md:w-[60%]">
+              <Image
+                src="/images/home/rmt_img.jpg"
+                alt="Overlay image"
+                layout="responsive"
+                width={500}
+                height={500}
+                className="rounded-lg object-cover shadow-xl border-4"
+              />
+            </div>
+          </div>
+        </div>
       </div>
 
       <div className="w-full md:w-1/2 p-6 text-left flex flex-col justify-center items-start space-y-6">
@@ -41,8 +58,8 @@ function AboutRMT() {
         >
           As a cross-functional service provider, we offer cost-effective and
           time-efficient R&D services to creative minds like physicians, medical
-          device manufacturers, and healthcare researchers who want to turn their
-          ideas into market-ready products in an accelerated process.
+          device manufacturers, and healthcare researchers who want to turn
+          their ideas into market-ready products in an accelerated process.
         </motion.p>
 
         {/* Call-to-Action Button */}

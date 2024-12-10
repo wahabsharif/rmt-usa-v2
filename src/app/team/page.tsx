@@ -1,7 +1,7 @@
 import React from "react";
 import OurLeadership from "@/components/team/OurLeadership";
-import OurTeam from "@/components/team/OurTeam";
-import TeamBanner from "@/components/team/TeamBanner";
+import OurProfessionals from "@/components/team/OurProfessionals";
+// import TeamBanner from "@/components/team/TeamBanner";
 
 // import OurTeamClients from "@/components/team/OurTeamClients";
 // import OurTeamFacility from "@/components/team/OurTeamFacility";
@@ -12,10 +12,10 @@ import TeamBanner from "@/components/team/TeamBanner";
 const Team: React.FC = () => {
   return (
     <>
-      <TeamBanner />
+      {/* <TeamBanner /> */}
       {/* <OurTeamImpact/> */}
       <OurLeadership />
-      <OurTeam />
+      <OurProfessionals />
       {/* <OurTeamValues /> */}
       {/* <OurTeamFacility /> */}
       {/* <OurTeamClients /> */}

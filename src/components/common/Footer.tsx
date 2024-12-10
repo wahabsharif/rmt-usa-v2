@@ -20,7 +20,7 @@ const Footer: React.FC = () => {
   };
   return (
     <footer className="mt-10">
-      <div className="w-full p-10 text-white bg-thDarkBlue grid grid-cols-1 md:grid-cols-3 gap-4">
+      <div className="w-full py-10 pl-10 text-white bg-thDarkBlue grid grid-cols-1 md:grid-cols-3 gap-4">
         {/* Column 1: Logo and Paragraph */}
         <div className="space-y-4">
           {/* Logo */}
@@ -83,7 +83,7 @@ const Footer: React.FC = () => {
           </ul>
         </div>
         {/* Column 3: Subscription Form */}
-        <div className="bg-thLightBlue backdrop-blur-md rounded-xl shadow-lg p-3 transition ease-in-out">
+        <div className="bg-thLightBlue backdrop-blur-md rounded-l-xl shadow-lg p-3 transition ease-in-out">
           <div className="text-left mx-4">
             <h2 className="text-2xl font-extrabold text-gray-800 capitalize">
               Subscribe Now

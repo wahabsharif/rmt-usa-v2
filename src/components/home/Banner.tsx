@@ -23,26 +23,28 @@ const Banner: React.FC = () => {
       {/* Hero Content */}
       <div className="relative z-10 container mx-auto px-6 py-4 md:py-8 text-left text-white">
         {/* Heading and Subheading */}
-        <div className="flex flex-col tracking-[.15em] items-start space-y-4 md:space-y-4">
+        <div className="flex flex-col items-start space-y-4 md:space-y-4">
           <motion.h1
-            className="text-4xl tracking-[.15em] md:text-5xl font-bold"
+            className="font-bold"
             initial={{ opacity: 0, y: -50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1 }}
           >
-            <span className="text-white tracking-[.25em] mb-4 text-base md:text-2xl">
+            <span className="text-white tracking-[.25em] mb-4 text-sm md:text-md">
               END-TO-END SERVICE PROVIDER
             </span>
             <br />
-            <span className="text-thLightBlue mb-4 italic font-extrabold">
+            <span className="text-thLightBlue mb-4 italic font-black text-7xl">
               INNOVATIVE
             </span>
             <br />
-            <span className="text-white mb-4 italic font-extrabold">
+            <span className="text-white mb-4 italic font-black text-7xl">
               HEALTHCARE
             </span>
             <br />
-            <span className="text-white italic font-extrabold">TECHNOLOGY</span>
+            <span className="text-white italic font-black text-7xl">
+              TECHNOLOGY
+            </span>
           </motion.h1>
         </div>
 

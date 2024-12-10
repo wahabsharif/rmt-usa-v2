@@ -34,15 +34,15 @@ const Banner: React.FC = () => {
               END-TO-END SERVICE PROVIDER
             </span>
             <br />
-            <span className="text-thLightBlue mb-4 italic font-black text-7xl">
+            <span className="text-thLightBlue mb-4 italic font-black text-3xl md:text-7xl">
               INNOVATIVE
             </span>
             <br />
-            <span className="text-white mb-4 italic font-black text-7xl">
+            <span className="text-white mb-4 italic font-black text-3xl md:text-7xl">
               HEALTHCARE
             </span>
             <br />
-            <span className="text-white italic font-black text-7xl">
+            <span className="text-white italic font-black text-3xl md:text-7xl">
               TECHNOLOGY
             </span>
           </motion.h1>

@@ -7,7 +7,7 @@ import Image from "next/image";
 function AboutRMT() {
   return (
     <section className="bg-gray-100 min-h-screen flex items-stretch flex-col md:flex-row md:justify-center items-start pt-24 pb-10 px-6">
-      <div className="w-full md:max-w-sm mb-6 md:mb-0 flex justify-end items-center relative h-[490px]">
+      <div className="w-full md:max-w-sm  md:mb-0 flex justify-end items-center relative h-[490px]">
         {/* First Image */}
         <Image
           src="/images/home/rmt_img.jpg"
@@ -19,7 +19,7 @@ function AboutRMT() {
         />
 
         {/* Second Image */}
-        <div className="absolute top-16 left-10 transform translate-x-[-50%] translate-y-[-50%] bg-gray-100 p-2 rounded-lg">
+        <div className="absolute top-0 md:top-16 left-24 md:left-10 transform translate-x-[-50%] translate-y-[-50%] bg-gray-100 p-2 rounded-lg">
           <Image
             src="/images/home/rmt_img.jpg"
             alt="Overlay Picture"

@@ -91,13 +91,10 @@ const BiomaterialSynthesis: React.FC = () => {
       content:
         "Our Testing Services division is committed to ensuring the safety, efficacy, and quality of medical products through rigorous testing protocols. Our comprehensive suite of testing services includes: Quality Testing Sterilization Validation Shelf-life Testing Microbiological Testing",
     },
-
   ];
 
   return (
     <section id="manufacturing" className="py-12 px-4 md:px-12">
-
-
       <div className="md:mb-16 flex flex-col md:flex-row items-start gap-6 md:gap-12">
         {/* Left Side - Accordion */}
         <motion.div
@@ -140,9 +137,18 @@ const BiomaterialSynthesis: React.FC = () => {
             className="w-full object-cover h-64"
           />
           <div className="px-6 py-4">
-            <div className="font-bold text-xl mb-2">Biomaterial & Drug Synthesis</div>
+            <div className="font-bold text-xl mb-2">
+              Biomaterial & Drug Synthesis
+            </div>
             <p className="text-gray-700 text-base">
-              Our Biomaterials and Drug Synthesis division is dedicated to harnessing the potential of biomaterials for a myriad of healthcare applications. Whether it's related to customized coatings and surface modifications of medical devices or the refinement of targeted drug delivery mechanisms, we stand at the forefront of innovation. Through a meticulous blend of scientific expertise and technological prowess, we strive to elevate medical treatments to unprecedented levels of efficacy and safety.
+              Our Biomaterials and Drug Synthesis division is dedicated to
+              harnessing the potential of biomaterials for a myriad of
+              healthcare applications. Whether it&apos;s related to customized
+              coatings and surface modifications of medical devices or the
+              refinement of targeted drug delivery mechanisms, we stand at the
+              forefront of innovation. Through a meticulous blend of scientific
+              expertise and technological prowess, we strive to elevate medical
+              treatments to unprecedented levels of efficacy and safety.
             </p>
           </div>
         </motion.div>

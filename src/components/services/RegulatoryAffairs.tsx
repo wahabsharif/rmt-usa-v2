@@ -67,42 +67,42 @@ const AccordionItem: React.FC<AccordionItemProps> = ({
   );
 };
 
-// Define type for the RegulatoryAffairs component data
+// Define type for the EmbeddedSystem component data
 interface Service {
   title: string;
   content: string;
 }
 
-const RegulatoryAffairs: React.FC = () => {
+const EmbeddedSystem: React.FC = () => {
   const [activeIndex, setActiveIndex] = useState<number>(-1); // Active accordion item index
   const services: Service[] = [
     {
-      title: "2D & 3D Designing",
+      title: "Embedded Firmware Design",
       content:
-        "Our team provides comprehensive 2D and 3D computer-aided design and modeling solutions, tailored to meet your specific project requirements and adhering to industry best practices.",
+        "Our experienced firmware development team specializes in creating reliable and efficient embedded firmware solutions. We excel in developing firmware for microcontrollers, microprocessors, and specialized embedded systems.",
     },
     {
-      title: "Design Verification & Validation",
+      title: "Electronics Design",
       content:
-        "Our team utilizes advanced tools and methodologies to meticulously examine your designs, identifying and addressing any potential issues, errors, or discrepancies.",
+        "Our skilled electronics engineers provide comprehensive design services, from initial concept to functional prototypes. We utilize state-of-the-art technologies and a thorough understanding of industry standards",
     },
     {
-      title: "Additive Manufacturing",
+      title: "PCB Manufacturing",
       content:
-        "We specialize in a range of advanced techniques, including; Fused Deposition Modeling (FDM), Resin Printing, PCB Printing",
+        "We specialize in the production of high-quality printed circuit boards (PCBs). Equipped with advanced machinery like the Carvera, we offer fast turnaround times, exceptional precision, and customization options for prototypes and small to large batch production.",
     },
     {
-      title: "Subtractive Manufacturing",
+      title: "PCB Designing",
       content:
-        "RMT provides comprehensive subtractive manufacturing services, including CNC machining, laser cutting, milling, casting, and molding, to meet your precise engineering needs.",
+        "We specialize in providing top-notch PCB design solutions tailored to meet your unique requirements. Our team of experienced engineers is committed to delivering high-quality, reliable, and efficient PCB layouts for a wide range of applications.",
     },
   ];
 
   return (
-    <section id="product-design" className="py-12 px-4 md:px-12">
-     
+    <section id="regulatory-affairs" className="py-12 px-4 md:px-12">
 
-      <div className="md:mb-16 flex flex-col md:flex-row items-start gap-6 md:gap-12">
+
+      <div className="md:mb-16 flex flex-col md:flex-row-reverse items-start gap-6 md:gap-12">
         {/* Left Side - Accordion */}
         <motion.div
           initial={{ opacity: 0, x: -50 }}
@@ -110,11 +110,11 @@ const RegulatoryAffairs: React.FC = () => {
           transition={{ duration: 1 }}
           className="w-full md:w-1/2"
         >
-           <div className="mb-8">
-        <h3 className="text-xl md:text-2xl text-thLightBlue font-semibold tracking-widest">
-          Product Design & Engineering
-        </h3>
-      </div>
+          <div className="mb-8">
+            <h3 className="text-xl md:text-2xl text-thLightBlue font-semibold tracking-widest">
+              Embedded System Development
+            </h3>
+          </div>
           <div className="rkit-accordion border border-thLightBlue rounded-lg p-8">
             {services.map((service, index) => (
               <AccordionItem
@@ -137,21 +137,17 @@ const RegulatoryAffairs: React.FC = () => {
           className="max-w-xl w-1/2 rounded overflow-hidden shadow-lg"
         >
           <Image
-            src="/images/services/services-banner.jpg"
+            src="/images/services/embeded-system2.jpg"
             alt="Product Design & Engineering"
             width={500}
             height={500}
             className="w-full object-cover h-64"
           />
           <div className="px-6 py-4">
-            <div className="font-bold text-xl mb-2">Design & Fabrication</div>
+            <div className="font-bold text-xl mb-2">Embedded System Development</div>
             <p className="text-gray-700 text-base">
-              We provide a standardized design development approach to our clients
-              where we adhere to strict design control protocols. We offer a
-              complete design development solution for medical devices which also
-              includes 2D, 3D and even PCB Designing. Our clients remain part of
-              the entire designing process, working hand-in-hand to get the best
-              possible design output.
+              In today’s rapidly evolving healthcare landscape, innovation is key, and embedded system development plays a pivotal role in the creation of cutting-edge medical devices. At Revive Medical Technologies, we are at the forefront of this technological revolution, harnessing the power of embedded systems to develop innovative, life-saving solutions that make a real difference in the healthcare industry
+
             </p>
           </div>
         </motion.div>
@@ -160,4 +156,4 @@ const RegulatoryAffairs: React.FC = () => {
   );
 };
 
-export default RegulatoryAffairs;
+export default EmbeddedSystem;

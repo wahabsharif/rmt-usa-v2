@@ -100,7 +100,7 @@ const QualityTesting: React.FC = () => {
 
   return (
     <section id="quality-testing" className="py-12 px-4 md:px-12">
-      <div className="md:mb-16 flex flex-col md:flex-row-reverse items-start gap-6 md:gap-12">
+      <div className="md:mb-16 flex flex-col md:flex-row items-start gap-6 md:gap-12">
         {/* Left Side - Accordion */}
         <motion.div
           initial={{ opacity: 0, x: -50 }}

@@ -2,7 +2,6 @@
 
 import Image from "next/image";
 import React from "react";
-import { AiOutlineRight } from "react-icons/ai"; // Import the right arrow icon
 import { motion } from "framer-motion"; // Import framer-motion
 
 const Banner: React.FC = () => {
@@ -29,7 +28,8 @@ const Banner: React.FC = () => {
             Our Services
           </h1>
           <p className="text-lg md:text-xl font-light max-w-md mx-auto">
-            Discover our wide range of services that meet the highest standards in product design, engineering, quality testing, and more.
+            Discover our wide range of services that meet the highest standards
+            in product design, engineering, quality testing, and more.
           </p>
         </motion.div>
 
@@ -51,7 +51,9 @@ const Banner: React.FC = () => {
                 className="w-6"
               />
             </div>
-            <h2 className="text-xl md:text-2xl font-semibold">Product Design & Engineering</h2>
+            <h2 className="text-xl md:text-2xl font-semibold">
+              Product Design & Engineering
+            </h2>
           </motion.div>
 
           {/* Service 2 */}
@@ -70,7 +72,9 @@ const Banner: React.FC = () => {
                 className="w-6"
               />
             </div>
-            <h2 className="text-xl md:text-2xl font-semibold">Quality Testing</h2>
+            <h2 className="text-xl md:text-2xl font-semibold">
+              Quality Testing
+            </h2>
           </motion.div>
 
           {/* Service 3 */}
@@ -89,7 +93,9 @@ const Banner: React.FC = () => {
                 className="w-6"
               />
             </div>
-            <h2 className="text-xl md:text-2xl font-semibold">Regulatory Affairs & Quality Management</h2>
+            <h2 className="text-xl md:text-2xl font-semibold">
+              Regulatory Affairs & Quality Management
+            </h2>
           </motion.div>
 
           {/* Service 4 */}
@@ -108,7 +114,9 @@ const Banner: React.FC = () => {
                 className="w-6"
               />
             </div>
-            <h2 className="text-xl md:text-2xl font-semibold">Manufacturing Consultancy</h2>
+            <h2 className="text-xl md:text-2xl font-semibold">
+              Manufacturing Consultancy
+            </h2>
           </motion.div>
         </div>
       </div>

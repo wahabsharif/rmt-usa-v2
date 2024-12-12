@@ -1,123 +1,92 @@
-"use client";
+// components/Services.js
+import Link from "next/link";
 
-import Image from "next/image";
-import React from "react";
-import { motion } from "framer-motion"; // Import framer-motion
+const services = [
+  {
+    title: "Product Design & Engineering",
+    description:
+      "We provide a standardized design development approach to our clients where we adhere to strict design control protocols. We offer a complete design development solution for medical devices which also includes 2D, 3D and even PCB Designing. Our clients remain part of the entire designing process, working hand-in-hand to get best possible design output.",
+    link: "/services#product-design",
+    animation: "slideInLeft",
+    bgImage: "/images/services/services1.jpg",
+  },
+  {
+    title: "Quality Testing",
+    description:
+      "Rigorous quality testing is paramount in ensuring the safety and efficacy of biomaterials, medical devices, and software solutions. At Revive Medical Technologies Inc., we are committed to providing comprehensive quality testing services that adhere to the highest industry standards. Our state-of-the-art facilities and experienced team utilize advanced testing methodologies to evaluate the performance, biocompatibility, and reliability of your products, ensuring they meet regulatory requirements and deliver optimal outcomes for patients.",
+    link: "/services#quality-testing",
+    animation: "slideInUp",
+    bgImage: "/images/services/services2.webp",
+  },
+  {
+    title: "Regulatory Affairs & Quality Management",
+    description:
+      "At RMT, we not only create medical-grade products but also help bring them to reality through comprehensive regulatory support. From the preparation of technical files to ensuring Quality Management System (QMS) compliance, we help you navigate through the complex regulatory landscape to accelerate the commercialization of your product.",
+    link: "/services#regulatory-affairs",
+    animation: "slideInUp",
+    bgImage: "/images/services/services3.webp",
+  },
+  {
+    title: "Manufacturing Consultancy",
+    description:
+      "We offer advanced solutions for establishing stent and PTCA balloon catheter production and testing lines, Our services include comprehensive installation and training, technical support for plant commissioning, and regulatory compliance assistance for both products and facilities. Additionally, we manufacture selected machines in-house, enhancing automation and ensuring superior results.",
+    link: "/services#manufacturing",
+    animation: "slideInUp",
+    bgImage: "/images/services/services4.webp",
+  },
+];
 
-const Banner: React.FC = () => {
+const Banner = () => {
   return (
-    <section
-      className="relative w-full bg-cover bg-center min-h-screen flex items-start justify-between text-center px-4 md:px-16"
-      style={{
-        backgroundImage: "url('/images/services/services-banner.jpg')",
-      }}
-    >
-      {/* Overlay */}
-      <div className="absolute inset-0 bg-black bg-opacity-50"></div>
-
-      {/* Content */}
-      <div className="relative z-10 w-full flex flex-col md:flex-row justify-between items-center py-16">
-        {/* Left Side - Heading (Our Services) */}
-        <motion.div
-          className="w-full md:w-1/2 text-white mb-8 md:mb-0"
-          initial={{ opacity: 0, x: -100 }}
-          animate={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.8 }}
-        >
-          <h1 className="text-2x mb-4 md:text-3xl font-bold tracking-wide leading-tight">
-            Our Services
-          </h1>
-          <p className="text-lg md:text-xl font-light max-w-md mx-auto">
-            Discover our wide range of services that meet the highest standards
-            in product design, engineering, quality testing, and more.
-          </p>
-        </motion.div>
-
-        {/* Right Side - Service Headings */}
-        <div className="w-full md:w-1/2 text-white flex flex-col items-start">
-          {/* Service 1 */}
-          <motion.div
-            className="flex items-center mb-16 space-x-4 hover:text-thLightBlue transition-all duration-300"
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.3 }}
-          >
-            <div className="bg-white p-2 rounded-full flex items-center justify-center">
-              <Image
-                src={"/images/icons/arrow-bullet.png"}
-                alt="arrow-bullet"
-                width={1000}
-                height={1000}
-                className="w-6"
-              />
-            </div>
-            <h2 className="text-xl md:text-2xl font-semibold">
-              Product Design & Engineering
-            </h2>
-          </motion.div>
-
-          {/* Service 2 */}
-          <motion.div
-            className="flex items-center mb-16 space-x-4 hover:text-thLightBlue transition-all duration-300"
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.4 }}
-          >
-            <div className="bg-white p-2 rounded-full flex items-center justify-center">
-              <Image
-                src={"/images/icons/arrow-bullet.png"}
-                alt="arrow-bullet"
-                width={1000}
-                height={1000}
-                className="w-6"
-              />
-            </div>
-            <h2 className="text-xl md:text-2xl font-semibold">
-              Quality Testing
-            </h2>
-          </motion.div>
-
-          {/* Service 3 */}
-          <motion.div
-            className="flex items-center mb-16 space-x-4 hover:text-thLightBlue transition-all duration-300"
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.5 }}
-          >
-            <div className="bg-white p-2 rounded-full flex items-center justify-center">
-              <Image
-                src={"/images/icons/arrow-bullet.png"}
-                alt="arrow-bullet"
-                width={1000}
-                height={1000}
-                className="w-6"
-              />
-            </div>
-            <h2 className="text-xl md:text-2xl font-semibold">
-              Regulatory Affairs & Quality Management
-            </h2>
-          </motion.div>
-
-          {/* Service 4 */}
-          <motion.div
-            className="flex items-center mb-16 space-x-4 hover:text-thLightBlue transition-all duration-300"
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.6 }}
-          >
-            <div className="bg-white p-2 rounded-full flex items-center justify-center">
-              <Image
-                src={"/images/icons/arrow-bullet.png"}
-                alt="arrow-bullet"
-                width={1000}
-                height={1000}
-                className="w-6"
-              />
-            </div>
-            <h2 className="text-xl md:text-2xl font-semibold">
-              Manufacturing Consultancy
-            </h2>
-          </motion.div>
+    <section className="bg-gray-50 py-12">
+      <div className="container mx-auto px-4">
+        <h2 className="text-3xl font-bold text-center mb-8">Our Services</h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          {services.map((service, index) => (
+            <Link href={service.link} key={index}>
+              <div
+                className={`relative bg-gradient-to-tr from-white to-gray-100 group hover:from-thLightBlue hover:to-thDarkBlue hover:text-gray-100 p-6 border border-thLightBlue rounded-lg shadow-md animate__animated animate__${service.animation} cursor-pointer flex flex-col h-full`}
+              >
+                {/* Background image */}
+                <div
+                  className="absolute inset-0 bg-cover bg-center opacity-0 group-hover:opacity-70 rounded-lg"
+                  style={{
+                    backgroundImage: `url(${service.bgImage})`,
+                    transition: "opacity 0.3s ease-in-out",
+                  }}
+                ></div>
+                {/* Overlay for darker effect */}
+                <div className="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-0 group-hover:opacity-50 rounded-lg transition-opacity duration-300"></div>
+                {/* Content */}
+                <div className="relative z-10">
+                  <h3 className="text-lg font-semibold mb-4 group-hover:text-white">
+                    {service.title}
+                  </h3>
+                  <p className="text-gray-600 group-hover:text-gray-200 mb-6 line-clamp-4 overflow-hidden text-ellipsis">
+                    {service.description}
+                  </p>
+                  <div className="border-t border-thLightBlue mb-4"></div>
+                  <span className="text-thDarkBlue group-hover:text-white  flex items-center">
+                    Learn More
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      strokeWidth={2}
+                      stroke="currentColor"
+                      className="ml-2 w-4 h-4"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        d="M9 5l7 7-7 7"
+                      />
+                    </svg>
+                  </span>
+                </div>
+              </div>
+            </Link>
+          ))}
         </div>
       </div>
     </section>

@@ -27,7 +27,7 @@ const Banner: React.FC = () => {
           <h1 className="text-2x mb-4 md:text-3xl font-bold tracking-wide leading-tight">
             Our Services
           </h1>
-          <p className="text-lg md:text-xl font-light max-w-md mx-auto">
+          <p className="text-sm md:text-xl font-light max-w-md mx-auto">
             Discover our wide range of services that meet the highest standards
             in product design, engineering, quality testing, and more.
           </p>
@@ -51,7 +51,7 @@ const Banner: React.FC = () => {
                 className="w-6"
               />
             </div>
-            <h2 className="text-xl md:text-2xl font-semibold">
+            <h2 className="text-base md:text-lg lg:text-xl xl:text-2xl font-semibold">
               Product Design & Engineering
             </h2>
           </motion.div>
@@ -72,7 +72,7 @@ const Banner: React.FC = () => {
                 className="w-6"
               />
             </div>
-            <h2 className="text-xl md:text-2xl font-semibold">
+            <h2 className="text-base md:text-lg lg:text-xl xl:text-2xl font-semibold">
               Quality Testing
             </h2>
           </motion.div>
@@ -93,7 +93,7 @@ const Banner: React.FC = () => {
                 className="w-6"
               />
             </div>
-            <h2 className="text-xl md:text-2xl font-semibold">
+            <h2 className="text-base md:text-lg lg:text-xl xl:text-2xl font-semibold">
               Regulatory Affairs & Quality Management
             </h2>
           </motion.div>
@@ -114,7 +114,7 @@ const Banner: React.FC = () => {
                 className="w-6"
               />
             </div>
-            <h2 className="text-xl md:text-2xl font-semibold">
+            <h2 className="text-base md:text-lg lg:text-xl xl:text-2xl font-semibold">
               Manufacturing Consultancy
             </h2>
           </motion.div>

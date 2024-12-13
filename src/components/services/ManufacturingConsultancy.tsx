@@ -28,7 +28,7 @@ const AccordionItem: React.FC<AccordionItemProps> = ({
   return (
     <div className="rkit-accordion-item border rounded-lg shadow-md my-4">
       <div
-        className="rkit-accordion-header flex justify-start items-center  cursor-pointer py-4 gap-8 px-4 bg-thLightBlue rounded-lg"
+        className="rkit-accordion-header flex justify-start items-center  cursor-pointer py-4 gap-4 md:gap-8 px-4 bg-thLightBlue rounded-lg"
         onClick={toggleAccordion}
       >
         <svg
@@ -127,7 +127,7 @@ const BiomaterialSynthesis: React.FC = () => {
           initial={{ opacity: 0, x: 50 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 1 }}
-          className="max-w-xl w-1/2 rounded overflow-hidden shadow-lg"
+          className="w-full max-w-xl md:w-1/2 rounded overflow-hidden shadow-lg"
         >
           <Image
             src="/images/services/biomaterial.webp"

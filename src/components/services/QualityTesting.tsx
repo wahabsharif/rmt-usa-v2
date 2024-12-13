@@ -28,7 +28,7 @@ const AccordionItem: React.FC<AccordionItemProps> = ({
   return (
     <div className="rkit-accordion-item border rounded-lg shadow-md my-4">
       <div
-        className="rkit-accordion-header flex justify-start items-center  cursor-pointer py-4 gap-8 px-4 bg-thLightBlue rounded-lg"
+        className="rkit-accordion-header flex justify-start items-center  cursor-pointer py-4 gap-2 md:gap-8 px-0 md:px-4 bg-thLightBlue rounded-lg"
         onClick={toggleAccordion}
       >
         <svg
@@ -132,7 +132,7 @@ const QualityTesting: React.FC = () => {
           initial={{ opacity: 0, x: 50 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 1 }}
-          className="max-w-xl w-1/2 rounded overflow-hidden shadow-lg"
+          className="max-w-xl w-full md:w-1/2 rounded overflow-hidden shadow-lg"
         >
           <Image
             src="/images/services/services2.webp"

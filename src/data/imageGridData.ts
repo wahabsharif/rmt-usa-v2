@@ -2,7 +2,7 @@
 export const imageGridData = [
   {
     id: 1,
-    image: "/images/home/pexels-chokniti-khongchum-1197604-3938022.jpg",
+    image: "/images/home/manufacturing.jpg",
     heading: "Support",
     description: "Rehabilitiation",
   },

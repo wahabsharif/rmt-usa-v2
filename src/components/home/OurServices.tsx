@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React from "react";
-import { ourServicesData } from "@/data/ourServicesData";
+import { homeServicesData } from "@/data/homeServices";
 
 function OurServices() {
   return (
@@ -13,7 +13,7 @@ function OurServices() {
 
         {/* Services Cards */}
         <div className="flex justify-center items-center flex-wrap gap-12">
-          {ourServicesData.map((service) => (
+          {homeServicesData.map((service) => (
             <div
               key={service.id}
               className="bg-white p-6 rounded-lg shadow-lg flex flex-col items-center text-center w-[18rem] min-h-[16rem]"

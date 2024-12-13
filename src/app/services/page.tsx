@@ -4,8 +4,7 @@ import Banner from "@/components/services/Banner";
 // import QualityTesting from "@/components/services/QualityTesting";
 // import EmbeddedSystem from "@/components/services/RegulatoryAffairs";
 import ServicesData from "@/components/services/ServicesData";
-
-import SoftwareDevelopment from "@/components/services/SoftwareDevelopment";
+// import SoftwareDevelopment from "@/components/services/SoftwareDevelopment";
 import React from "react";
 const Services: React.FC = () => {
   return (

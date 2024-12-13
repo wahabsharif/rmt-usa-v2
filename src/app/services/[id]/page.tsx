@@ -11,7 +11,7 @@ interface AccordionItemProps {
   content: string;
   index: number;
   activeIndex: number;
-  setActiveIndex: React.Dispatch<React.SetStateAction<number>>; // Function to update the active index
+  setActiveIndex: React.Dispatch<React.SetStateAction<number>>;
 }
 
 // Services data
@@ -28,7 +28,6 @@ const AccordionItem: React.FC<AccordionItemProps> = ({
   const toggleAccordion = () => {
     setActiveIndex(isOpen ? -1 : index);
   };
-  const [activeIndex, setActiveIndex] = useState(-1);
 
   return (
     <div className="rkit-accordion-item border rounded-lg shadow-md my-4">
@@ -54,13 +53,13 @@ const AccordionItem: React.FC<AccordionItemProps> = ({
 export default function ServiceDetail() {
   const params = useParams();
   const id = params.id;
+  const [activeIndex, setActiveIndex] = useState(-1);
 
   const service = ourServicesData.find((service) => service.id === id);
 
   if (!service) {
     return <p>Service not found</p>;
   }
-
 
   return (
     <div>
@@ -70,22 +69,18 @@ export default function ServiceDetail() {
           backgroundImage: "url('/images/about/Banner1.jpg')",
         }}
       >
-        {/* Overlay */}
         <div className="absolute inset-0 bg-black bg-opacity-50"></div>
 
-        {/* Content */}
         <motion.div
           className="relative z-10 text-white"
-          initial={{ opacity: 0, y: 50 }} // Initial state (invisible, shifted down)
-          animate={{ opacity: 1, y: 0 }} // Final state (visible, back to original position)
-          transition={{ duration: 1 }} // Duration of the animation
+          initial={{ opacity: 0, y: 50 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1 }}
         >
-          {/* About Us Heading */}
           <h1 className="text-2xl md:text-4xl font-bold tracking-widest">
             {service.title}
           </h1>
 
-          {/* Breadcrumb */}
           <p className="mt-4 text-lg md:text-xl font-medium">
             <span className="text-thLightBlue">Home</span> /{" "}
             <span>Services</span> / <span>{service.title}</span>
@@ -93,7 +88,6 @@ export default function ServiceDetail() {
         </motion.div>
       </section>
 
-      {/* Service Details with Accordion */}
       <section id="service-details" className="py-12 px-4 md:px-12">
         <div className="mb-8">
           <h3 className="text-xl md:text-2xl text-thLightBlue font-semibold tracking-widest">
@@ -101,7 +95,6 @@ export default function ServiceDetail() {
           </h3>
         </div>
         <div className="md:mb-16 flex flex-col md:flex-row items-start gap-6 md:gap-12">
-          {/* Left Side - Accordion */}
           <motion.div
             initial={{ opacity: 0, x: -50 }}
             animate={{ opacity: 1, x: 0 }}
@@ -122,7 +115,6 @@ export default function ServiceDetail() {
             </div>
           </motion.div>
 
-          {/* Right Side - Image & Description */}
           <motion.div
             initial={{ opacity: 0, x: 50 }}
             animate={{ opacity: 1, x: 0 }}

@@ -1,10 +1,14 @@
 "use client";
 import React from "react";
-import Slider from "react-slick";
 import { testimonialData, Testimonial } from "@/data/testimonialData";
 import { FaQuoteLeft } from "react-icons/fa";
 import Image from "next/image";
-
+import { Settings } from "react-slick";
+import dynamic from "next/dynamic";
+const Slider = dynamic<Settings>(
+  () => import("react-slick").then((mod) => mod.default as never),
+  { ssr: false }
+);
 const TestimonialCard: React.FC<{ testimonial: Testimonial }> = ({
   testimonial,
 }) => {

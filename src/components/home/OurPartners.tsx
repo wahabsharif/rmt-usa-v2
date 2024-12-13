@@ -1,12 +1,14 @@
 "use client";
 import React, { useEffect, useState } from "react";
-import dynamic from "next/dynamic"; // Import dynamic from Next.js
+import dynamic from "next/dynamic";
 import { ourPartnersData } from "@/data/ourPartnersData";
 import Image from "next/image";
+import { Settings } from "react-slick";
 
-// Dynamically import react-slick to disable SSR
-const Slider = dynamic(() => import("react-slick"), { ssr: false });
-
+const Slider = dynamic<Settings>(
+  () => import("react-slick").then((mod) => mod.default as never),
+  { ssr: false }
+);
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 

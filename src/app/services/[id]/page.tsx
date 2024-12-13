@@ -28,6 +28,7 @@ const AccordionItem: React.FC<AccordionItemProps> = ({
   const toggleAccordion = () => {
     setActiveIndex(isOpen ? -1 : index);
   };
+  const [activeIndex, setActiveIndex] = useState(-1);
 
   return (
     <div className="rkit-accordion-item border rounded-lg shadow-md my-4">
@@ -60,7 +61,6 @@ export default function ServiceDetail() {
     return <p>Service not found</p>;
   }
 
-  const [activeIndex, setActiveIndex] = useState(-1);
 
   return (
     <div>

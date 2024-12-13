@@ -18,15 +18,15 @@ const Banner: React.FC = () => {
       <motion.div
         className="relative z-10 text-white"
         initial={{ opacity: 0, y: 50 }} // Initial state: fade in and move up
-        animate={{ opacity: 1, y: 0 }}  // Final state: fully visible at original position
-        transition={{ duration: 1 }}    // Animation duration
+        animate={{ opacity: 1, y: 0 }} // Final state: fully visible at original position
+        transition={{ duration: 1 }} // Animation duration
       >
         {/* About Us Heading */}
         <h1 className="text-4xl md:text-6xl font-bold">Services</h1>
 
         {/* Breadcrumb */}
         <p className="mt-4 text-lg md:text-xl font-medium">
-          <span className="text-thLightBlue">Home</span> / <span>Services</span>
+          <span>Home</span> / <span className="text-thLightBlue">Services</span>
         </p>
       </motion.div>
     </section>

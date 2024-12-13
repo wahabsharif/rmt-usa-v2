@@ -9,6 +9,9 @@ export default {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        sans: ["SF Pro", "Manrope", "Helvetica Neue", "Arial", "sans-serif"],
+      },
       colors: {
         thDarkBlue: "#013550",
         thLightBlue: "#00b6c6",
@@ -19,7 +22,7 @@ export default {
         foreground: "var(--foreground)",
       },
       boxShadow: {
-        '3xl': '0 20px 50px rgba(0, 0, 0, 0.5)', // Custom shadow
+        "3xl": "0 20px 50px rgba(0, 0, 0, 0.5)", // Custom shadow
       },
       keyframes: {
         marquee: {

@@ -14,8 +14,8 @@ function AboutRMT() {
           <Image
             src="/images/home/rmt_image.jpg"
             alt="Picture of the rmt"
-            layout="fill"
-            objectFit="cover"
+            fill
+            style={{ objectFit: "cover" }}
             className="rounded-lg"
           />
         </div>
@@ -25,7 +25,6 @@ function AboutRMT() {
           <Image
             src="/images/home/rmt_img.jpg"
             alt="Overlay Picture"
-            layout="intrinsic"
             width={250}
             height={400}
             className="shadow-lg rounded-lg"

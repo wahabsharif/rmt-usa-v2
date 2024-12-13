@@ -11,8 +11,8 @@ const Banner: React.FC = () => {
       <Image
         src="/images/home/home-banner.webp"
         alt="A visually striking banner representing innovative healthcare technology"
-        layout="fill"
-        objectFit="cover"
+        fill // Use the `fill` property to make the image fill its container
+        style={{ objectFit: "cover" }} // Use `style` to apply `objectFit`
         priority
         className="-z-10"
       />

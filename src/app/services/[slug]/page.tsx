@@ -97,11 +97,11 @@ export default function ServiceDetail() {
 
       <section id="service-details" className="py-12 px-4 md:px-12">
         {service.serviceSub.map((serviceSub) => (
-          <div key={serviceSub.id} className="mb-8">
+          <div key={serviceSub.id}>
             <h3 className="text-2xl md:text-4xl text-center text-thLightBlue font-semibold tracking-widest">
               {serviceSub.title}
             </h3>
-            <p className="my-2">{serviceSub.description}</p>
+            <p className="my-6">{serviceSub.description}</p>
 
             <div className="md:mb-16 flex flex-col md:flex-row items-start gap-6 md:gap-12">
               <motion.div

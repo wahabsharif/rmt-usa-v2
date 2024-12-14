@@ -21,7 +21,7 @@ interface Service {
 }
 
 export const ourServicesData: Service[] = [
-  // Product Design & Engineering
+  // Product Design & Engineering Page
   {
     id: 1,
     slug: "product-design-and-engineering",
@@ -156,6 +156,158 @@ export const ourServicesData: Service[] = [
             image: "/images/services/s (5).webp",
             description:
               "We guarantee the quality and reliability of your medical software through comprehensive Software Quality Assurance (SQA) services. Our SQA team meticulously tests applications to ensure they function flawlessly and meet regulatory standards. We specialize in STLC of both, Software-as-Medical-Device (SaMD) and Software-in-Medical-Device (SiMD). From static testing to system-level testing and cybersecurity testing, we offer end-to-end SQA.",
+          },
+        ],
+      },
+    ],
+  },
+
+  // Quality Testing Page
+  {
+    id: 2,
+    slug: "quality-testing",
+    title: "Quality Testing",
+    description:
+      "Rigorous quality testing is paramount in ensuring the safety and efficacy of biomaterials, medical devices, and software solutions. At Revive Medical Technologies Inc., we are committed to providing comprehensive quality testing services that adhere to the highest industry standards. Our state-of-the-art facilities and experienced team utilize advanced testing methodologies to evaluate the performance, biocompatibility, and reliability of your products, ensuring they meet regulatory requirements and deliver optimal outcomes for patients.",
+    image: "/images/services/quality-testing.webp",
+    serviceSub: [
+      // Quality Testing
+      {
+        id: 1,
+        title: "Quality Testing",
+        description:
+          "Rigorous quality testing is paramount in ensuring the safety and efficacy of biomaterials, medical devices, and software solutions. At Revive Medical Technologies Inc., we are committed to providing comprehensive quality testing services that adhere to the highest industry standards. Our state-of-the-art facilities and experienced team utilize advanced testing methodologies to evaluate the performance, biocompatibility, and reliability of your products, ensuring they meet regulatory requirements and deliver optimal outcomes for patients.",
+        accordion: [
+          {
+            title: "Quality Plan",
+            image: "/images/services/width_797.webp",
+            description:
+              "A quality plan usually covers the processes and quality elements which are applicable over the specific case. It further includes internal and external requirements may not be necessary for the specific case but are included to ensure acceptability from external elements like end-user, local market norms, local regulatory bodies, etc. Quality Plan is also dependent upon how well the QMS documentation can support it.",
+          },
+          {
+            title: "Bench Testing",
+            image: "/images/services/width_800 (2).webp",
+            description:
+              "Testing of products-under development in a simulated environment with aid of specialized equipment, tools and software, opens avenues for evaluating different performance and safety attributes which can be expressed qualitatively and quantitatively. We offer specialized bench testing solutions focused on testing our client’s under-development products.",
+          },
+          {
+            title: "Simulation",
+            image: "/images/services/width_800 (3).webp",
+            description:
+              "It is the imitation of the operation of a real-world process or system over time. Simulations require the use of models; the model represents the key characteristics or behaviors of the selected system or process, whereas the simulation represents the evolution of the model over time. We provide advanced computation modelling (e.g., Finite Element Analysis) to simulate working conditions to predict behavior of an under-development product.",
+          },
+          {
+            title: "Visual Inspection",
+            image: "/images/services/width_800 (4).webp",
+            description:
+              "We offer services for Visual Inspection which is a globally employed quality inspection technique. Our team of highly skilled and experienced scientists and engineers’ using high quality visual inspection technology like high-magnification digital microscopes can visually detect the smallest defects or irregularities in a product which may have an impact on the product’s performance or safety.",
+          },
+          {
+            title: "Dimensional Analysis",
+            image: "/images/services/width_800 (5).webp",
+            description:
+              "Here at Revive Medical Technologies, our team of highly skilled engineers & developers offer services for dimensional analysis of our client’s products using high precision calibrated dimensional inspection equipment and tools.",
+          },
+          {
+            title: "Defect Analysis",
+            image: "/images/services/width_800 (6).webp",
+            description:
+              "This is defined as the study of properties, characteristics and impact of product-based defects. We provide services for Defect Analysis where our experienced team will conduct in-depth assessment of product defects, its origin and its impact over the product’s performance and safety.",
+          },
+          {
+            title: "Packaging Integrity Testing",
+            image: "/images/services/width_787.webp",
+            description:
+              "We at Revive Medical Technologies offer services for conducting packing integrity testing for our client’s product where we identify packaging problems which may have an impact on the product and its sterility. We offer to conduct microbial challenge testing, dye penetration testing and seal integrity testing for evaluating packaging integrity of our client’s products.",
+          },
+          {
+            title:
+              "Physicochemical testing of Biomaterials & Drug Delivery Systems",
+            image: "/images/services/s (6).webp",
+            description:
+              "Physicochemical testing of biomaterials and drug delivery systems involves a series of analytical and experimental techniques to assess and characterize the physical and chemical properties of these materials. These tests are crucial for ensuring the quality, safety, and effectiveness of biomaterials and drug delivery systems.",
+          },
+        ],
+      },
+    ],
+  },
+
+  // Regulatory Services Page
+  {
+    id: 3,
+    slug: "regulatory-affairs-and-quality-management",
+    title: "Regulatory Affairs & Quality Management",
+    description:
+      "At RMT, we not only create medical-grade products but also help bring them to reality through comprehensive regulatory support. From the preparation of technical files to ensuring Quality Management System (QMS) compliance, we help you navigate through the complex regulatory landscape to accelerate the commercialization of your product.",
+    image: "/images/services/services3.webp",
+    serviceSub: [
+      {
+        id: 1,
+        title: "Regulatory Services",
+        description:
+          "At RMT, we not only create medical-grade products but also help bring them to reality through comprehensive regulatory support. From the preparation of technical files to ensuring Quality Management System (QMS) compliance, we help you navigate through the complex regulatory landscape to accelerate the commercialization of your product.",
+        accordion: [
+          {
+            title: "Technical File Preparation",
+            image: "/images/services/s (7).webp",
+            description:
+              "At Revive Medical Technologies, we specialize in preparing comprehensive technical files for CE and FDA approval, catering to medical devices across all risk classifications. Our approach integrates seamlessly with ISO 13485 quality management systems, streamlining the approval process & enhancing product quality.",
+          },
+          {
+            title: "Clinical Evaluation Report (CER)",
+            image: "/images/services/screen.webp",
+            description:
+              "Our team of clinical experts provide comprehensive data analysis, evaluating clinical evidence to demonstrate device safety and performance. Our transparent and well-documented methodology facilitates easy validation by regulatory bodies. We continuously monitor and update the CER as new data emerges.",
+          },
+          {
+            title: "Biological Evaluation Reports (BER)",
+            image: "/images/services/s.jpg",
+            description:
+              "Our team of seasoned professionals, including biocompatibility experts and regulatory specialists, conducts a rigorous evaluation of the biological safety of the medical device. This involves a thorough examination of materials, potential risks, and their impact on human health",
+          },
+          {
+            title: "Implementation of Quality Management System",
+            image: "/images/services/width_800.png",
+            description:
+              "Our expert team provides holistic guidance through the entire implementation process, tailoring it to your specific needs for seamless integration and enhanced efficiency. We create detailed documentation and process maps, crucial for audits and transparency. ",
+          },
+        ],
+      },
+    ],
+  },
+
+  // Manufacturing Consultancy Pages
+  {
+    id: 4,
+    slug: "manufacturing-consultancy",
+    title: "Manufacturing Consultancy",
+    description:
+      "We offer advanced solutions for establishing stent and PTCA balloon catheter production and testing lines, Our services include comprehensive installation and training, technical support for plant commissioning, and regulatory compliance assistance for both products and facilities. Additionally, we manufacture selected machines in-house, enhancing automation and ensuring superior results.",
+    image: "/images/services/width_1600.jpg",
+    serviceSub: [
+      {
+        id: 1,
+        title: "Manufacturing & Process Technology",
+        description:
+          "We offer advanced solutions for establishing stent and PTCA balloon catheter production and testing lines, Our services include comprehensive installation and training, technical support for plant commissioning, and regulatory compliance assistance for both products and facilities. Additionally, we manufacture selected machines in-house, enhancing automation and ensuring superior results.",
+        accordion: [
+          {
+            title: "Installation & Training",
+            image: "/images/services/width_800 (7).webp",
+            description:
+              "We ensure that your stent and PTCA balloon catheter production and testing lines are set up efficiently and correctly. Our expert team conducts thorough on-site training, equipping your staff with the knowledge and skills needed to operate and maintain the advanced automated systems. This hands-on training ensures smooth operations and empowers your team to maximize the capabilities of the new technology.",
+          },
+          {
+            title: "Commissioning and Validation Support",
+            image: "/images/services/width_450.webp",
+            description:
+              "Our technical support services ensure seamless commissioning and operation of your production line, encompassing Installation Qualification (IQ), Operational Qualification (OQ), and Performance Qualification (PQ). We provide expert guidance and support throughout the entire process to verify the functioning of all systems and equipment.",
+          },
+          {
+            title: "HR Training",
+            image: "/images/services/width_800.jpg",
+            description:
+              "Our HR training services are designed to equip your human resources team with the skills and knowledge needed to support advanced manufacturing and production operations. Trained in Germany, our expert trainers provide comprehensive programs that cover industry-specific best practices, compliance requirements, and effective personnel management strategies.",
           },
         ],
       },

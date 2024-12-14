@@ -23,10 +23,19 @@ export const navBarData: MenuItem[] = [
     label: "Services",
     href: "/services",
     submenu: [
-      { label: "Product Design & Engineering", href: "/services/product-design" },
+      {
+        label: "Product Design & Engineering",
+        href: "/services/product-design-and-engineering",
+      },
       { label: "Quality Testing", href: "/services/quality-testing" },
-      { label: "Regulatory Affairs & Quality Management", href: "/services/regulatory-affairs" },
-      { label: "Manufacturing Consultancy", href: "/services/manufacturing-consultancy" },
+      {
+        label: "Regulatory Affairs & Quality Management",
+        href: "/services/regulatory-affairs-and-quality-management",
+      },
+      {
+        label: "Manufacturing Consultancy",
+        href: "/services/manufacturing-consultancy",
+      },
     ],
   },
   {

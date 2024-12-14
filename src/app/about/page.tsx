@@ -1,18 +1,16 @@
 import AboutCompany from "@/components/about/AboutCompany";
 import AboutCompanyServices from "@/components/about/AboutCompanyServices";
 import AboutUsTwo from "@/components/about/AboutUsTwo";
-import Banner from "@/components/about/Banner";
 import MeetTeam from "@/components/about/MeetTeam";
 import GoogleMap from "@/components/common/GoogleMap";
-import Feature from "@/components/Feature";
-// import TeamAbout from "@/components/team/TeamAbout";
+import PageBanner from "@/components/common/PageBanner";
+import Feature from "@/components/about/Feature";
 import React from "react";
 
 const AboutUsPage: React.FC = () => {
   return (
     <>
-      <Banner />
-      {/* <TeamAbout/> */}
+      <PageBanner />
       <AboutCompany />
       <MeetTeam />
       <AboutCompanyServices />

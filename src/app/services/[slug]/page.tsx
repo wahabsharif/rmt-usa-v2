@@ -5,6 +5,7 @@ import Image from "next/image";
 import { useState } from "react";
 import { ourServicesData } from "@/data/ourServicesData";
 import { FaChevronUp } from "react-icons/fa";
+import PageBanner from "@/components/common/PageBanner";
 
 interface ServiceSubProps {
   title: string;
@@ -72,34 +73,7 @@ export default function ServiceDetail() {
 
   return (
     <div>
-      <section
-        className="relative w-full bg-cover bg-center h-96 flex items-center justify-center text-center"
-        style={{
-          backgroundImage: `
-            radial-gradient(circle, rgba(220,51,50,0.5193678057160365) 0%, rgba(1,53,80,1) 67%),
-            url('/images/about/Banner1.jpg')
-          `,
-          backgroundSize: "cover", // Ensures the image covers the entire area
-          backgroundPosition: "center", // Centers the image
-        }}
-      >
-        <div className="absolute inset-0 bg-black bg-opacity-50"></div>
-        <motion.div
-          className="relative z-10 text-white"
-          initial={{ opacity: 0, y: 50 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1 }}
-        >
-          <h1 className="text-2xl md:text-4xl font-bold tracking-widest">
-            {service.title}
-          </h1>
-          <p className="mt-4 text-lg md:text-xl font-medium">
-            <span className="text-thLightBlue">Home</span> /{" "}
-            <span>Services</span> / <span>{service.title}</span>
-          </p>
-        </motion.div>
-      </section>
-
+      <PageBanner />
       <section id="service-details" className="py-12 px-4 md:px-12">
         {service.serviceSub.map((serviceSub) => (
           <div key={serviceSub.id}>

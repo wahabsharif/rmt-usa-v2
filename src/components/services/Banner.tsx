@@ -8,7 +8,12 @@ const Banner: React.FC = () => {
     <section
       className="relative w-full bg-cover bg-center min-h-screen flex items-center justify-center text-center"
       style={{
-        backgroundImage: "url('/images/about/Banner1.jpg')",
+        backgroundImage: `
+          radial-gradient(circle, rgba(220,51,50,0.5193678057160365) 0%, rgba(1,53,80,1) 67%),
+          url('/images/about/Banner1.jpg')
+        `,
+        backgroundSize: "cover", // Ensures the image covers the entire area
+        backgroundPosition: "center", // Centers the image
       }}
     >
       {/* Overlay */}

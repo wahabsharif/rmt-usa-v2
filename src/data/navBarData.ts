@@ -40,7 +40,41 @@ export const navBarData: MenuItem[] = [
   },
   {
     label: "Product Archive",
-    href: "#",
+    href: "/products",
+    submenu: [
+      {
+        label: "Invasive",
+        href: "/products/invasive",
+      },
+      {
+        label: "Non-Invasive",
+        href: "/products/non-invasive",
+      },
+      {
+        label: "Wearable Medical Devices",
+        href: "/products/wearable-medical-devices",
+      },
+      {
+        label: "Active Medical Devices",
+        href: "/products/active-medical-devices",
+      },
+      {
+        label: "Medical Software",
+        href: "/products/medical-software",
+      },
+      {
+        label: "Drug Delivery Systems",
+        href: "/products/drug-delivery-systems",
+      },
+      {
+        label: "Bio-Compatible Scaffolds, Composites & Coatings",
+        href: "/products/bio-compatible-scaffolds-composites-coatings",
+      },
+      {
+        label: "Wellness Devices",
+        href: "/products/wellness-devices",
+      },
+    ],
   },
   {
     label: "Insights",

@@ -19,7 +19,7 @@ const Footer: React.FC = () => {
     }
   };
   return (
-    <footer className="mt-10">
+    <footer>
       <div className="w-full py-10 pl-10 text-white bg-thDarkBlue grid grid-cols-1 md:grid-cols-3 gap-4">
         {/* Column 1: Logo and Paragraph */}
         <div className="space-y-4">

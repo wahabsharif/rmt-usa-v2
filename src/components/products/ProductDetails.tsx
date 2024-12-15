@@ -91,15 +91,23 @@ const ProductDetails = () => {
           <div className="space-y-6">
             <p className="text-gray-600">{description}</p>
             <p className="text-lg text-gray-600">{shortDescription}</p>
-            <h3 className="text-xl font-bold text-gray-800">Key Features:</h3>
-            <ul className="list-inside space-y-2 text-gray-600">
-              {keyFeature.map((feature, index) => (
-                <li className="flex justify-center" key={index}>
-                  <MdOutlineKeyboardDoubleArrowRight className="text-thDarkBlue text-3xl font-bold mr-2" />
-                  {feature}
-                </li>
-              ))}
-            </ul>
+
+            {/* Conditionally render Key Features section */}
+            {keyFeature && keyFeature.length > 0 && (
+              <>
+                <h3 className="text-xl font-bold text-gray-800">
+                  Key Features:
+                </h3>
+                <ul className="list-inside space-y-2 text-gray-600">
+                  {keyFeature.map((feature, index) => (
+                    <li className="flex justify-start" key={index}>
+                      <MdOutlineKeyboardDoubleArrowRight className="text-thDarkBlue text-2xl font-bold mr-2" />
+                      {feature}
+                    </li>
+                  ))}
+                </ul>
+              </>
+            )}
           </div>
         </div>
       </div>

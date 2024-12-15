@@ -7,6 +7,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { MdOutlineKeyboardDoubleArrowRight } from "react-icons/md";
 import { motion } from "framer-motion"; // Import motion from framer-motion
+import GetAQuote from "../common/GetAQuote";
 
 const ProductDetails = () => {
   const params = useParams();
@@ -108,6 +109,7 @@ const ProductDetails = () => {
                 </ul>
               </>
             )}
+            <GetAQuote />
           </div>
         </div>
       </div>

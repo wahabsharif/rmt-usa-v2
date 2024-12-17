@@ -134,4 +134,25 @@ export const productsData = [
       "Fitness and Activity Monitoring Platforms",
     ],
   },
+  {
+    id: 7,
+    title: "Reshaping Healthcare Through Innovative Software Solutions",
+    slug: "reshaping-healthcare-through-innovative-software-solutions",
+    description:
+      "Our software division is at the forefront of this mission, offering a comprehensive suite of services designed to address the evolving needs of healthcare organizations worldwide. We empower our clients to stay ahead in an increasingly digital landscape.",
+    shortDescription:
+      "At Revive Medical Technologies (RMT), we operate in the novel areas of healthcare innovation, providing cutting-edge software solutions designed to meet the diverse needs of the industry. Our services encompass a wide range of advanced technologies and applications, each meticulously crafted to enhance efficiency, accuracy, and patient care",
+    images: [
+      "/images/products/software-solutions.jpg",
+      "/images/products/software-solutions-1.webp",
+      "/images/products/software-solutions-2.jpg",
+      "/images/products/software-solutions-3.jpg",
+    ],
+    keyFeature: [
+      "Data-Driven Solutions",
+      "DevOps",
+      "Interface Engineering",
+      "SQA",
+    ],
+  },
 ];

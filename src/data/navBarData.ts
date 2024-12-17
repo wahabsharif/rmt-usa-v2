@@ -60,7 +60,7 @@ export const navBarData: MenuItem[] = [
       },
       {
         label: "Medical Software",
-        href: "/products/medical-software",
+        href: "/products/reshaping-healthcare-through-innovative-software-solutions",
       },
       {
         label: "Drug Delivery Systems",

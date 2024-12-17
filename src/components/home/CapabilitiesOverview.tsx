@@ -6,9 +6,12 @@ import { motion } from "framer-motion";
 function CapabilitiesOverview() {
   return (
     <section
-      className="relative bg-gray-100 bg-cover bg-center py-12"
+      className="relative bg-gray-100 py-12"
       style={{
-        backgroundImage: "url('/images/home/stethoscope.png')",
+        backgroundImage: "url('/images/home/stethoscope.jpeg')",
+        backgroundPosition: "left center",
+        backgroundSize: "contain",
+        backgroundRepeat: "no-repeat",
       }}
     >
       {/* Overlay */}

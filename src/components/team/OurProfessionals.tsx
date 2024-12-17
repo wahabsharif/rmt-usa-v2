@@ -42,7 +42,9 @@ const OurProfessionals: React.FC = () => {
                 <h4 className="text-xl font-bold mb-2 text-gray-800">
                   {professional.name}
                 </h4>
-                <p className="text-gray-600 mb-4">{professional.title}</p>
+                <p className="text-gray-600 capitalize mb-4">
+                  {professional.title}
+                </p>
 
                 {/* LinkedIn Icon */}
                 <Link

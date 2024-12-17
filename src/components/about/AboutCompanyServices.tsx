@@ -81,9 +81,9 @@ const AboutCompanyServices: React.FC = () => {
       {/* Right Section with Image */}
       <div className="w-full flex justify-center items-center">
         <motion.img
-          src="/images/about/About3.jpg"
+          src="/images/about/medical-technologies.jpg"
           alt="Image 1"
-          className="w-full md:w-[600px] shadow-lg"
+          className="w-full md:h-[500px] rounded-lg shadow-lg"
           initial={{ opacity: 0, x: -50 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 1 }}

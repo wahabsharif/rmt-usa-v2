@@ -34,8 +34,8 @@ const AboutUsTwo = () => {
           transition={{ duration: 1 }}
           className="text-4xl md:text-8xl text-thLightBlue font-bold text-center"
         >
-          Leading & Modern <br />
-          <span className="text-white">Bionic Technologies</span>
+          Revive <br />
+          <span className="text-white">Medical Technologies</span>
         </motion.h2>
         <motion.button
           initial={{ opacity: 0, y: 50 }}

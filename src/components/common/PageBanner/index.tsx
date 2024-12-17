@@ -8,10 +8,10 @@ const PageBanner = () => {
       style={{
         backgroundImage: `
         radial-gradient(circle, rgba(220,51,50,0.5193678057160365) 0%, rgba(1,53,80,1) 67%),
-        url('/images/about/Banner1.jpg')
+        url('/images/page-banner.webp')
       `,
-        backgroundSize: "cover", // Ensures the image covers the entire area
-        backgroundPosition: "center", // Centers the image
+        backgroundSize: "cover",
+        backgroundPosition: "center",
       }}
     >
       <div className="absolute inset-0 bg-black bg-opacity-50"></div>

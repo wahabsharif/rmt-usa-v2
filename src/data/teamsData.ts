@@ -2,7 +2,7 @@ export const leaders = [
   {
     name: "Dr. Murtaza Najabat ALi",
     title: "CEO & CO-FOUNDER",
-    imageUrl: "/images/team/team4.png",
+    imageUrl: "/images/team/dr-murtaza-najabat-ali.webp",
     linkedinUrl:
       "https://www.linkedin.com/in/prof-dr-murtaza-najabat-ali-ceng-uk-fimeche-pe-55a4469",
   },
@@ -36,7 +36,7 @@ export const professionals = [
   {
     name: "Dr. Murtaza Najabat ALi",
     title: "CEO & CO-FOUNDER",
-    imageUrl: "/images/team/team4.png",
+    imageUrl: "/images/team/dr-murtaza-najabat-ali.webp",
     linkedinUrl:
       "https://www.linkedin.com/in/prof-dr-murtaza-najabat-ali-ceng-uk-fimeche-pe-55a4469",
   },
@@ -49,43 +49,49 @@ export const professionals = [
   {
     name: "Ammad Ahmed",
     title: "COO",
-    imageUrl: "/images/team/team11.jpg",
+    imageUrl: "/images/team/ammad-ahmad.webp",
     linkedinUrl: "#",
   },
   {
     name: "Ali Asghar",
     title: "CFO",
-    imageUrl: "/images/team/team8.jpg",
+    imageUrl: "/images/team/ali-asghar.jpg",
     linkedinUrl: "#",
   },
   {
     name: "M. Hafeez Khan",
-    title: "CSCM",
-    imageUrl: "/images/team/team9.jpeg",
+    title: "CSCO",
+    imageUrl: "/images/team/m-hafeez-khan.jpg",
     linkedinUrl: "#",
   },
   {
     name: "M. Talha",
     title: "CIO",
-    imageUrl: "/images/team/team12.jpg",
+    imageUrl: "/images/team/muhammad-talha.webp",
+    linkedinUrl: "#",
+  },
+  {
+    name: "Ibraheem Raza",
+    title: "CTO",
+    imageUrl: "/images/team/ibraheem-raza.webp",
     linkedinUrl: "#",
   },
   {
     name: "Ahmad Maaz Ali ",
-    title: "systems manager",
+    title: "BDM",
     imageUrl: "/images/team/ahmad-maaz.jpg",
     linkedinUrl: "#",
   },
   {
     name: "Suhail",
-    title: "senior engineer production technology ",
+    title: "production Technology Specialist / Quality Control Lead",
     imageUrl: "/images/team/suhail.jpg",
     linkedinUrl: "#",
   },
   {
     name: "Bilal Baqir",
     title: "business development manager",
-    imageUrl: "/images/team/bilal.webp",
+    imageUrl: "/images/team/sayed-bilal-bakir.webp",
     linkedinUrl: "#",
   },
   {

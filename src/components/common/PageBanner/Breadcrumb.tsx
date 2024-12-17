@@ -49,7 +49,7 @@ const BreadCrumb = () => {
                 aria-current={isLastSegment ? "page" : undefined}
               >
                 {isLastSegment ? (
-                  <span className="font-medium text-thRed">
+                  <span className="font-medium text-thLightBlue">
                     {sanitizePath(segment)}
                   </span>
                 ) : (

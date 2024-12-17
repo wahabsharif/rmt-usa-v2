@@ -3,17 +3,16 @@ import React, { useState } from "react";
 import { footerData } from "@/data/footerData";
 import Link from "next/link";
 import Image from "next/image";
-import { FaPhoneAlt } from "react-icons/fa"; // Import phone icon from react-icons
+import { FaPhoneAlt } from "react-icons/fa";
 
 const Footer: React.FC = () => {
-  const currentYear = new Date().getFullYear(); // Get the current year
+  const currentYear = new Date().getFullYear();
   const [email, setEmail] = useState("");
   const [submitted, setSubmitted] = useState(false);
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     if (email) {
-      // Simulate a subscription process
       setSubmitted(true);
       setEmail("");
     }
@@ -26,7 +25,7 @@ const Footer: React.FC = () => {
           {/* Logo */}
           <Link href="/">
             <Image
-              src="/images/logo/rmt-usa-logo.png"
+              src="/images/logo/rmt-white-logo.webp"
               alt="Logo"
               width={1000}
               height={1000}
@@ -56,7 +55,7 @@ const Footer: React.FC = () => {
           {/* Social Media Icons */}
           <div className="flex space-x-4">
             {footerData.socialLinks.map((link, index) => (
-              <a
+              <Link
                 key={index}
                 href={link.href}
                 target="_blank"
@@ -64,7 +63,7 @@ const Footer: React.FC = () => {
                 className="text-thLightBlue hover:text-white transition ease-in-out"
               >
                 <link.icon className="text-2xl" />
-              </a>
+              </Link>
             ))}
           </div>
         </div>

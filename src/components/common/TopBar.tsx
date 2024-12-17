@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 import { FaEnvelope, FaPhone, FaMapMarkerAlt } from "react-icons/fa";
 
@@ -12,12 +13,12 @@ const TopBar: React.FC = () => {
             <div className="bg-thLightBlue p-2 rounded-full">
               <FaEnvelope className="text-white" />
             </div>
-            <a
+            <Link
               href="mailto:info@rmt-usa.com"
               className="text-sm md:text-base font-bold text-[#2E2E2E] hover:text-thLightBlue"
             >
               info@rmt-usa.com
-            </a>
+            </Link>
           </div>
 
           {/* Location */}
@@ -25,9 +26,13 @@ const TopBar: React.FC = () => {
             <div className="bg-thLightBlue p-2 rounded-full">
               <FaMapMarkerAlt className="text-white" />
             </div>
-            <span className="text-sm md:text-base font-bold text-[#2E2E2E]">
-              Florida, US
-            </span>
+            <Link
+              href="https://maps.app.goo.gl/gqUSYzL7wsMCvPrh9"
+              target="_blank"
+              className="text-sm md:text-base font-bold text-[#2E2E2E]"
+            >
+              Guidewell innovation center, Florida US
+            </Link>
           </div>
 
           {/* Phone */}

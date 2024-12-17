@@ -1,4 +1,4 @@
-import { FaFacebook, FaTwitter, FaLinkedin, FaInstagram } from "react-icons/fa";
+import { FaFacebook, FaYoutube, FaLinkedin, FaInstagram } from "react-icons/fa";
 
 export const footerData = {
   description:
@@ -12,9 +12,18 @@ export const footerData = {
     { href: "#", text: "Contact" },
   ],
   socialLinks: [
-    { href: "https://facebook.com", icon: FaFacebook },
-    { href: "https://twitter.com", icon: FaTwitter },
-    { href: "https://linkedin.com", icon: FaLinkedin },
-    { href: "https://instagram.com", icon: FaInstagram },
+    {
+      href: "https://www.instagram.com/revivemedicaltechnologies/",
+      icon: FaInstagram,
+    },
+    { href: "https://www.facebook.com/", icon: FaFacebook },
+    {
+      href: "https://www.linkedin.com/company/revive-medical-technologies-inc/",
+      icon: FaLinkedin,
+    },
+    {
+      href: "https://www.youtube.com/@revivemeditech",
+      icon: FaYoutube,
+    },
   ],
 };

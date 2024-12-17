@@ -49,7 +49,7 @@ const GetAQuote: React.FC = () => {
                   <input
                     type="text"
                     id="companyName"
-                    className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                    className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-thLightBlue"
                     placeholder="Enter your company name"
                   />
                 </div>
@@ -57,7 +57,7 @@ const GetAQuote: React.FC = () => {
                   <input
                     type="text"
                     id="contactPerson"
-                    className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                    className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-thLightBlue"
                     placeholder="Enter the contact person's name"
                   />
                 </div>
@@ -65,7 +65,7 @@ const GetAQuote: React.FC = () => {
                   <input
                     type="email"
                     id="email"
-                    className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                    className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-thLightBlue"
                     placeholder="Enter your email"
                   />
                 </div>
@@ -73,7 +73,7 @@ const GetAQuote: React.FC = () => {
                   <input
                     type="tel"
                     id="phone"
-                    className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                    className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-thLightBlue"
                     placeholder="Enter your phone number"
                   />
                 </div>
@@ -86,14 +86,14 @@ const GetAQuote: React.FC = () => {
                   <input
                     type="text"
                     id="projectName"
-                    className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                    className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-thLightBlue"
                     placeholder="Enter your project name"
                   />
                 </div>
                 <div className="mb-4">
                   <textarea
                     id="projectDescription"
-                    className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                    className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-thLightBlue"
                     placeholder="Enter project description"
                     rows={4}
                   />
@@ -101,7 +101,7 @@ const GetAQuote: React.FC = () => {
                 <div className="mb-4">
                   <textarea
                     id="projectInfo"
-                    className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                    className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-thLightBlue"
                     placeholder="Provide any additional project information"
                     rows={4}
                   />

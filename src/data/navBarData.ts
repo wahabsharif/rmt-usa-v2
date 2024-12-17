@@ -78,7 +78,7 @@ export const navBarData: MenuItem[] = [
   },
   {
     label: "Insights",
-    href: "#",
+    href: "/insights",
   },
   {
     label: "Careers",

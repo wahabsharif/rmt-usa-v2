@@ -40,11 +40,11 @@ const Subscribe: React.FC = () => {
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               required
-              className="w-full px-4 py-2 border border-gray-300 rounded-full shadow-sm focus:ring-2 focus:ring-blue-500 focus:outline-none"
+              className="w-full px-4 py-2 border border-gray-300 rounded-full shadow-sm focus:ring-2 focus:ring-thLightBlue focus:outline-none"
             />
             <button
               type="submit"
-              className="absolute right-0 top-1/2 transform -translate-y-1/2 px-4 py-2 bg-thDarkBlue text-white font-medium rounded-full shadow-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 transition ease-in-out duration-3"
+              className="absolute right-0 top-1/2 transform -translate-y-1/2 px-4 py-2 bg-thDarkBlue text-white font-medium rounded-full shadow-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-thLightBlue transition ease-in-out duration-3"
             >
               Subscribe
             </button>

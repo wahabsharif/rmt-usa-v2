@@ -82,6 +82,6 @@ export const navBarData: MenuItem[] = [
   },
   {
     label: "Careers",
-    href: "#",
+    href: "/careers",
   },
 ];

@@ -18,7 +18,8 @@ const CurrentOpeningCareers = () => {
           Current Job Openings
         </h2>
         <div className="w-full max-w-5xl container mx-auto">
-          <div className="flex justify-center items-center flex-wrap gap-8 md:gap-16 place-items-center">
+          {/* Using Grid for 3 cards per row */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-16">
             {currentOpeningData.map((job: JobOpening, index: number) => (
               <Link href={`#`} key={job.id}>
                 {/* <Link href={`/careers/${job.id}`} key={job.id}> */}
@@ -29,7 +30,7 @@ const CurrentOpeningCareers = () => {
                     duration: 0.5,
                     delay: index * 0.2,
                   }}
-                  className="relative w-full md:max-w-xs lg:max-w-md bg-gradient-to-tr from-white to-gray-100 group hover:from-thLightBlue hover:to-thDarkBlue hover:text-gray-100 p-6 border border-thLightBlue rounded-lg shadow-md cursor-pointer flex flex-col h-full"
+                  className="relative bg-gradient-to-tr from-white to-gray-100 group hover:from-thLightBlue hover:to-thDarkBlue hover:text-gray-100 p-6 border border-thLightBlue rounded-lg shadow-md cursor-pointer flex flex-col h-full"
                 >
                   {/* Content */}
                   <div className="relative z-10">

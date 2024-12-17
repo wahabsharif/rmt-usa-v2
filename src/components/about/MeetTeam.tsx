@@ -12,7 +12,7 @@ const MeetTeam: React.FC = () => {
         {/* Left Side: Image */}
         <div className="relative w-full md:w-[40%] h-60 md:h-[600px]">
           <Image
-            src="/images/team/dr-murtaza-najabat-ali-ceo-msg.webp"
+            src="/images/team/dr-murtaza-najabat-ali-ceo-msg.jpeg"
             alt="Picture of the RMT CEO"
             fill
             objectFit="cover"

@@ -27,7 +27,7 @@ export const leaders = [
   {
     name: "Dr. Danish Bhatti",
     title: "FOUNDING DIRECTOR",
-    imageUrl: "/images/team/danish-bhatti.jpg",
+    imageUrl: "/images/team/danish-bhatti.webp",
     linkedinUrl: "https://www.linkedin.com/in/danish-bhatti/",
   },
 ];

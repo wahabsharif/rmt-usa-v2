@@ -12,7 +12,7 @@ function GoogleMap() {
       title: "US Office",
     },
     satelliteOffice: {
-      src: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d864.2812002643912!2d73.08105600780762!3d33.5601635627164!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38df95a051b0c321%3A0x62b38a3c7bdacba3!2sBahria%20Intellectual%20Village!5e0!3m2!1sen!2s!4v1732873113996!5m2!1sen!2s",
+      src: "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3326.173939657459!2d73.092313!3d33.522863!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8c3be14889cd4efd%3A0xb20676eb67d56ad5!2sRevive%20Medical%20Technologies!5e0!3m2!1sen!2s!4v1735281285211!5m2!1sen!2s",
       title: "Pakistan Office",
     },
   };

@@ -83,12 +83,12 @@ const MobileNavBar: React.FC = () => {
             <div key={index} className="mb-2">
               {/* Parent Menu Item */}
               <div className="flex items-center justify-between">
-                <a
+                <Link
                   href={item.href}
                   className="block py-2 px-2 text-gray-800 font-medium hover:bg-blue-100 rounded"
                 >
                   {item.label}
-                </a>
+                </Link>
                 {item.submenu && (
                   <button
                     className="focus:outline-none text-gray-700"
@@ -110,13 +110,13 @@ const MobileNavBar: React.FC = () => {
                   className="ml-4 overflow-hidden"
                 >
                   {item.submenu.map((subItem, subIndex) => (
-                    <a
+                    <Link
                       key={subIndex}
                       href={subItem.href}
                       className="block py-1 px-2 text-gray-600 hover:bg-gray-200 rounded"
                     >
                       {subItem.label}
-                    </a>
+                    </Link>
                   ))}
                 </motion.div>
               )}

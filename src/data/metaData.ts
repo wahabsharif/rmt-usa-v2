@@ -35,6 +35,5 @@ export const generateMetadata = ({
     ],
     type: "website",
   },
-  viewport: "width=device-width, initial-scale=1",
   robots: "index, follow",
 });

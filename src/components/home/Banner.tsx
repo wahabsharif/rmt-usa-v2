@@ -11,12 +11,10 @@ const Banner: React.FC = () => {
       <Image
         src="/images/home/home-banner.webp"
         alt="A visually striking banner representing innovative healthcare technology"
-        objectFit="cover"
+        fill
+        style={{ objectFit: "cover" }} // Use `style` to apply `objectFit`
         priority
         className="-z-10"
-        width={1920} // Specify width and height for the image
-        height={1080} // Adjust according to your needs
-        loading="eager" // Force eager loading for the hero image
       />
 
       {/* Overlay */}

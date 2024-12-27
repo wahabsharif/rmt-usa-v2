@@ -19,7 +19,7 @@ const BlogPostsDetail = () => {
 
   return (
     <div className="p-6 max-w-4xl mx-auto">
-      <h1 className="text-3xl font-bold mb-4">{blogPost.title}</h1>
+      <h2 className="text-3xl font-bold mb-4">{blogPost.title}</h2>
       <Image
         src={blogPost.imageUrl}
         alt={blogPost.title}

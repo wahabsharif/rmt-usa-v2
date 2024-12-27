@@ -23,7 +23,7 @@ const ProductDetails = () => {
   if (!product) {
     return (
       <section className="flex flex-col items-center justify-center min-h-screen">
-        <h1 className="text-3xl font-bold text-gray-800">Product not found</h1>
+        <h2 className="text-3xl font-bold text-gray-800">Product not found</h2>
         <Link
           href={"/products"}
           className="mt-4 bg-thLightBlue text-white font-semibold py-3 px-6 rounded-full text-lg transition duration-300 ease-in-out hover:bg-[#0098a1]"

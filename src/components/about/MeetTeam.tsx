@@ -28,16 +28,6 @@ const MeetTeam: React.FC = () => {
             <h2 className="text-lg mb-2 uppercase tracking-widest bg-white p-2 inline-block shadow-3xl rounded-lg">
               CEO Message
             </h2>
-
-            {/* <h1 className="text-4xl md:text-5xl font-bold text-thLightBlue">
-              Our Qualified Doctors
-            </h1>
-            <h2 className="text-2xl md:text-3xl font-semibold mt-2">
-              On Guard of Your Health
-            </h2>
-            <h2 className="text-2xl md:text-3xl font-semibold mt-2">
-              and Comfort
-            </h2> */}
           </div>
 
           {/* Description */}

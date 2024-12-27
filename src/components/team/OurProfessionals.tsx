@@ -39,10 +39,10 @@ const OurProfessionals: React.FC = () => {
 
               {/* professional Details */}
               <div className="p-4 text-center bg-white">
-                <h4 className="text-xl font-bold mb-2 text-gray-800">
+                <h4 className="text-xl uppercase font-bold mb-2 text-gray-800">
                   {professional.name}
                 </h4>
-                <p className="text-gray-600 capitalize mb-4">
+                <p className="text-gray-600 uppercase mb-4">
                   {professional.title}
                 </p>
 

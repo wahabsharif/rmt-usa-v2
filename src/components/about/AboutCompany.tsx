@@ -32,17 +32,7 @@ const AboutCompany: React.FC = () => {
       </div>
 
       {/* Right Section with Content */}
-      <div className="w-full md:w-1/2 p-6 text-left space-y-8">
-        {/* Heading */}
-        <motion.h1
-          className="text-lg mb-2 uppercase tracking-widest bg-white p-2 inline-block shadow-3xl rounded-lg"
-          initial={{ opacity: 0, y: -50 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1 }}
-        >
-          ABOUT RMT
-        </motion.h1>
-
+      <div className="w-full md:w-1/2 p-6 text-left space-y-2">
         {/* Subheadings */}
         <div className="relative">
           {/* High-Sensitive Text */}
@@ -51,12 +41,9 @@ const AboutCompany: React.FC = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, delay: 0.5 }}
           >
-            <h2 className="text-3xl md:text-4xl font-bold text-thLightBlue">
-              High Sensitive
-            </h2>
-            <h3 className="text-3xl md:text-4xl font-bold text-gray-800">
-              Bionic Prosthesis
-            </h3>
+            <h1 className="text-3xl md:text-4xl font-bold text-thLightBlue">
+              About RMT
+            </h1>
           </motion.div>
 
           {/* Overlayed CEO Message */}
@@ -81,10 +68,17 @@ const AboutCompany: React.FC = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 1 }}
         >
-          Prosthetics is a rapidly advancing field of biomedical engineering
-          that focuses on the design, development, and fabrication of artificial
-          limbs and other devices that can help people with physical
-          disabilities.
+          Revive Medical Technologies Inc. (RMT) is a U.S. based company with
+          its Satellite office and a unique R&D facility in Pakistan. As a
+          cross-functional service provider we provide cost and time efficient
+          R&D services to creative minds like Physicians, Medical device
+          manufacturers and healthcare researchers who want to realize their
+          ingenious ideas into market-ready products in an accelerated process.
+          Our mission is to catalyze healthcare advancement by cultivating an
+          environment that turns creative ideas into practical solutions. By
+          having our state-of-art R&D facility and Technical/development staff
+          in Pakistan, we offer reliable and robust technological solutions to
+          our customers across the globe.
         </motion.p>
 
         {/* Call-to-Action Button and Phone */}

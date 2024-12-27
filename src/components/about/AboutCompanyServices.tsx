@@ -7,7 +7,7 @@ const AboutCompanyServices: React.FC = () => {
     <section className="bg-white flex flex-col md:flex-row items-start justify-center mx-auto py-10 px-2 md:px-10 gap-x-8">
       {/* Left Section with Content */}
 
-      <div className="w-full md:w-1/2 p-6 text-left space-y-6">
+      <div className="w-full md:w-1/2 p-6 text-left space-y-2">
         {/* Heading */}
         <motion.h1
           className="text-xl md:text-lg font-medium tracking-widest text-gray-800"
@@ -25,13 +25,13 @@ const AboutCompanyServices: React.FC = () => {
           transition={{ duration: 1, delay: 0.5 }}
         >
           <h2 className="text-3xl md:text-5xl font-bold text-[#00B4C5]">
-            Motor Skills
+            Best Medical
           </h2>
           <h4 className="text-xl md:text-3xl font-bold text-gray-800">
-            Guarantee You
+            Innovation Services
           </h4>
           <h4 className="text-xl md:text-3xl font-bold text-gray-800">
-            a Comfortable Life
+            Guaranteed
           </h4>
         </motion.div>
 
@@ -40,7 +40,7 @@ const AboutCompanyServices: React.FC = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 0.5 }}
         >
-          <div className="border-b-2 my-5 border-gray-500 pt-8">
+          <div className="border-b-2 my-2 border-gray-500 pt-8">
             <div className="flex gap-4">
               <h3 className="font-bold text-xl text-[#00B4C5]">01</h3>
               <h3 className="text-gray-800 font-bold text-xl">Our Vision</h3>

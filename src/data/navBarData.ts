@@ -15,7 +15,7 @@ export const navBarData: MenuItem[] = [
     submenu: [
       { label: "About", href: "/about" },
       { label: "Our Team", href: "/team" },
-      { label: "Legacy", href: "#" },
+      { label: "Careers", href: "/careers" },
       { label: "Certifications", href: "#" },
     ],
   },
@@ -39,7 +39,7 @@ export const navBarData: MenuItem[] = [
     ],
   },
   {
-    label: "Product Archive",
+    label: "Products",
     href: "/products",
     submenu: [
       {
@@ -81,7 +81,7 @@ export const navBarData: MenuItem[] = [
     href: "/insights",
   },
   {
-    label: "Careers",
-    href: "/careers",
+    label: "Contact Us",
+    href: "/contact",
   },
 ];

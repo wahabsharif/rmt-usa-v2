@@ -4,7 +4,7 @@ import BreadCrumb from "./Breadcrumb";
 const PageBanner = () => {
   return (
     <div
-      className="relative w-full bg-cover bg-center min-h-screen flex items-center justify-center text-center"
+      className="relative w-full bg-cover bg-center h-72 flex items-center justify-center text-center"
       style={{
         backgroundImage: `
         radial-gradient(circle, rgba(220,51,50,0.5193678057160365) 0%, rgba(1,53,80,1) 67%),

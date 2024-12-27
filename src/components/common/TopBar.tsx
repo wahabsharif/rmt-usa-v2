@@ -36,16 +36,29 @@ const TopBar: React.FC = () => {
           </div>
 
           {/* Phone */}
-          <div className="flex items-start space-x-2 justify-start md:justify-start md:ml-auto">
-            <div className="bg-thLightBlue p-2 rounded-full">
-              <FaPhone className="text-white" />
+          <div className="flex items-center space-x-2 justify-start md:justify-start md:ml-auto">
+            <div className="flex justify-center items-center space-x-1">
+              <div className="bg-thLightBlue p-2 rounded-full">
+                <FaPhone className="text-white" />
+              </div>
+              <Link
+                href="tel:+9251123456789"
+                className="text-sm md:text-base font-bold text-[#2E2E2E] hover:text-thLightBlue"
+              >
+                +92-51-123456789
+              </Link>
             </div>
-            <a
-              href="tel:+9251123456789"
-              className="text-sm md:text-base font-bold text-[#2E2E2E] hover:text-thLightBlue"
-            >
-              +92-51-123456789
-            </a>
+            <div className="flex justify-center items-center space-x-1">
+              <div className="bg-thLightBlue p-2 rounded-full">
+                <FaPhone className="text-white" />
+              </div>
+              <Link
+                href="tel:+16892164437"
+                className="text-sm md:text-base font-bold text-[#2E2E2E] hover:text-thLightBlue"
+              >
+                +1 (689) 216-4437
+              </Link>
+            </div>
           </div>
         </div>
       </div>

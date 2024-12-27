@@ -33,16 +33,16 @@ const OurLeadership: React.FC = () => {
                   alt={leader.name}
                   layout="fill"
                   objectFit="cover"
-                  className="absolute top-0 left-0 transition-transform duration-500 transform group-hover:scale-110"
+                  className="absolute top-0 left-0 mix-blend-multiply group-hover:scale-110 transition-transform duration-500"
                 />
               </div>
 
               {/* leader Details */}
               <div className="p-4 text-center bg-white">
-                <h4 className="text-xl font-bold mb-2 text-gray-800">
+                <h4 className="text-xl uppercase font-bold mb-2 text-gray-800">
                   {leader.name}
                 </h4>
-                <p className="text-gray-600 mb-4">{leader.title}</p>
+                <p className="text-gray-600 uppercase mb-4">{leader.title}</p>
 
                 {/* LinkedIn Icon */}
                 <Link

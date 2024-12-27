@@ -6,15 +6,17 @@ import { motion } from "framer-motion";
 
 const Banner: React.FC = () => {
   return (
-    <header className="relative w-full h-auto md:h-screen">
+    <div className="relative w-full h-auto md:h-screen">
       {/* Optimized Background Image */}
       <Image
         src="/images/home/home-banner.webp"
         alt="A visually striking banner representing innovative healthcare technology"
-        fill // Use the `fill` property to make the image fill its container
-        style={{ objectFit: "cover" }} // Use `style` to apply `objectFit`
+        objectFit="cover"
         priority
         className="-z-10"
+        width={1920} // Specify width and height for the image
+        height={1080} // Adjust according to your needs
+        loading="eager" // Force eager loading for the hero image
       />
 
       {/* Overlay */}
@@ -78,7 +80,7 @@ const Banner: React.FC = () => {
           </motion.a>
         </div>
       </div>
-    </header>
+    </div>
   );
 };
 

@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://rmt-usa.com
+
+# Sitemaps
+Sitemap: https://rmt-usa.com/sitemap.xml

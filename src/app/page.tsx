@@ -6,8 +6,8 @@ import ImageGrid from "@/components/home/ImageGrid";
 import OurPartners from "@/components/home/OurPartners";
 import TestimonialSlider from "@/components/home/Testimonial";
 import dynamic from "next/dynamic";
-
-// Dynamic imports
+import { generateMetadata } from "@/data/metaData";
+import type { Metadata } from "next";
 const Banner = dynamic(() => import("@/components/home/Banner"));
 const AboutRMT = dynamic(() => import("@/components/home/AboutRMT"));
 const OurServices = dynamic(() => import("@/components/home/OurServices"));
@@ -15,6 +15,9 @@ const CapabilitiesOverview = dynamic(
   () => import("@/components/home/CapabilitiesOverview")
 );
 
+export const metadata: Metadata = generateMetadata({
+  pageTitle: "",
+});
 export default function Home() {
   return (
     <>

@@ -5,14 +5,13 @@ import TopBar from "@/components/common/TopBar";
 import Footer from "@/components/common/Footer";
 import MobileNavBar from "@/components/common/MobileNavBar";
 import { Manrope } from "next/font/google";
-
+import { generateMetadata } from "@/data/metaData";
 const manrope = Manrope({
   subsets: ["latin"],
   variable: "--font-manrope",
 });
-export const metadata: Metadata = {
-  title: "RMT USA",
-};
+
+export const metadata: Metadata = generateMetadata({});
 
 export default function RootLayout({
   children,

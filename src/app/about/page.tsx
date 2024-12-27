@@ -6,7 +6,12 @@ import GoogleMap from "@/components/common/GoogleMap";
 import PageBanner from "@/components/common/PageBanner";
 import Feature from "@/components/about/Feature";
 import React from "react";
+import { generateMetadata } from "@/data/metaData";
+import type { Metadata } from "next";
 
+export const metadata: Metadata = generateMetadata({
+  pageTitle: "About",
+});
 const AboutUsPage: React.FC = () => {
   return (
     <>

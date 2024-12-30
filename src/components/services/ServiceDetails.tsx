@@ -12,7 +12,7 @@ interface ServiceSubProps {
   index: number;
   activeIndex: number;
   setActiveIndex: React.Dispatch<React.SetStateAction<number>>;
-  image: string;
+  image: string[];
 }
 
 const ServiceSub: React.FC<ServiceSubProps> = ({
@@ -106,17 +106,22 @@ function ServiceDetails() {
               transition={{ duration: 0.5 }}
               className="w-full grid grid-cols-2 md:grid-cols-2 gap-4"
             >
-              {serviceSub.accordion?.map((item, index) => (
-                <div key={index} className="flex flex-col items-center">
-                  <Image
-                    src={item.image}
-                    alt={item.title}
-                    width={1500}
-                    height={1500}
-                    className="w-full h-60 cursor-pointer object-cover rounded-lg shadow-lg transition-transform duration-300 ease-in-out transform hover:scale-105"
-                  />
-                </div>
-              ))}
+              {serviceSub.accordion?.flatMap((item, index) =>
+                item.image.map((imgSrc, imgIndex) => (
+                  <div
+                    key={`${index}-${imgIndex}`}
+                    className="relative w-full h-60 rounded-lg shadow-lg overflow-hidden"
+                  >
+                    <Image
+                      src={imgSrc}
+                      alt={item.title}
+                      layout="fill"
+                      objectFit="cover"
+                      className="transition-transform duration-300 ease-in-out transform hover:scale-105"
+                    />
+                  </div>
+                ))
+              )}
             </motion.div>
           </div>
         </div>

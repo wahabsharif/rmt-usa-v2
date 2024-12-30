@@ -16,7 +16,7 @@ const ContactInfo: React.FC = () => {
           whileTap={{ scale: 0.95 }}
         >
           <div className="flex flex-col space-y-4">
-            <div className="flex items-center space-x-2 text-lg md:text-2xl font-semibold text-thRed">
+            <div className="flex items-center space-x-2 text-lg md:text-2xl font-semibold text-thDarkBlue">
               <span className="text-2xl md:text-6xl">
                 {React.createElement(info.icon)}
               </span>

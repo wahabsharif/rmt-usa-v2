@@ -4,7 +4,8 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
 import { Event } from "@/types";
-const NewsEventsGrid = ({ cards }: { cards: string | number }) => {
+
+const NewsEventsList = ({ cards }: { cards: string | number }) => {
   const [events, setEvents] = useState<Event[]>([]);
   const [loading, setLoading] = useState(true);
 
@@ -39,22 +40,22 @@ const NewsEventsGrid = ({ cards }: { cards: string | number }) => {
       <h2 className="text-2xl font-bold mb-6 text-center text-thDarkBlue tracking-widest">
         News & Events
       </h2>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div>
         {eventsToDisplay.map((newsEvent) => (
           <Link href={`/news-and-events/${newsEvent.slug}`} key={newsEvent.id}>
             <motion.div
-              className="bg-white shadow-lg rounded-lg overflow-hidden cursor-pointer"
+              className="bg-white my-2 shadow-lg rounded-lg overflow-hidden cursor-pointer flex items-center p-4"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
               <Image
                 src={`${process.env.NEXT_PUBLIC_API_URL}/storage/${newsEvent.image}`}
                 alt={newsEvent.title}
-                width={1000}
-                height={1000}
-                className="w-full h-40 object-cover"
+                width={100}
+                height={100}
+                className="w-24 h-24 object-cover rounded-lg"
               />
-              <div className="p-4">
+              <div className="ml-4 flex-1">
                 <h3 className="text-xl capitalize font-semibold mb-2">
                   {newsEvent.title}
                 </h3>
@@ -81,4 +82,4 @@ const NewsEventsGrid = ({ cards }: { cards: string | number }) => {
   );
 };
 
-export default NewsEventsGrid;
+export default NewsEventsList;

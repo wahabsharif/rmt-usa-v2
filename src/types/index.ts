@@ -8,3 +8,13 @@ export interface BlogPost {
   category: string;
   tags: [];
 }
+
+export interface Event {
+  id: number;
+  slug: string;
+  image: string;
+  title: string;
+  date_time: string;
+  description: string;
+  location: string;
+}

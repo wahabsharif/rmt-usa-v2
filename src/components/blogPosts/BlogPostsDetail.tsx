@@ -3,6 +3,7 @@ import { useParams, useRouter } from "next/navigation";
 import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import { BlogPost } from "@/types";
+import BlogPostsList from "./BlogPostsList";
 
 const BlogPostsDetail = () => {
   const params = useParams();
@@ -61,40 +62,46 @@ const BlogPostsDetail = () => {
   const tags = Array.isArray(blogPost.tags) ? blogPost.tags : [];
 
   return (
-    <div className="p-6 max-w-4xl mx-auto">
-      <h2 className="text-3xl font-bold mb-4">{blogPost.title}</h2>
-      <Image
-        src={`${process.env.NEXT_PUBLIC_API_URL}${blogPost.featured_image}`}
-        alt={blogPost.title}
-        width={800}
-        height={400}
-        className="w-full h-60 object-cover rounded-lg mb-6"
-      />
-      <p className="text-gray-500 text-sm mb-4">
-        Published on {formattedDateForDisplay} by{" "}
-      </p>
-      <article className="prose lg:prose-xl">
-        <div dangerouslySetInnerHTML={{ __html: blogPost.content }} />
-      </article>
-      {tags.length > 0 && (
-        <div className="flex flex-wrap gap-2 mt-4">
-          {tags.map((tag, index) => (
-            <span
-              key={index}
-              className="bg-blue-100 text-thLightBlue text-sm px-3 py-1 rounded-lg"
-            >
-              #{tag}
-            </span>
-          ))}
-        </div>
-      )}
-      <button
-        onClick={() => router.push("/blog-posts")}
-        className="mt-6 bg-thLightBlue text-white px-4 py-2 rounded-lg hover:bg-blue-600"
-      >
-        View All Blog Posts
-      </button>
-    </div>
+    <section className="flex flex-col lg:flex-row justify-between gap-2 p-4">
+      <div className="max-w-4xl mx-auto flex-1">
+        <h2 className="text-xl md:text-3xl font-bold mb-4">{blogPost.title}</h2>
+        <Image
+          src={`${process.env.NEXT_PUBLIC_API_URL}${blogPost.featured_image}`}
+          alt={blogPost.title}
+          width={800}
+          height={400}
+          className="w-full h-60 object-cover rounded-lg mb-6"
+        />
+        <p className="text-gray-500 text-sm mb-4">
+          Published on {formattedDateForDisplay}
+        </p>
+        <article className="prose lg:prose-xl">
+          <div dangerouslySetInnerHTML={{ __html: blogPost.content }} />
+        </article>
+        {tags.length > 0 && (
+          <div className="flex flex-wrap gap-2 mt-4">
+            {tags.map((tag, index) => (
+              <span
+                key={index}
+                className="bg-blue-100 text-thLightBlue text-sm px-3 py-1 rounded-lg"
+              >
+                #{tag}
+              </span>
+            ))}
+          </div>
+        )}
+        <button
+          onClick={() => router.push("/blog-posts")}
+          className="mt-6 bg-thLightBlue text-white px-4 py-2 rounded-lg hover:bg-blue-600"
+        >
+          View All Blog Posts
+        </button>
+      </div>
+
+      <div className=":w-3/4">
+        <BlogPostsList cards={""} />
+      </div>
+    </section>
   );
 };
 

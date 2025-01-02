@@ -39,11 +39,11 @@ const BlogPostsList = ({ cards }: { cards: string | number }) => {
       <h2 className="text-2xl font-bold mb-6 text-center text-thDarkBlue tracking-widest">
         Other Blogs
       </h2>
-      <div className="space-y-6">
+      <div>
         {postsToDisplay.map((blogPost) => (
           <Link href={`/blog-posts/${blogPost.slug}`} key={blogPost.id}>
             <motion.div
-              className="bg-white shadow-lg rounded-lg overflow-hidden cursor-pointer flex items-center p-4"
+              className="bg-white my-2 shadow-lg rounded-lg overflow-hidden cursor-pointer flex items-center p-4"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >

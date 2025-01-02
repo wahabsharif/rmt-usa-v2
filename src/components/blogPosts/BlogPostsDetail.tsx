@@ -98,7 +98,7 @@ const BlogPostsDetail = () => {
         </button>
       </div>
 
-      <div className=":w-3/4">
+      <div>
         <BlogPostsList cards={""} />
       </div>
     </section>

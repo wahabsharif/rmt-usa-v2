@@ -10,6 +10,11 @@ const nextConfig: NextConfig = {
     locales: ["en", "es"],
     defaultLocale: "en",
   },
+
+  // Image domains configuration
+  images: {
+    domains: ["localhost"], // Add your backend domain here
+  },
 };
 
 export default nextConfig;

@@ -1,13 +1,37 @@
 "use client";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
-import { blogPostsData } from "@/data/insightsData";
 import Image from "next/image";
 import Link from "next/link";
-
+import { BlogPost } from "@/types";
 const BlogPostsGrid = ({ cards }: { cards: string | number }) => {
-  const displayCount = cards === "" ? blogPostsData.length : Number(cards);
-  const postsToDisplay = blogPostsData.slice(0, displayCount);
+  const [blogPosts, setBlogPosts] = useState<BlogPost[]>([]);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    const fetchBlogPosts = async () => {
+      try {
+        const response = await fetch(
+          `${process.env.NEXT_PUBLIC_API_URL}/api/blogs`
+        );
+        const data = await response.json();
+        setBlogPosts(data);
+      } catch (error) {
+        console.error("Error fetching blog posts:", error);
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    fetchBlogPosts();
+  }, []);
+
+  const displayCount = cards === "" ? blogPosts.length : Number(cards);
+  const postsToDisplay = blogPosts.slice(0, displayCount);
+
+  if (loading) {
+    return <p className="text-center">Loading...</p>;
+  }
 
   return (
     <div className="p-6">
@@ -15,30 +39,35 @@ const BlogPostsGrid = ({ cards }: { cards: string | number }) => {
         Blog Posts
       </h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-        {postsToDisplay.map((post) => (
-          <Link href={`/blog-posts/${post.slug}`} key={post.id}>
+        {postsToDisplay.map((blogPost) => (
+          <Link href={`/blog-posts/${blogPost.slug}`} key={blogPost.id}>
             <motion.div
               className="bg-white shadow-lg rounded-lg overflow-hidden cursor-pointer"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
               <Image
-                src={post.imageUrl}
-                alt={post.title}
+                src={`${process.env.NEXT_PUBLIC_API_URL}${blogPost.featured_image}`}
+                alt={blogPost.title}
                 width={1000}
                 height={1000}
                 className="w-full h-40 object-cover"
               />
               <div className="p-4">
-                <h3 className="text-xl font-semibold mb-2">{post.title}</h3>
+                <h3 className="text-xl font-semibold mb-2">{blogPost.title}</h3>
                 <p className="text-sm text-gray-500">
-                  {post.publishedDate.toDateString()}
+                  {new Date(blogPost.created_at).toDateString()}
                 </p>
                 <p className="mt-2 text-gray-700">
-                  {post.content.slice(0, 100)}...
+                  {blogPost.content
+                    .replace(/<\/?[^>]+(>|$)/g, "")
+                    .slice(0, 100)}
+                  ...
                 </p>
                 <div className="mt-4 flex justify-between items-center">
-                  <span className="text-sm text-gray-500">{post.category}</span>
+                  <span className="text-sm text-gray-500">
+                    {blogPost.category}
+                  </span>
                   <span className="text-thLightBlue text-sm font-medium hover:underline">
                     Read More
                   </span>

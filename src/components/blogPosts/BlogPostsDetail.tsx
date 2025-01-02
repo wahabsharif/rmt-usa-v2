@@ -1,49 +1,93 @@
 "use client";
 import { useParams, useRouter } from "next/navigation";
-import React from "react";
-import { blogPostsData } from "@/data/insightsData";
+import React, { useEffect, useState } from "react";
 import Image from "next/image";
+import { BlogPost } from "@/types";
 
 const BlogPostsDetail = () => {
   const params = useParams();
   const router = useRouter();
-
   const { slug } = params; // Get slug from params
 
-  // Find the blog post by slug
-  const blogPost = blogPostsData.find((post) => post.slug === slug);
+  const [blogPost, setBlogPost] = useState<BlogPost | null>(null);
+  const [loading, setLoading] = useState(true);
+  const [, setFormattedDate] = useState<string>("");
+
+  useEffect(() => {
+    const fetchBlogPost = async () => {
+      console.log("Fetching blog post for slug:", slug);
+      try {
+        const response = await fetch(
+          `${process.env.NEXT_PUBLIC_API_URL}/api/blogs/slug/${slug}`
+        );
+        if (!response.ok) {
+          throw new Error(`Blog post not found: ${response.status}`);
+        }
+        const data = await response.json();
+        setBlogPost(data);
+      } catch (error) {
+        console.error("Error fetching blog post:", error);
+        setBlogPost(null);
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    if (slug) fetchBlogPost();
+  }, [slug]);
+
+  // Format the date after blogPost is fetched
+  useEffect(() => {
+    if (blogPost && blogPost.created_at) {
+      setFormattedDate(new Date(blogPost.created_at).toDateString());
+    }
+  }, [blogPost]);
+
+  if (loading) {
+    return <p className="p-6 text-center">Loading...</p>;
+  }
 
   if (!blogPost) {
-    return <p className="p-6 text-center text-red-500">Blog post not found.</p>;
+    return (
+      <p className="p-6 text-center text-red-500">Blog Detail not found.</p>
+    );
   }
+
+  const formattedDateForDisplay = blogPost.created_at
+    ? new Date(blogPost.created_at).toLocaleDateString()
+    : "";
+
+  // Ensure tags is always an array before rendering
+  const tags = Array.isArray(blogPost.tags) ? blogPost.tags : [];
 
   return (
     <div className="p-6 max-w-4xl mx-auto">
       <h2 className="text-3xl font-bold mb-4">{blogPost.title}</h2>
       <Image
-        src={blogPost.imageUrl}
+        src={`${process.env.NEXT_PUBLIC_API_URL}${blogPost.featured_image}`}
         alt={blogPost.title}
         width={800}
         height={400}
         className="w-full h-60 object-cover rounded-lg mb-6"
       />
       <p className="text-gray-500 text-sm mb-4">
-        Published on {blogPost.publishedDate.toDateString()} by{" "}
-        {blogPost.author}
+        Published on {formattedDateForDisplay} by{" "}
       </p>
       <article className="prose lg:prose-xl">
         <div dangerouslySetInnerHTML={{ __html: blogPost.content }} />
       </article>
-      <div className="flex flex-wrap gap-2 mt-4">
-        {blogPost.tags.map((tag, index) => (
-          <span
-            key={index}
-            className="bg-blue-100 text-thLightBlue text-sm px-3 py-1 rounded-lg"
-          >
-            #{tag}
-          </span>
-        ))}
-      </div>
+      {tags.length > 0 && (
+        <div className="flex flex-wrap gap-2 mt-4">
+          {tags.map((tag, index) => (
+            <span
+              key={index}
+              className="bg-blue-100 text-thLightBlue text-sm px-3 py-1 rounded-lg"
+            >
+              #{tag}
+            </span>
+          ))}
+        </div>
+      )}
       <button
         onClick={() => router.push("/blog-posts")}
         className="mt-6 bg-thLightBlue text-white px-4 py-2 rounded-lg hover:bg-blue-600"

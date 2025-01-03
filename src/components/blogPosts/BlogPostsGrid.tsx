@@ -3,7 +3,9 @@ import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
+import axios from "axios"; // Import axios
 import { BlogPost } from "@/types";
+
 const BlogPostsGrid = ({ cards }: { cards: string | number }) => {
   const [blogPosts, setBlogPosts] = useState<BlogPost[]>([]);
   const [loading, setLoading] = useState(true);
@@ -11,9 +13,10 @@ const BlogPostsGrid = ({ cards }: { cards: string | number }) => {
   useEffect(() => {
     const fetchBlogPosts = async () => {
       try {
-        const response = await fetch(`${process.env.API_URL}api/blogs`);
-        const data = await response.json();
-        setBlogPosts(data);
+        const response = await axios.get(
+          `${process.env.NEXT_PUBLIC_API_URL}api/blogs`
+        ); // Use axios to fetch data
+        setBlogPosts(response.data); // Use response.data to access the result
       } catch (error) {
         console.error("Error fetching blog posts:", error);
       } finally {
@@ -45,7 +48,7 @@ const BlogPostsGrid = ({ cards }: { cards: string | number }) => {
               whileTap={{ scale: 0.95 }}
             >
               <Image
-                src={`${process.env.IMAGE_URL}/${blogPost.featured_image}`}
+                src={`${process.env.NEXT_PUBLIC_IMAGE_URL}/${blogPost.featured_image}`}
                 alt={blogPost.title}
                 width={1000}
                 height={1000}

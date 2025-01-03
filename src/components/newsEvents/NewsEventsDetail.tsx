@@ -3,6 +3,7 @@
 import { useParams, useRouter } from "next/navigation";
 import React, { useEffect, useState } from "react";
 import Image from "next/image";
+import axios from "axios";
 import { Event } from "@/types";
 import NewsEventsList from "./NewsEventsList";
 
@@ -18,13 +19,13 @@ const NewsEventsDetail = () => {
   useEffect(() => {
     const fetchNewsEvent = async () => {
       try {
-        const response = await fetch(
-          `${process.env.API_URL}api/events/slug/${slug}`
+        const response = await axios.get(
+          `${process.env.NEXT_PUBLIC_API_URL}api/events/slug/${slug}`
         );
-        const data = await response.json();
-        setNewsEvent(data); // Set the event data to state
+        setNewsEvent(response.data); // Set the event data to state
       } catch (error) {
         console.error("Error fetching event data:", error);
+        setNewsEvent(null);
       } finally {
         setLoading(false);
       }
@@ -36,12 +37,14 @@ const NewsEventsDetail = () => {
   }, [slug]);
 
   if (loading) {
-    return <div>Loading...</div>; // You can display a loader here
+    return <div className="text-center py-6">Loading...</div>; // Loader UI
   }
 
   if (!newsEvent) {
     return (
-      <p className="p-6 text-center text-red-500">News/Event not found.</p>
+      <p className="p-6 text-center text-red-500">
+        News/Event not found. Please check back later.
+      </p>
     );
   }
 
@@ -52,7 +55,7 @@ const NewsEventsDetail = () => {
           {newsEvent.title}
         </h2>
         <Image
-          src={`${process.env.IMAGE_URL}/${newsEvent.image}`}
+          src={`${process.env.NEXT_PUBLIC_IMAGE_URL}/${newsEvent.image}`}
           alt={newsEvent.title}
           width={800}
           height={400}

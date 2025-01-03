@@ -1,23 +1,23 @@
 "use client";
+
 import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
+import axios from "axios";
 import { Event } from "@/types";
+
 const NewsEventsGrid = ({ cards }: { cards: string | number }) => {
   const [events, setEvents] = useState<Event[]>([]);
   const [loading, setLoading] = useState(true);
 
-  const displayCount = cards === "" ? events.length : Number(cards);
-  const eventsToDisplay = events.slice(0, displayCount);
-
-  // Fetch events data from API
   useEffect(() => {
     const fetchEvents = async () => {
       try {
-        const response = await fetch(`${process.env.API_URL}api/events`);
-        const data = await response.json();
-        setEvents(data);
+        const response = await axios.get(
+          `${process.env.NEXT_PUBLIC_API_URL}api/events`
+        );
+        setEvents(response.data);
       } catch (error) {
         console.error("Error fetching events data:", error);
       } finally {
@@ -28,8 +28,15 @@ const NewsEventsGrid = ({ cards }: { cards: string | number }) => {
     fetchEvents();
   }, []);
 
+  const displayCount = cards === "" ? events.length : Number(cards);
+  const eventsToDisplay = events.slice(0, displayCount);
+
   if (loading) {
-    return <div>Loading...</div>; // You can display a loader here
+    return (
+      <div className="p-6 text-center">
+        <p className="text-gray-500">Loading events...</p>
+      </div>
+    );
   }
 
   return (
@@ -46,7 +53,7 @@ const NewsEventsGrid = ({ cards }: { cards: string | number }) => {
               whileTap={{ scale: 0.95 }}
             >
               <Image
-                src={`${process.env.IMAGE_URL}/${newsEvent.image}`}
+                src={`${process.env.NEXT_PUBLIC_IMAGE_URL}/${newsEvent.image}`}
                 alt={newsEvent.title}
                 width={1000}
                 height={1000}

@@ -2,6 +2,7 @@
 import { useParams, useRouter } from "next/navigation";
 import React, { useEffect, useState } from "react";
 import Image from "next/image";
+import axios from "axios";
 import { BlogPost } from "@/types";
 import BlogPostsList from "./BlogPostsList";
 
@@ -12,19 +13,14 @@ const BlogPostsDetail = () => {
 
   const [blogPost, setBlogPost] = useState<BlogPost | null>(null);
   const [loading, setLoading] = useState(true);
-  const [, setFormattedDate] = useState<string>("");
 
   useEffect(() => {
     const fetchBlogPost = async () => {
       try {
-        const response = await fetch(
-          `${process.env.API_URL}api/blogs/slug/${slug}`
+        const response = await axios.get(
+          `${process.env.NEXT_PUBLIC_API_URL}api/blogs/slug/${slug}`
         );
-        if (!response.ok) {
-          throw new Error(`Blog post not found: ${response.status}`);
-        }
-        const data = await response.json();
-        setBlogPost(data);
+        setBlogPost(response.data);
       } catch (error) {
         console.error("Error fetching blog post:", error);
         setBlogPost(null);
@@ -35,13 +31,6 @@ const BlogPostsDetail = () => {
 
     if (slug) fetchBlogPost();
   }, [slug]);
-
-  // Format the date after blogPost is fetched
-  useEffect(() => {
-    if (blogPost && blogPost.created_at) {
-      setFormattedDate(new Date(blogPost.created_at).toDateString());
-    }
-  }, [blogPost]);
 
   if (loading) {
     return <p className="p-6 text-center">Loading...</p>;
@@ -65,7 +54,7 @@ const BlogPostsDetail = () => {
       <div className="max-w-4xl mx-auto flex-1">
         <h2 className="text-xl md:text-3xl font-bold mb-4">{blogPost.title}</h2>
         <Image
-          src={`${process.env.IMAGE_URL}/${blogPost.featured_image}`}
+          src={`${process.env.NEXT_PUBLIC_IMAGE_URL}/${blogPost.featured_image}`}
           alt={blogPost.title}
           width={800}
           height={400}

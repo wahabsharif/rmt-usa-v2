@@ -3,24 +3,25 @@ import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
+import axios from "axios";
 import { Event } from "@/types";
 
 const NewsEventsList = ({ cards }: { cards: string | number }) => {
   const [events, setEvents] = useState<Event[]>([]);
   const [loading, setLoading] = useState(true);
-
-  const displayCount = cards === "" ? events.length : Number(cards);
-  const eventsToDisplay = events.slice(0, displayCount);
+  const [error, setError] = useState<string | null>(null);
 
   // Fetch events data from API
   useEffect(() => {
     const fetchEvents = async () => {
       try {
-        const response = await fetch(`${process.env.API_URL}api/events`);
-        const data = await response.json();
-        setEvents(data);
-      } catch (error) {
-        console.error("Error fetching events data:", error);
+        const response = await axios.get(
+          `${process.env.NEXT_PUBLIC_API_URL}api/events`
+        );
+        setEvents(response.data);
+      } catch (err) {
+        console.error("Error fetching events data:", err);
+        setError("Failed to load events. Please try again later.");
       } finally {
         setLoading(false);
       }
@@ -29,8 +30,23 @@ const NewsEventsList = ({ cards }: { cards: string | number }) => {
     fetchEvents();
   }, []);
 
+  const displayCount = cards === "" ? events.length : Number(cards);
+  const eventsToDisplay = events.slice(0, displayCount);
+
   if (loading) {
-    return <div>Loading...</div>; // You can display a loader here
+    return (
+      <div className="p-6 text-center">
+        <p className="text-gray-500">Loading events...</p>
+      </div>
+    );
+  }
+
+  if (error) {
+    return (
+      <div className="p-6 text-center">
+        <p className="text-red-500">{error}</p>
+      </div>
+    );
   }
 
   return (
@@ -46,13 +62,15 @@ const NewsEventsList = ({ cards }: { cards: string | number }) => {
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
+              {/* Event Image */}
               <Image
-                src={`${process.env.IMAGE_URL}/${newsEvent.image}`}
+                src={`${process.env.NEXT_PUBLIC_IMAGE_URL}/${newsEvent.image}`}
                 alt={newsEvent.title}
                 width={100}
                 height={100}
                 className="w-24 h-24 object-cover rounded-lg"
               />
+              {/* Event Details */}
               <div className="ml-4 flex-1">
                 <h3 className="text-xl capitalize font-semibold mb-2">
                   {newsEvent.title}

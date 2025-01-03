@@ -3,6 +3,7 @@ import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
+import axios from "axios";
 import { BlogPost } from "@/types";
 
 const BlogPostsList = ({ cards }: { cards: string | number }) => {
@@ -12,9 +13,10 @@ const BlogPostsList = ({ cards }: { cards: string | number }) => {
   useEffect(() => {
     const fetchBlogPosts = async () => {
       try {
-        const response = await fetch(`${process.env.API_URL}api/blogs`);
-        const data = await response.json();
-        setBlogPosts(data);
+        const response = await axios.get(
+          `${process.env.NEXT_PUBLIC_API_URL}api/blogs`
+        );
+        setBlogPosts(response.data);
       } catch (error) {
         console.error("Error fetching blog posts:", error);
       } finally {
@@ -25,7 +27,8 @@ const BlogPostsList = ({ cards }: { cards: string | number }) => {
     fetchBlogPosts();
   }, []);
 
-  const displayCount = cards === "" ? blogPosts.length : Number(cards);
+  const displayCount =
+    isNaN(Number(cards)) || cards === "" ? blogPosts.length : Number(cards);
   const postsToDisplay = blogPosts.slice(0, displayCount);
 
   if (loading) {
@@ -47,7 +50,7 @@ const BlogPostsList = ({ cards }: { cards: string | number }) => {
             >
               {/* Image on the left */}
               <Image
-                src={`${process.env.IMAGE_URL}/${blogPost.featured_image}`}
+                src={`${process.env.NEXT_PUBLIC_IMAGE_URL}/${blogPost.featured_image}`}
                 alt={blogPost.title}
                 width={100}
                 height={100}

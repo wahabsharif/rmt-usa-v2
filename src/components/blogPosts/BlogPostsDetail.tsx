@@ -18,7 +18,7 @@ const BlogPostsDetail = () => {
     const fetchBlogPost = async () => {
       try {
         const response = await fetch(
-          `${process.env.NEXT_PUBLIC_API_URL}api/blogs/slug/${slug}`
+          `${process.env.API_URL}api/blogs/slug/${slug}`
         );
         if (!response.ok) {
           throw new Error(`Blog post not found: ${response.status}`);
@@ -65,7 +65,7 @@ const BlogPostsDetail = () => {
       <div className="max-w-4xl mx-auto flex-1">
         <h2 className="text-xl md:text-3xl font-bold mb-4">{blogPost.title}</h2>
         <Image
-          src={`${process.env.NEXT_PUBLIC_IMAGE_URL}/${blogPost.featured_image}`}
+          src={`${process.env.IMAGE_URL}/${blogPost.featured_image}`}
           alt={blogPost.title}
           width={800}
           height={400}

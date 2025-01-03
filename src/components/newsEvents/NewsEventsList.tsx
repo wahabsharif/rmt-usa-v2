@@ -16,9 +16,7 @@ const NewsEventsList = ({ cards }: { cards: string | number }) => {
   useEffect(() => {
     const fetchEvents = async () => {
       try {
-        const response = await fetch(
-          `${process.env.NEXT_PUBLIC_API_URL}api/events`
-        );
+        const response = await fetch(`${process.env.API_URL}api/events`);
         const data = await response.json();
         setEvents(data);
       } catch (error) {
@@ -49,7 +47,7 @@ const NewsEventsList = ({ cards }: { cards: string | number }) => {
               whileTap={{ scale: 0.95 }}
             >
               <Image
-                src={`${process.env.NEXT_PUBLIC_IMAGE_URL}/${newsEvent.image}`}
+                src={`${process.env.IMAGE_URL}/${newsEvent.image}`}
                 alt={newsEvent.title}
                 width={100}
                 height={100}

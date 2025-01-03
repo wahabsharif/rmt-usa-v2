@@ -13,7 +13,14 @@ const nextConfig: NextConfig = {
 
   // Image domains configuration
   images: {
-    domains: ["localhost"], // Add your backend domain here
+    domains: [
+      "localhost",
+      "admin.rmt-usa.com",
+      "https://admin.rmt-usa.com/",
+      "https://admin.rmt-usa.com",
+      "http://admin.rmt-usa.com/",
+      "http://admin.rmt-usa.com",
+    ],
   },
 };
 

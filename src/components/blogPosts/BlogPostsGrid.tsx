@@ -11,6 +11,8 @@ const BlogPostsGrid = ({ cards }: { cards: string | number }) => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
+    console.log("NEXT_PUBLIC_API_URL:", process.env.NEXT_PUBLIC_API_URL);
+    console.log("NEXT_PUBLIC_IMAGE_URL:", process.env.NEXT_PUBLIC_IMAGE_URL);
     const fetchBlogPosts = async () => {
       try {
         const response = await axios.get(

@@ -52,7 +52,7 @@ const NewsEventsDetail = () => {
           {newsEvent.title}
         </h2>
         <Image
-          src={`${process.env.NEXT_PUBLIC_API_URL}storage/${newsEvent.image}`}
+          src={`${process.env.NEXT_PUBLIC_IMAGE_URL}/${newsEvent.image}`}
           alt={newsEvent.title}
           width={800}
           height={400}

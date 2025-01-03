@@ -65,7 +65,7 @@ const BlogPostsDetail = () => {
       <div className="max-w-4xl mx-auto flex-1">
         <h2 className="text-xl md:text-3xl font-bold mb-4">{blogPost.title}</h2>
         <Image
-          src={`${process.env.NEXT_PUBLIC_API_URL}storage/${blogPost.featured_image}`}
+          src={`${process.env.NEXT_PUBLIC_IMAGE_URL}/${blogPost.featured_image}`}
           alt={blogPost.title}
           width={800}
           height={400}

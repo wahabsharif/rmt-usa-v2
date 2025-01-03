@@ -49,7 +49,7 @@ const NewsEventsList = ({ cards }: { cards: string | number }) => {
               whileTap={{ scale: 0.95 }}
             >
               <Image
-                src={`${process.env.NEXT_PUBLIC_API_URL}storage/${newsEvent.image}`}
+                src={`${process.env.NEXT_PUBLIC_IMAGE_URL}/${newsEvent.image}`}
                 alt={newsEvent.title}
                 width={100}
                 height={100}

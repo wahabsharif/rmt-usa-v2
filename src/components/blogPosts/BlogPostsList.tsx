@@ -49,7 +49,7 @@ const BlogPostsList = ({ cards }: { cards: string | number }) => {
             >
               {/* Image on the left */}
               <Image
-                src={`${process.env.NEXT_PUBLIC_API_URL}storage/${blogPost.featured_image}`}
+                src={`${process.env.NEXT_PUBLIC_IMAGE_URL}/${blogPost.featured_image}`}
                 alt={blogPost.title}
                 width={100}
                 height={100}

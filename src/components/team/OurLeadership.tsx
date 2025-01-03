@@ -31,9 +31,10 @@ const OurLeadership: React.FC = () => {
                 <Image
                   src={leader.imageUrl}
                   alt={leader.name}
-                  layout="fill"
-                  objectFit="cover"
-                  className="absolute top-0 left-0 mix-blend-multiply group-hover:scale-110 transition-transform duration-500"
+                  priority
+                  width={1000}
+                  height={1000}
+                  className="absolute object-cover w-[100%] h-[100%] top-0 left-0 transition-transform duration-500 transform group-hover:scale-110"
                 />
               </div>
 

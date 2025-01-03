@@ -14,10 +14,9 @@ const MeetTeam: React.FC = () => {
           <Image
             src="/images/team/dr-murtaza-najabat-ali-ceo-msg.jpeg"
             alt="Picture of the RMT CEO"
-            fill
-            objectFit="cover"
-            layout="fill"
-            className="object-cover rounded-lg"
+            width={1000}
+            height={1000}
+            className="object-cover rounded-lg h-[90%]"
           />
         </div>
 

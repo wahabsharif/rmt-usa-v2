@@ -23,10 +23,13 @@ const Feature: React.FC = () => {
               <Image
                 src={feature.icon}
                 alt={feature.title}
-                width={100}
-                height={100}
+                width={500}
+                height={500}
+                className="w-20"
+                priority // Add priority to load the image faster
               />
             </motion.div>
+
             <h3 className="text-lg font-semibold">{feature.title}</h3>
             <p className="text-gray-600">{feature.description}</p>
           </motion.div>

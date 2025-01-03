@@ -10,13 +10,14 @@ function AboutRMT() {
       {/* Left Section - Image */}
       <div className="w-full md:max-w-sm flex justify-end items-center relative">
         {/* First Image */}
-        <div className="relative w-80 h-[490px] overflow-hidden rounded-lg shadow-xl">
+        <div className="relative overflow-hidden rounded-lg shadow-xl">
           <Image
             src="/images/home/rmt_image.jpg"
             alt="Picture of the rmt"
-            fill
+            width={1000}
+            height={1000}
             style={{ objectFit: "cover" }}
-            className="rounded-lg"
+            className="rounded-lg w-80 h-[490px]"
           />
         </div>
 
@@ -25,9 +26,9 @@ function AboutRMT() {
           <Image
             src="/images/home/rmt_img.jpg"
             alt="Overlay Picture"
-            width={250}
-            height={400}
-            className="shadow-lg rounded-lg"
+            width={1000}
+            height={1000}
+            className="shadow-lg rounded-lg w-72 h-52"
           />
         </div>
       </div>

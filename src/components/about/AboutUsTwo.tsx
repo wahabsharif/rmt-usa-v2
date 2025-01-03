@@ -6,9 +6,7 @@ const AboutUsTwo = () => {
   const { scrollY } = useScroll();
   const y = useTransform(scrollY, [0, 300], ["0%", "100%"]);
   useEffect(() => {
-    const unsubscribe = scrollY.onChange((value) => {
-      console.log("Scroll Y:", value);
-    });
+    const unsubscribe = scrollY.onChange(() => {});
     return () => unsubscribe();
   }, [scrollY]);
 

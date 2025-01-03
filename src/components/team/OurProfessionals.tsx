@@ -31,9 +31,10 @@ const OurProfessionals: React.FC = () => {
                 <Image
                   src={professional.imageUrl}
                   alt={professional.name}
-                  layout="fill"
-                  objectFit="cover"
-                  className="absolute top-0 left-0 transition-transform duration-500 transform group-hover:scale-110"
+                  priority
+                  width={1000}
+                  height={1000}
+                  className="absolute object-cover w-[100%] h-[100%] top-0 left-0 transition-transform duration-500 transform group-hover:scale-110"
                 />
               </div>
 

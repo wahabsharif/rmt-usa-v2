@@ -16,7 +16,7 @@ const NewsEventsGrid = ({ cards }: { cards: string | number }) => {
     const fetchEvents = async () => {
       try {
         const response = await fetch(
-          `${process.env.NEXT_PUBLIC_API_URL}/api/events`
+          `${process.env.NEXT_PUBLIC_API_URL}api/events`
         );
         const data = await response.json();
         setEvents(data);
@@ -48,7 +48,7 @@ const NewsEventsGrid = ({ cards }: { cards: string | number }) => {
               whileTap={{ scale: 0.95 }}
             >
               <Image
-                src={`${process.env.NEXT_PUBLIC_API_URL}/storage/${newsEvent.image}`}
+                src={`${process.env.NEXT_PUBLIC_API_URL}storage/${newsEvent.image}`}
                 alt={newsEvent.title}
                 width={1000}
                 height={1000}

@@ -115,9 +115,10 @@ function ServiceDetails() {
                     <Image
                       src={imgSrc}
                       alt={item.title}
-                      layout="fill"
-                      objectFit="cover"
-                      className="transition-transform duration-300 ease-in-out transform hover:scale-105"
+                      priority
+                      width={1000}
+                      height={1000}
+                      className="transition-transform object-cover duration-300 ease-in-out transform hover:scale-105"
                     />
                   </div>
                 ))

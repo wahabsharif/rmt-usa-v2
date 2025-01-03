@@ -13,7 +13,7 @@ const BlogPostsList = ({ cards }: { cards: string | number }) => {
     const fetchBlogPosts = async () => {
       try {
         const response = await fetch(
-          `${process.env.NEXT_PUBLIC_API_URL}/api/blogs`
+          `${process.env.NEXT_PUBLIC_API_URL}api/blogs`
         );
         const data = await response.json();
         setBlogPosts(data);
@@ -49,7 +49,7 @@ const BlogPostsList = ({ cards }: { cards: string | number }) => {
             >
               {/* Image on the left */}
               <Image
-                src={`${process.env.NEXT_PUBLIC_API_URL}${blogPost.featured_image}`}
+                src={`${process.env.NEXT_PUBLIC_API_URL}storage/${blogPost.featured_image}`}
                 alt={blogPost.title}
                 width={100}
                 height={100}

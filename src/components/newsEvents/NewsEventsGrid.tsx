@@ -14,9 +14,7 @@ const NewsEventsGrid = ({ cards }: { cards: string | number }) => {
   useEffect(() => {
     const fetchEvents = async () => {
       try {
-        const response = await axios.get(
-          `${process.env.NEXT_PUBLIC_API_URL}api/events`
-        );
+        const response = await axios.get(`${process.env.API_URL}api/events`);
         setEvents(response.data);
       } catch (error) {
         console.error("Error fetching events data:", error);
@@ -53,7 +51,7 @@ const NewsEventsGrid = ({ cards }: { cards: string | number }) => {
               whileTap={{ scale: 0.95 }}
             >
               <Image
-                src={`${process.env.NEXT_PUBLIC_IMAGE_URL}/${newsEvent.image}`}
+                src={`${process.env.IMAGE_URL}/${newsEvent.image}`}
                 alt={newsEvent.title}
                 width={1000}
                 height={1000}

@@ -13,9 +13,7 @@ const BlogPostsList = ({ cards }: { cards: string | number }) => {
   useEffect(() => {
     const fetchBlogPosts = async () => {
       try {
-        const response = await axios.get(
-          `${process.env.NEXT_PUBLIC_API_URL}api/blogs`
-        );
+        const response = await axios.get(`${process.env.API_URL}api/blogs`);
         setBlogPosts(response.data);
       } catch (error) {
         console.error("Error fetching blog posts:", error);
@@ -50,7 +48,7 @@ const BlogPostsList = ({ cards }: { cards: string | number }) => {
             >
               {/* Image on the left */}
               <Image
-                src={`${process.env.NEXT_PUBLIC_IMAGE_URL}/${blogPost.featured_image}`}
+                src={`${process.env.IMAGE_URL}/${blogPost.featured_image}`}
                 alt={blogPost.title}
                 width={100}
                 height={100}

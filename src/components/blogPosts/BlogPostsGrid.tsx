@@ -11,13 +11,11 @@ const BlogPostsGrid = ({ cards }: { cards: string | number }) => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    console.log("NEXT_PUBLIC_API_URL:", process.env.NEXT_PUBLIC_API_URL);
-    console.log("NEXT_PUBLIC_IMAGE_URL:", process.env.NEXT_PUBLIC_IMAGE_URL);
+    console.log("API_URL:", process.env.API_URL);
+    console.log("IMAGE_URL:", process.env.IMAGE_URL);
     const fetchBlogPosts = async () => {
       try {
-        const response = await axios.get(
-          `${process.env.NEXT_PUBLIC_API_URL}api/blogs`
-        ); // Use axios to fetch data
+        const response = await axios.get(`${process.env.API_URL}api/blogs`); // Use axios to fetch data
         setBlogPosts(response.data); // Use response.data to access the result
       } catch (error) {
         console.error("Error fetching blog posts:", error);
@@ -50,7 +48,7 @@ const BlogPostsGrid = ({ cards }: { cards: string | number }) => {
               whileTap={{ scale: 0.95 }}
             >
               <Image
-                src={`${process.env.NEXT_PUBLIC_IMAGE_URL}/${blogPost.featured_image}`}
+                src={`${process.env.IMAGE_URL}/${blogPost.featured_image}`}
                 alt={blogPost.title}
                 width={1000}
                 height={1000}

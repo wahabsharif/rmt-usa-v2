@@ -20,7 +20,7 @@ const NewsEventsDetail = () => {
     const fetchNewsEvent = async () => {
       try {
         const response = await axios.get(
-          `${process.env.NEXT_PUBLIC_API_URL}api/events/slug/${slug}`
+          `${process.env.API_URL}api/events/slug/${slug}`
         );
         setNewsEvent(response.data); // Set the event data to state
       } catch (error) {
@@ -55,7 +55,7 @@ const NewsEventsDetail = () => {
           {newsEvent.title}
         </h2>
         <Image
-          src={`${process.env.NEXT_PUBLIC_IMAGE_URL}/${newsEvent.image}`}
+          src={`${process.env.IMAGE_URL}/${newsEvent.image}`}
           alt={newsEvent.title}
           width={800}
           height={400}

@@ -15,7 +15,9 @@ const NewsEventsList = ({ cards }: { cards: string | number }) => {
   useEffect(() => {
     const fetchEvents = async () => {
       try {
-        const response = await axios.get(`${process.env.API_URL}api/events`);
+        const response = await axios.get(
+          `https://admin.rmt-usa.com/api/events`
+        );
         setEvents(response.data);
       } catch (err) {
         console.error("Error fetching events data:", err);
@@ -62,7 +64,7 @@ const NewsEventsList = ({ cards }: { cards: string | number }) => {
             >
               {/* Event Image */}
               <Image
-                src={`${process.env.IMAGE_URL}/${newsEvent.image}`}
+                src={`https://admin.rmt-usa.com/storage/app/public/${newsEvent.image}`}
                 alt={newsEvent.title}
                 width={100}
                 height={100}

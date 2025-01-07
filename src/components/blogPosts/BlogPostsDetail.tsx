@@ -18,7 +18,7 @@ const BlogPostsDetail = () => {
     const fetchBlogPost = async () => {
       try {
         const response = await axios.get(
-          `${process.env.API_URL}api/blogs/slug/${slug}`
+          `https://admin.rmt-usa.com/api/blogs/slug/${slug}`
         );
         setBlogPost(response.data);
       } catch (error) {
@@ -54,7 +54,7 @@ const BlogPostsDetail = () => {
       <div className="max-w-4xl mx-auto flex-1">
         <h2 className="text-xl md:text-3xl font-bold mb-4">{blogPost.title}</h2>
         <Image
-          src={`${process.env.IMAGE_URL}/${blogPost.featured_image}`}
+          src={`https://admin.rmt-usa.com/storage/app/public/${blogPost.featured_image}`}
           alt={blogPost.title}
           width={800}
           height={400}

@@ -11,12 +11,9 @@ const BlogPostsGrid = ({ cards }: { cards: string | number }) => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    console.log("API_URL:", process.env.API_URL);
-    console.log("IMAGE_URL:", process.env.IMAGE_URL);
     const fetchBlogPosts = async () => {
       try {
-        console.log("Fetching from:", `${process.env.API_URL}api/blogs`);
-        const response = await axios.get(`${process.env.API_URL}api/blogs`);
+        const response = await axios.get(`https://admin.rmt-usa.com/api/blogs`);
         console.log("API response:", response.data);
         setBlogPosts(response.data);
       } catch (error) {
@@ -53,7 +50,7 @@ const BlogPostsGrid = ({ cards }: { cards: string | number }) => {
               whileTap={{ scale: 0.95 }}
             >
               <Image
-                src={`${process.env.IMAGE_URL}/${blogPost.featured_image}`}
+                src={`https://admin.rmt-usa.com/storage/app/public/${blogPost.featured_image}`}
                 alt={blogPost.title}
                 width={1000}
                 height={1000}

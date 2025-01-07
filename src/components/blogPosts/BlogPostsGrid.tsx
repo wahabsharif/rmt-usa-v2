@@ -14,7 +14,6 @@ const BlogPostsGrid = ({ cards }: { cards: string | number }) => {
     const fetchBlogPosts = async () => {
       try {
         const response = await axios.get(`https://admin.rmt-usa.com/api/blogs`);
-        console.log("API response:", response.data);
         setBlogPosts(response.data);
       } catch (error) {
         console.error("Error fetching blog posts:", error);

@@ -16,7 +16,6 @@ const BlogPostsGrid = ({ cards }: { cards: string | number }) => {
         const response = await axios.get(
           `${process.env.NEXT_PUBLIC_API_URL}/api/blogs`
         );
-        console.log(process.env.NEXT_PUBLIC_API_URL);
         setBlogPosts(response.data);
       } catch (error) {
         console.error("Error fetching blog posts:", error);

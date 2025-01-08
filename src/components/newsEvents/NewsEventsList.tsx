@@ -16,7 +16,7 @@ const NewsEventsList = ({ cards }: { cards: string | number }) => {
     const fetchEvents = async () => {
       try {
         const response = await axios.get(
-          `https://admin.rmt-usa.com/api/events`
+          `${process.env.NEXT_PUBLIC_API_URL}/api/events`
         );
         setEvents(response.data);
       } catch (err) {
@@ -64,7 +64,7 @@ const NewsEventsList = ({ cards }: { cards: string | number }) => {
             >
               {/* Event Image */}
               <Image
-                src={`https://admin.rmt-usa.com/storage/app/public/${newsEvent.image}`}
+                src={`${process.env.NEXT_PUBLIC_IMAGE_URL}${newsEvent.image}`}
                 alt={newsEvent.title}
                 width={100}
                 height={100}

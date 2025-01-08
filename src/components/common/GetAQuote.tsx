@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
 const GetAQuote: React.FC = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -11,6 +11,19 @@ const GetAQuote: React.FC = () => {
   const closeModal = () => {
     setIsModalOpen(false);
   };
+
+  // Handle scrolling when modal is open
+  useEffect(() => {
+    if (isModalOpen) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "auto";
+    }
+
+    return () => {
+      document.body.style.overflow = "auto"; // Reset when component unmounts
+    };
+  }, [isModalOpen]);
 
   return (
     <div>
@@ -25,7 +38,7 @@ const GetAQuote: React.FC = () => {
       {/* Modal */}
       {isModalOpen && (
         <div className="fixed inset-0 bg-gray-600 backdrop-blur-lg bg-opacity-50 flex z-50 justify-center items-center">
-          <div className="bg-white p-8 rounded-lg shadow-xl max-w-lg w-full">
+          <div className="bg-white p-8 rounded-lg shadow-xl max-w-lg w-full h-[98vh] ">
             <h2 className="text-xl font-semibold mb-4 tracking-widest text-thRed">
               Quotation
             </h2>

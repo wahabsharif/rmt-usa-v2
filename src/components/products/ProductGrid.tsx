@@ -15,9 +15,10 @@ const ProductGrid = () => {
       {/* Grid Layout */}
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
         {productsData.map((product) => (
-          <div
+          <Link
             key={product.id}
-            className="flex flex-col items-center border p-4 rounded-lg shadow-md bg-white"
+            href={`/products/${product.slug}`}
+            className="flex flex-col items-center border p-4 rounded-lg shadow-md bg-white hover:shadow-lg transition-shadow"
           >
             <div className="flex-shrink-0 w-full h-48">
               <Image
@@ -34,13 +35,8 @@ const ProductGrid = () => {
             <p className="text-gray-600 text-sm mb-4 line-clamp-4">
               {product.description}
             </p>
-            <Link
-              href={`/products/${product.slug}`}
-              className="text-thRed hover:underline"
-            >
-              Learn more
-            </Link>
-          </div>
+            <span className="text-thRed hover:underline">Learn more</span>
+          </Link>
         ))}
       </div>
     </div>

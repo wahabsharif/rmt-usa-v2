@@ -1,6 +1,6 @@
 import PageBanner from "@/components/common/PageBanner";
 import ProductDetails from "@/components/products/ProductDetails";
-import ProductSlider from "@/components/products/ProductSlider";
+import ProductGrid from "@/components/products/ProductGrid";
 import React from "react";
 import { generateMetadata } from "@/data/metaData";
 import type { Metadata } from "next";
@@ -13,7 +13,7 @@ export default function ProductDetailsPage() {
     <>
       <PageBanner />
       <ProductDetails />
-      <ProductSlider />
+      <ProductGrid />
     </>
   );
 }

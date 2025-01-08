@@ -16,7 +16,6 @@ export const navBarData: MenuItem[] = [
       { label: "About", href: "/about" },
       { label: "Our Team", href: "/team" },
       { label: "Careers", href: "/careers" },
-      { label: "Certifications", href: "#" },
     ],
   },
   {
@@ -60,7 +59,7 @@ export const navBarData: MenuItem[] = [
       },
       {
         label: "Medical Software",
-        href: "/products/reshaping-healthcare-through-innovative-software-solutions",
+        href: "/products/software-solutions",
       },
       {
         label: "Drug Delivery Systems",

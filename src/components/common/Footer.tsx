@@ -44,7 +44,10 @@ const Footer: React.FC = () => {
             </div>
             <div className="flex flex-col">
               <span className="text-lg font-bold">
-                {footerData.phoneNumber}
+                {footerData.usPhoneNumber}
+              </span>
+              <span className="text-lg font-bold">
+                {footerData.pakPhoneNumber}
               </span>
               <span className="text-thLightBlue text-lg font-bold">
                 Round-the-clock

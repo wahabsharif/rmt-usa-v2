@@ -136,8 +136,8 @@ export const productsData = [
   },
   {
     id: 7,
-    title: "Reshaping Healthcare Through Innovative Software Solutions",
-    slug: "reshaping-healthcare-through-innovative-software-solutions",
+    title: "Software Solutions",
+    slug: "software-solutions",
     description:
       "Our software division is at the forefront of this mission, offering a comprehensive suite of services designed to address the evolving needs of healthcare organizations worldwide. We empower our clients to stay ahead in an increasingly digital landscape.",
     shortDescription:

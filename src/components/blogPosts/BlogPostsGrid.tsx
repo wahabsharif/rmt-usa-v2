@@ -3,7 +3,7 @@ import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
-import axios from "axios"; // Import axios
+import axios from "axios";
 import { BlogPost } from "@/types";
 
 const BlogPostsGrid = ({ cards }: { cards: string | number }) => {
@@ -13,7 +13,10 @@ const BlogPostsGrid = ({ cards }: { cards: string | number }) => {
   useEffect(() => {
     const fetchBlogPosts = async () => {
       try {
-        const response = await axios.get(`https://admin.rmt-usa.com/api/blogs`);
+        const response = await axios.get(
+          `${process.env.NEXT_PUBLIC_API_URL}/api/blogs`
+        );
+        console.log(process.env.NEXT_PUBLIC_API_URL);
         setBlogPosts(response.data);
       } catch (error) {
         console.error("Error fetching blog posts:", error);
@@ -49,7 +52,7 @@ const BlogPostsGrid = ({ cards }: { cards: string | number }) => {
               whileTap={{ scale: 0.95 }}
             >
               <Image
-                src={`https://admin.rmt-usa.com/storage/app/public/${blogPost.featured_image}`}
+                src={`${process.env.NEXT_PUBLIC_IMAGE_URL}${blogPost.featured_image}`}
                 alt={blogPost.title}
                 width={1000}
                 height={1000}

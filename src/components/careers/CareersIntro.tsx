@@ -1,11 +1,11 @@
 "use client";
 import { motion } from "framer-motion";
-import Image from "next/image";
+// import Image from "next/image";
 const CareersIntro = () => {
   return (
     <section className="max-w-6xl mx-auto py-12 px-4">
       {/* Top Image */}
-      <motion.div
+      {/* <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 1 }}
@@ -18,7 +18,7 @@ const CareersIntro = () => {
           height={1000}
           className="w-full h-96 rounded-lg object-cover shadow-xl"
         />
-      </motion.div>
+      </motion.div> */}
 
       {/* Tags */}
       <motion.div

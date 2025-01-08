@@ -34,23 +34,6 @@ const AboutCompany: React.FC = () => {
       {/* Right Section with Content */}
       <div className="w-full md:w-1/2 p-6 text-left space-y-2">
         {/* Subheadings */}
-        <div className="relative">
-          {/* High-Sensitive Text */}
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1, delay: 0.5 }}
-          >
-            <h2 className="text-3xl md:text-4xl font-bold text-thLightBlue">
-              About RMT
-            </h2>
-          </motion.div>
-
-          {/* Overlayed CEO Message */}
-          {/* <h2 className="absolute top-0 left-[10%] transform -translate-x-1/3 -translate-y-1/2 text-lg mb-2 uppercase tracking-widest bg-white p-2 inline-block shadow-3xl rounded-lg z-10">
-            about rmt
-          </h2> */}
-        </div>
 
         {/* Subheading with Paragraph */}
         <motion.h4

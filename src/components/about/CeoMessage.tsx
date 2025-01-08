@@ -3,8 +3,9 @@
 import Link from "next/link";
 import React from "react";
 import Image from "next/image"; // Import the Next.js Image component
+import { motion } from "framer-motion";
 
-const MeetTeam: React.FC = () => {
+const CeoMessage: React.FC = () => {
   return (
     <section className="py-6 md:py-16 px-6 md:px-4">
       {/* Flex container to split the layout */}
@@ -21,13 +22,17 @@ const MeetTeam: React.FC = () => {
         </div>
 
         {/* Right Side: Content */}
-        <div className="flex flex-col justify-center items-start py-6 md:py-2 text-gray-800 md:px-6 w-full md:w-1/2">
+        <div className="flex flex-col justify-center items-start py-4 md:py-2 text-gray-800 md:px-6 w-full md:w-1/2">
           {/* Section Heading */}
-          <div className="text-left">
-            <h2 className="text-lg mb-2 uppercase tracking-widest bg-white p-2 inline-block shadow-3xl rounded-lg">
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1, delay: 0.5 }}
+          >
+            <h2 className="text-3xl md:text-4xl font-bold text-thLightBlue">
               CEO Message
             </h2>
-          </div>
+          </motion.div>
 
           {/* Description */}
           <p className="mt-2 text-lg md:text-xl font-light max-w-2xl leading-relaxed">
@@ -68,4 +73,4 @@ const MeetTeam: React.FC = () => {
   );
 };
 
-export default MeetTeam;
+export default CeoMessage;

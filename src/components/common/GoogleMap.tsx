@@ -22,24 +22,24 @@ function GoogleMap() {
       {/* Tabs */}
       <div className="flex justify-center my-4 space-x-2">
         <button
-          className={`px-5 py-2 cursor-pointer border border-gray-300 rounded-full ${
+          className={`px-5 py-2 uppercase cursor-pointer border border-gray-300 rounded-full ${
             activeTab === "headquarter"
               ? "bg-thDarkBlue text-white"
               : "bg-gray-100 text-black"
           }`}
           onClick={() => setActiveTab("headquarter")}
         >
-          Orlando FL
+          Headoffice (Orlando)
         </button>
         <button
-          className={`px-5 py-2 cursor-pointer border border-gray-300 rounded-full ${
+          className={`px-5 py-2 uppercase cursor-pointer border border-gray-300 rounded-full ${
             activeTab === "satelliteOffice"
               ? "bg-thDarkBlue text-white"
               : "bg-gray-100 text-black"
           }`}
           onClick={() => setActiveTab("satelliteOffice")}
         >
-          R&D Facility
+          Offsure (R&D Facility)
         </button>
       </div>
 

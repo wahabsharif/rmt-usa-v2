@@ -3,13 +3,14 @@ import { FaFacebook, FaYoutube, FaLinkedin, FaInstagram } from "react-icons/fa";
 export const footerData = {
   description:
     "Your complete journey partner from conceptualisation to Full-Scale Commercial Reality in the Medical Innovation Landscape.",
-  phoneNumber: "+1 1234 5678",
+  usPhoneNumber: "+1 (689) 216-4437",
+  pakPhoneNumber: "+1 (689) 216-4437",
   links: [
     { href: "/", text: "Home" },
     { href: "/about", text: "About Us" },
-    { href: "#", text: "Products" },
-    { href: "#", text: "Blog" },
-    { href: "#", text: "Contact" },
+    { href: "/products", text: "Products" },
+    { href: "/blog-posts", text: "Blog" },
+    { href: "/contact", text: "Contact" },
   ],
   socialLinks: [
     {

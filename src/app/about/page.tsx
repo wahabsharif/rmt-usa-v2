@@ -1,7 +1,7 @@
 import AboutCompany from "@/components/about/AboutCompany";
 import AboutCompanyServices from "@/components/about/AboutCompanyServices";
 import AboutUsTwo from "@/components/about/AboutUsTwo";
-import MeetTeam from "@/components/about/MeetTeam";
+import CeoMessage from "@/components/about/CeoMessage";
 import GoogleMap from "@/components/common/GoogleMap";
 import PageBanner from "@/components/common/PageBanner";
 import Feature from "@/components/about/Feature";
@@ -16,9 +16,9 @@ const AboutUsPage: React.FC = () => {
   return (
     <>
       <PageBanner />
-      <AboutCompany />
-      <MeetTeam />
+      <CeoMessage />
       <AboutCompanyServices />
+      <AboutCompany />
       <Feature />
       <AboutUsTwo />
       <GoogleMap />

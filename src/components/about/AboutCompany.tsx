@@ -86,7 +86,11 @@ const AboutCompany: React.FC = () => {
             <div className="bg-thLightBlue text-white rounded-full p-2 flex items-center justify-center">
               <FaPhone className="text-lg" />
             </div>
-            <span>8-800-10-500-25</span>
+            <span>+92 (51) 848-0117</span>
+            <div className="bg-thLightBlue text-white rounded-full p-2 flex items-center justify-center">
+              <FaPhone className="text-lg" />
+            </div>
+            <span>+1 (689) 216-4437</span>
           </div>
         </motion.div>
       </div>

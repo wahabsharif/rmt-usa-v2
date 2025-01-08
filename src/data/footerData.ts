@@ -4,7 +4,7 @@ export const footerData = {
   description:
     "Your complete journey partner from conceptualisation to Full-Scale Commercial Reality in the Medical Innovation Landscape.",
   usPhoneNumber: "+1 (689) 216-4437",
-  pakPhoneNumber: "+1 (689) 216-4437",
+  pakPhoneNumber: "+92 (51) 848-0117",
   links: [
     { href: "/", text: "Home" },
     { href: "/about", text: "About Us" },

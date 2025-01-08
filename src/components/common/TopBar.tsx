@@ -42,10 +42,10 @@ const TopBar: React.FC = () => {
                 <FaPhone className="text-white" />
               </div>
               <Link
-                href="tel:+9251123456789"
+                href="tel:+92518480117"
                 className="text-sm md:text-base font-bold text-[#2E2E2E] hover:text-thLightBlue"
               >
-                +92-51-123456789
+                +92 (51) 848-0117
               </Link>
             </div>
             <div className="flex justify-center items-center space-x-1">

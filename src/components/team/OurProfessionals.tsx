@@ -11,13 +11,10 @@ const OurProfessionals: React.FC = () => {
       <div className="container mx-auto px-6 py-16">
         {/* Heading for Our professionalship */}
         <h2 className="text-4xl font-bold text-center uppercase tracking-widest text-thLightBlue mb-2">
-          Our Professionalship
+          Meet Our Executive Team
         </h2>
 
         {/* Meet Our professionals */}
-        <h3 className="text-2xl capitalize text-center text-black mb-8 md:mb-20">
-          Meet Our Executive Team
-        </h3>
 
         {/* professionals Grid */}
         <div className="flex flex-col md:flex-row justify-center flex-wrap gap-10 md:gap-20">

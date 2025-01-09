@@ -1,9 +1,8 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  // Enables React strict mode for better development warnings
   reactStrictMode: true,
-  trailingSlash: true, // Optionally adds a trailing slash to URLs
+  trailingSlash: true,
 
   // i18n configuration
   i18n: {

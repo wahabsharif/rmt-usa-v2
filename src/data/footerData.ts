@@ -10,6 +10,7 @@ export const footerData = {
     { href: "/about", text: "About Us" },
     { href: "/products", text: "Products" },
     { href: "/blog-posts", text: "Blog" },
+    { href: "/careers", text: "Careers" },
     { href: "/contact", text: "Contact" },
   ],
   socialLinks: [

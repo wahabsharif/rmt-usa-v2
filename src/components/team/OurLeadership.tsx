@@ -15,8 +15,8 @@ const OurLeadership: React.FC = () => {
         </h2>
 
         {/* Meet Our leaders */}
-        <h3 className="text-2xl text-center text-black mb-8 md:mb-20">
-          Meet Our leaders
+        <h3 className="text-2xl capitalize text-center text-black mb-8 md:mb-20">
+          Meet Our Board Of Directors
         </h3>
 
         {/* leaders Grid */}

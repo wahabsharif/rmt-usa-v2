@@ -15,7 +15,6 @@ export const navBarData: MenuItem[] = [
     submenu: [
       { label: "About", href: "/about" },
       { label: "Our Team", href: "/team" },
-      { label: "Careers", href: "/careers" },
     ],
   },
   {

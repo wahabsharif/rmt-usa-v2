@@ -37,7 +37,7 @@ const TopBar: React.FC = () => {
 
           {/* Phone */}
           <div className="flex items-center space-x-2 justify-start md:justify-start md:ml-auto">
-            <div className="flex justify-center items-center space-x-1">
+            {/* <div className="flex justify-center items-center space-x-1">
               <div className="bg-thLightBlue p-2 rounded-full">
                 <FaPhone className="text-white" />
               </div>
@@ -47,7 +47,7 @@ const TopBar: React.FC = () => {
               >
                 +92 (51) 848-0117
               </Link>
-            </div>
+            </div> */}
             <div className="flex justify-center items-center space-x-1">
               <div className="bg-thLightBlue p-2 rounded-full">
                 <FaPhone className="text-white" />

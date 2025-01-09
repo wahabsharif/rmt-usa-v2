@@ -61,7 +61,7 @@ export const professionals = [
   {
     name: "M. Hafeez Khan",
     title: "CSCO",
-    imageUrl: "/images/team/m-hafeez-khan.jpg",
+    imageUrl: "/images/team/muhammad-hafeez-khan.jpg",
     linkedinUrl: "#",
   },
   {

@@ -14,7 +14,7 @@ export const generateMetadata = ({
   keywords = `RMT USA, professional services, industry solutions, business services, R&D services, healthcare innovation,
    medical technology, cost-effective R&D, time-efficient R&D, creative minds, physicians, medical device manufacturers, 
    healthcare researchers, market-ready products, healthcare advancement, biomedical engineering, healthcare technology, 
-   innovation, research and development, strategic solutions, cutting-edge technology, collaboration, adaptability, 
+   innovation, Digital Health, HIT, Health IT, Healthcare, Health Tech, research and development, strategic solutions, cutting-edge technology, collaboration, adaptability, 
    technological solutions, global services, technical staff, Pakistan R&D, biomedical engineers, healthcare accessibility, 
    medical device research, trusted partner, healthcare transformation, healthcare sector, product development, accelerated process, 
    medical devices, product commercialization, R&D facility, medical research, healthcare solutions, advanced technology, 
@@ -37,6 +37,7 @@ export const generateMetadata = ({
   description,
   keywords,
   authors: authors.map((author) => ({ name: author.name })),
+  metadataBase: new URL("https://rmt-usa.com"), // Added metadataBase property
   openGraph: {
     title: pageTitle ? `${pageTitle} - RMT USA` : "RMT USA",
     description,

@@ -6,6 +6,7 @@ import Image from "next/image";
 import Link from "next/link";
 import axios from "axios";
 import { Event } from "@/types";
+import FadeLoader from "react-spinners/FadeLoader";
 
 const NewsEventsGrid = ({ cards }: { cards: string | number }) => {
   const [events, setEvents] = useState<Event[]>([]);
@@ -33,8 +34,8 @@ const NewsEventsGrid = ({ cards }: { cards: string | number }) => {
 
   if (loading) {
     return (
-      <div className="p-6 text-center">
-        <p className="text-gray-500">Loading events...</p>
+      <div className="p-6 text-center flex flex-col items-center">
+        <FadeLoader color="#013550" loading={loading} />
       </div>
     );
   }

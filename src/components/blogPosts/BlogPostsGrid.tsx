@@ -5,6 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import axios from "axios";
 import { BlogPost } from "@/types";
+import FadeLoader from "react-spinners/FadeLoader";
 
 const BlogPostsGrid = ({ cards }: { cards: string | number }) => {
   const [blogPosts, setBlogPosts] = useState<BlogPost[]>([]);
@@ -34,7 +35,11 @@ const BlogPostsGrid = ({ cards }: { cards: string | number }) => {
   const postsToDisplay = blogPosts.slice(0, displayCount);
 
   if (loading) {
-    return <p className="text-center">Loading...</p>;
+    return (
+      <div className="p-6 text-center flex flex-col items-center">
+        <FadeLoader color="#013550" loading={loading} />
+      </div>
+    );
   }
 
   return (

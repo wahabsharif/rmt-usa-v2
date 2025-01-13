@@ -1,5 +1,4 @@
 export const ourPartnersData = [
-  // Slides One
   {
     src: "/images/clients-partners/bioflorida.png",
     alt: "bioflorida",
@@ -8,7 +7,7 @@ export const ourPartnersData = [
   {
     src: "/images/clients-partners/cenfluence.webp",
     alt: "cenfluence",
-    link: "https://kounterintuitivetechnologies.com/",
+    link: "#",
   },
   {
     src: "/images/clients-partners/cincinnati.png",
@@ -53,7 +52,7 @@ export const ourPartnersData = [
   {
     src: "/images/clients-partners/schade-final.png",
     alt: "schade-final",
-    link: "https://kounterintuitivetechnologies.com/",
+    link: "#",
   },
   {
     src: "/images/clients-partners/sope.jpg",
@@ -63,6 +62,6 @@ export const ourPartnersData = [
   {
     src: "/images/clients-partners/the-florida-high-tech-corridor.svg",
     alt: "the-florida-high-tech-corridor",
-    link: "https://kounterintuitivetechnologies.com/",
+    link: "#",
   },
 ];

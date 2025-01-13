@@ -4,6 +4,7 @@ import React from "react";
 import { ourPartnersData } from "@/data/ourPartnersData";
 import Image from "next/image";
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 const OurPartnersGrid: React.FC = () => {
   return (
@@ -26,17 +27,20 @@ const OurPartnersGrid: React.FC = () => {
           {ourPartnersData.map((partner, index) => (
             <motion.div
               key={index}
+              rel="noopener noreferrer"
               className="flex justify-center cursor-pointer items-center bg-gray-100 p-2 rounded-lg shadow-md"
               whileHover={{ scale: 1.1, rotate: 2 }}
               transition={{ duration: 0.3 }}
             >
-              <Image
-                src={partner.src}
-                alt={partner.alt}
-                width={1000}
-                height={1000}
-                className="w-28 object-contain"
-              />
+              <Link href={partner.link} target="_blank">
+                <Image
+                  src={partner.src}
+                  alt={partner.alt}
+                  width={1000}
+                  height={1000}
+                  className="w-28 object-contain"
+                />
+              </Link>
             </motion.div>
           ))}
         </div>

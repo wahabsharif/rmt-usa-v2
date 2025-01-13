@@ -3,6 +3,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
+import Link from "next/link";
 
 function AboutRMT() {
   return (
@@ -62,15 +63,14 @@ function AboutRMT() {
         </motion.p>
 
         {/* Call-to-Action Button */}
-        <motion.a
-          href="#"
+        <motion.div
           className="inline-block bg-thLightBlue text-white font-semibold py-3 px-8 rounded-full text-lg transition duration-300 ease-in-out hover:bg-[#0098a1] mt-6"
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 1.5 }}
         >
-          LEARN MORE
-        </motion.a>
+          <Link href="/about"> LEARN MORE</Link>
+        </motion.div>
       </div>
     </section>
   );

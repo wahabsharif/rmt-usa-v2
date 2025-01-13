@@ -3,6 +3,7 @@
 import React from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 const Banner: React.FC = () => {
   return (
@@ -66,16 +67,15 @@ const Banner: React.FC = () => {
 
         {/* Call-to-Action Button */}
         <div className="mt-8">
-          <motion.a
-            href="#"
+          <motion.div
             aria-label="Learn more about our innovative healthcare technology"
             className="inline-block bg-thLightBlue text-white font-semibold py-3 px-8 rounded-full text-lg transition duration-300 ease-in-out hover:bg-[#0098a1]"
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, delay: 1.5 }}
           >
-            LEARN MORE
-          </motion.a>
+            <Link href="/about">LEARN MORE</Link>
+          </motion.div>
         </div>
       </div>
     </div>

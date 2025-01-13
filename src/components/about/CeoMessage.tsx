@@ -13,7 +13,7 @@ const CeoMessage: React.FC = () => {
         {/* Left Side: Image */}
         <div className="relative w-full md:w-[40%] h-60 md:h-[600px]">
           <Image
-            src="/images/team/dr-murtaza-najabat-ali-ceo-msg.jpeg"
+            src="/images/team/dr-murtaza-najabat-ali-ceo-msg.webp"
             alt="Picture of the RMT CEO"
             width={1000}
             height={1000}

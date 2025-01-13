@@ -1,6 +1,7 @@
 "use client";
 import React, { useEffect } from "react";
 import { motion, useTransform, useScroll } from "framer-motion";
+import Link from "next/link";
 
 const AboutUsTwo = () => {
   const { scrollY } = useScroll();
@@ -35,14 +36,14 @@ const AboutUsTwo = () => {
           Revive <br />
           <span className="text-white">Medical Technologies</span>
         </motion.h2>
-        <motion.button
+        <motion.div
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 0.6 }}
           className="mt-8 px-6 py-3 text-lg bg-thLightBlue text-white font-semibold rounded-full transition ease-in-out shadow-md hover:bg-thDarkBlue focus:outline-none"
         >
-          Learn More
-        </motion.button>
+          <Link href={"/about"}>Learn More</Link>
+        </motion.div>
       </div>
     </section>
   );

@@ -12,13 +12,19 @@ const nextConfig: NextConfig = {
 
   // Image domains configuration
   images: {
-    domains: [
-      "localhost",
-      "admin.rmt-usa.com",
-      "https://admin.rmt-usa.com/",
-      "https://admin.rmt-usa.com",
-      "http://admin.rmt-usa.com/",
-      "http://admin.rmt-usa.com",
+    remotePatterns: [
+      {
+        protocol: "http",
+        hostname: "localhost",
+      },
+      {
+        protocol: "https",
+        hostname: "admin.rmt-usa.com",
+      },
+      {
+        protocol: "http",
+        hostname: "admin.rmt-usa.com",
+      },
     ],
   },
 };

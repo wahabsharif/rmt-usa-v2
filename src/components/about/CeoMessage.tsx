@@ -53,8 +53,8 @@ const CeoMessage: React.FC = () => {
 
           {/* Doctor Details */}
           <div className="mt-6">
-            <h3 className="text-2xl md:text-3xl font-bold">
-              Dr. Murtaza Najabat ALi
+            <h3 className="text-2xl capitalize md:text-3xl font-bold">
+              Dr. Murtaza Najabat Ali
             </h3>
             <p className="text-lg md:text-xl">CEO & CO-FOUNDER</p>
           </div>

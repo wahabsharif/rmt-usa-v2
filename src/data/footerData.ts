@@ -11,7 +11,12 @@ export const footerData = {
     { href: "/products", text: "Products" },
     { href: "/blog-posts", text: "Blog" },
     { href: "/careers", text: "Careers" },
-    { href: "/contact", text: "Contact" },
+  ],
+  support: [
+    { href: "/services", text: "Rehabilitation" },
+    { href: "/services", text: "Own Production" },
+    { href: "/services", text: "Prosthetic Equipment" },
+    { href: "/services", text: "X-ray Diagnoses" },
   ],
   socialLinks: [
     {

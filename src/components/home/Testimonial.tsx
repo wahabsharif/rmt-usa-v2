@@ -18,9 +18,9 @@ const TestimonialCard: React.FC<{ testimonial: Testimonial }> = ({
         <Image
           src={testimonial.imageUrl}
           alt={testimonial.name}
-          className="w-24 h-24 rounded-full object-cover"
-          width={96}
-          height={96}
+          className="w-24 h-24 object-cover"
+          width={1000}
+          height={1000}
         />
       </div>
       <div className="flex-grow flex flex-col justify-between">

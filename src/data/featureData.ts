@@ -20,13 +20,13 @@ const featureData = [
     description:
       "Prosthetics is the bridge that connects physical disability to ability.",
   },
-  {
-    id: 4,
-    icon: "/icons/magic-icon.svg",
-    title: "Perfect Design",
-    description:
-      "With prosthetics, we can turn a disability into an opportunity.",
-  },
+  // {
+  //   id: 4,
+  //   icon: "/icons/magic-icon.svg",
+  //   title: "Perfect Design",
+  //   description:
+  //     "With prosthetics, we can turn a disability into an opportunity.",
+  // },
 ];
 
 export default featureData;

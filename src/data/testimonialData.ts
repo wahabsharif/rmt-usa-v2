@@ -14,7 +14,7 @@ export const testimonialData: Testimonial[] = [
     designation: "Software Engineer",
     description:
       "This app has transformed the way I work! The user experience is outstanding.",
-    imageUrl: "/images/icons/person.png",
+    imageUrl: "/icons/user-profle-placeholder.png",
   },
   {
     id: 2,
@@ -22,20 +22,20 @@ export const testimonialData: Testimonial[] = [
     designation: "Product Manager",
     description:
       "I love the simplicity and speed of the app. It’s very intuitive!",
-    imageUrl: "/images/icons/person.png",
+    imageUrl: "/icons/user-profle-placeholder.png",
   },
   {
     id: 3,
     name: "Michael Brown",
     designation: "Designer",
     description: "The design is clean and modern. Great job on the UI!",
-    imageUrl: "/images/icons/person.png",
+    imageUrl: "/icons/user-profle-placeholder.png",
   },
   {
     id: 4,
     name: "Emily Johnson",
     designation: "CEO",
     description: "A game-changer for our business. I highly recommend it!",
-    imageUrl: "/images/icons/person.png",
+    imageUrl: "/icons/user-profle-placeholder.png",
   },
 ];

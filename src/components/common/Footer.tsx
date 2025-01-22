@@ -19,7 +19,7 @@ const Footer: React.FC = () => {
   };
   return (
     <footer>
-      <div className="w-full py-10 pl-10 text-white bg-thDarkBlue grid grid-cols-1 md:grid-cols-3 gap-4">
+      <div className="w-full py-10 pl-10 text-white bg-thDarkBlue grid grid-cols-1 md:grid-cols-4 gap-2">
         {/* Column 1: Logo and Paragraph */}
         <div className="space-y-4">
           {/* Logo */}
@@ -84,7 +84,20 @@ const Footer: React.FC = () => {
             ))}
           </ul>
         </div>
-        {/* Column 3: Subscription Form */}
+        {/* Column 4: Links */}
+        <div>
+          <h3 className="text-2xl font-bold mb-4 tracking-wide">Support</h3>
+          <ul className="space-y-2">
+            {footerData.support.map((support, index) => (
+              <li key={index}>
+                <Link href={support.href} className="hover:text-gray-400">
+                  {support.text}
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </div>
+        {/* Column 4: Subscription Form */}
         <div className="bg-thLightBlue backdrop-blur-md rounded-l-xl shadow-lg p-3 transition ease-in-out">
           <div className="text-left mx-4">
             <h2 className="text-2xl font-extrabold text-gray-800 capitalize">

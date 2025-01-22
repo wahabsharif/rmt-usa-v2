@@ -8,7 +8,7 @@ import Image from "next/image";
 const Feature: React.FC = () => {
   return (
     <div className="container mx-auto px-4 py-8">
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
         {featureData.map((feature) => (
           <motion.div
             key={feature.id}

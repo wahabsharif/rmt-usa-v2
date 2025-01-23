@@ -13,7 +13,7 @@ function AboutRMT() {
         {/* First Image */}
         <div className="relative overflow-hidden rounded-lg shadow-xl">
           <Image
-            src="/images/home/about-rmt.jpg"
+            src="https://www.rmt-usa.com/images/home/about-rmt.jpg"
             alt="Picture of the rmt"
             width={1000}
             height={1000}
@@ -25,7 +25,7 @@ function AboutRMT() {
         {/* Second Image */}
         <div className="absolute top-0 md:top-16 left-24 md:left-10 transform translate-x-[-50%] translate-y-[-50%] bg-gray-100 p-2 rounded-lg">
           <Image
-            src="/images/home/about-rmt-1.jpg"
+            src="https://www.rmt-usa.com/images/home/about-rmt-1.jpg"
             alt="Overlay Picture"
             width={1000}
             height={1000}

@@ -19,6 +19,14 @@ const nextConfig: NextConfig = {
       },
       {
         protocol: "https",
+        hostname: "www.rmt-usa.com",
+      },
+      {
+        protocol: "http",
+        hostname: "rmt-usa.com",
+      },
+      {
+        protocol: "https",
         hostname: "admin.rmt-usa.com",
       },
       {

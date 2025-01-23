@@ -50,7 +50,7 @@ export const ourPartnersData = [
     link: "https://neureveal.ai/",
   },
   {
-    src: "/images/clients-partners/schade-final.png",
+    src: "/images/clients-partners/schade-final.PNG",
     alt: "schade-final",
     link: "#",
   },

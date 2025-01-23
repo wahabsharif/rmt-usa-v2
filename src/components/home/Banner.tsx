@@ -10,16 +10,16 @@ const Banner: React.FC = () => {
     <div className="relative w-full h-auto md:h-screen">
       {/* Optimized Background Image */}
       <Image
-        src="/images/home/home-banner.webp"
+        src="/images/home/home-banner-american-image.jpg"
         alt="A visually striking banner representing innovative healthcare technology"
         fill
-        style={{ objectFit: "cover" }} // Use `style` to apply `objectFit`
+        style={{ objectFit: "cover" }}
         priority
         className="-z-10"
       />
 
       {/* Overlay */}
-      <div className="absolute inset-0 bg-black bg-opacity-40"></div>
+      <div className="absolute inset-0 bg-black bg-opacity-70"></div>
 
       {/* Hero Content */}
       <div className="relative z-10 container mx-auto px-6 py-4 md:py-8 text-left text-white">

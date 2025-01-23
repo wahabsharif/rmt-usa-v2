@@ -42,7 +42,6 @@ const AboutCompanyServices: React.FC = () => {
         >
           <div className="border-b-2 my-2 border-gray-500 pt-8">
             <div className="flex gap-4">
-              <h3 className="font-bold text-xl text-[#00B4C5]">01</h3>
               <h3 className="text-gray-800 font-bold text-xl">Our Vision</h3>
             </div>
             <p className="py-4">

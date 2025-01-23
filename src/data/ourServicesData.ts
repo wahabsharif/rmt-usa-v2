@@ -250,7 +250,7 @@ export const ourServicesData: Service[] = [
         accordion: [
           {
             title: "Technical File Preparation",
-            image: ["/images/services/s (7).webp"],
+            image: ["/images/services/regulatory_compliance.jpg"],
             description:
               "At Revive Medical Technologies, we specialize in preparing comprehensive technical files for CE and FDA approval, catering to medical devices across all risk classifications. Our approach integrates seamlessly with ISO 13485 quality management systems, streamlining the approval process & enhancing product quality.",
           },

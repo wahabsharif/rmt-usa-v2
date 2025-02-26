@@ -24,7 +24,7 @@ const BreadCrumb = () => {
   return (
     <div className="bg-gradient-to-r from-thGray to-gray-400 py-2 md:py-4 rounded-xl px-4 md:px-6 text-white relative text-center">
       {/* Display Path as Heading */}
-      <h1 className="text-2xl md:text-5xl font-bold text-white/80 tracking-widest mb-2 md:mb-4 relative z-10">
+      <h1 className="text-2xl md:text-5xl font-bold text-white/80 tracking-wider mb-2 md:mb-4 relative z-10">
         {heading}
       </h1>
 

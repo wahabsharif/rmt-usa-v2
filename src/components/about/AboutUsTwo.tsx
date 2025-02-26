@@ -31,10 +31,10 @@ const AboutUsTwo = () => {
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1 }}
-          className="text-4xl md:text-8xl text-thLightBlue font-bold text-center"
+          className="text-4xl md:text-7xl text-thLightBlue font-bold text-center"
         >
           Revive <br />
-          <span className="text-white">Medical Technologies</span>
+          <span className="text-white">Medical Technologies inc. </span>
         </motion.h2>
         <motion.div
           initial={{ opacity: 0, y: 50 }}

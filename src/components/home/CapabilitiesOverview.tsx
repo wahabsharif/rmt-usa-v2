@@ -83,7 +83,7 @@ function CapabilitiesOverview() {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 1, delay: 1.5 }}
               >
-                <Link href="/about">LEARN MORE</Link>
+                <Link href="/products">LEARN MORE</Link>
               </motion.div>
             </div>
           </div>

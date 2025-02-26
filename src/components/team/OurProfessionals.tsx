@@ -10,7 +10,7 @@ const OurProfessionals: React.FC = () => {
     <section>
       <div className="container mx-auto px-6 py-16">
         {/* Heading for Our professionalship */}
-        <h2 className="text-4xl font-bold text-center uppercase tracking-widest text-thLightBlue mb-2">
+        <h2 className="text-4xl font-bold text-center uppercase tracking-wider text-thLightBlue mb-2">
           Meet Our Executive Team
         </h2>
 

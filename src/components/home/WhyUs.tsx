@@ -8,7 +8,7 @@ const WhyUs: React.FC = () => {
     <div className="flex flex-col md:flex-row items-center gap-8 px-4 md:px-16 py-8">
       {/* Left Side Content */}
       <div className="md:w-1/2">
-        <h2 className="text-4xl font-extrabold text-center text-thLightBlue mb-4">
+        <h2 className="text-4xl font-extrabold text-left text-thLightBlue mb-4">
           Why Choose Us?
         </h2>
         <ul className="space-y-6">

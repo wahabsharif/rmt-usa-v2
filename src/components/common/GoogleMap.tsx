@@ -29,7 +29,7 @@ function GoogleMap() {
           }`}
           onClick={() => setActiveTab("headquarter")}
         >
-          Headoffice (Orlando)
+          HeadOffice
         </button>
         <button
           className={`px-5 py-2 uppercase cursor-pointer border border-gray-300 rounded-full ${
@@ -39,7 +39,7 @@ function GoogleMap() {
           }`}
           onClick={() => setActiveTab("satelliteOffice")}
         >
-          Offsure (R&D Facility)
+          offshore (R&D Facility)
         </button>
       </div>
 

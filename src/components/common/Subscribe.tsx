@@ -9,16 +9,15 @@ const Subscribe: React.FC = () => {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     if (email) {
-      // Simulate a subscription process
       setSubmitted(true);
       setEmail("");
     }
   };
 
   return (
-    <div className="flex flex-col sm:flex-row items-center justify-center p-6 bg-thLightBlue w-full">
-      {/* Left Side - Text */}
-      <div className="w-1/2 text-right mx-4">
+    <div className="flex flex-col items-center justify-center w-full p-6 bg-thLightBlue">
+      {/* Text Section */}
+      <div className="text-center mb-4">
         <h2 className="text-2xl font-extrabold text-gray-800 capitalize">
           Subscribe Now
         </h2>
@@ -30,10 +29,13 @@ const Subscribe: React.FC = () => {
         )}
       </div>
 
-      {/* Right Side - Input and Button */}
+      {/* Input Section */}
       {!submitted && (
-        <form onSubmit={handleSubmit} className="w-1/2 flex items-center">
-          <div className="relative w-full max-w-md">
+        <form
+          onSubmit={handleSubmit}
+          className="w-full max-w-md flex items-center justify-center"
+        >
+          <div className="relative w-full">
             <input
               type="email"
               placeholder="Enter your email"
@@ -44,7 +46,7 @@ const Subscribe: React.FC = () => {
             />
             <button
               type="submit"
-              className="absolute right-0 top-1/2 transform -translate-y-1/2 px-4 py-2 bg-thDarkBlue text-white font-medium rounded-full shadow-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-thLightBlue transition ease-in-out duration-3"
+              className="absolute right-0 top-1/2 transform -translate-y-1/2 px-4 py-2 bg-thDarkBlue text-white font-medium rounded-full shadow-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-thLightBlue transition ease-in-out duration-300"
             >
               Subscribe
             </button>

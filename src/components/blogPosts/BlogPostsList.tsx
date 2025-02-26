@@ -37,7 +37,7 @@ const BlogPostsList = ({ cards }: { cards: string | number }) => {
 
   return (
     <div className="p-6">
-      <h2 className="text-2xl font-bold mb-6 text-center text-thDarkBlue tracking-widest">
+      <h2 className="text-2xl font-bold mb-6 text-center text-thDarkBlue tracking-wider">
         Other Blogs
       </h2>
       <div>

@@ -8,7 +8,7 @@ const ProductGrid = () => {
   return (
     <div className="w-full mx-auto p-8 bg-gray-100">
       <div className="p-2 flex justify-center items-center">
-        <h2 className="text-4xl md:text-5xl tracking-widest text-center my-5 font-bold">
+        <h2 className="text-4xl md:text-5xl tracking-wider text-center my-5 font-bold">
           Looking For Other Product?
         </h2>
       </div>

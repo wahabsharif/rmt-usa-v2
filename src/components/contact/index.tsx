@@ -6,7 +6,7 @@ function ContactSection() {
   return (
     <section className="px-4 py-8">
       <div className="mb-6 flex justify-center items-center">
-        <h3 className="text-thLightBlue text-xl md:text-4xl font-bold tracking-widest uppercase text-center">
+        <h3 className="text-thLightBlue text-xl md:text-4xl font-bold tracking-wider uppercase text-center">
           Get In Touch With Us
         </h3>
       </div>

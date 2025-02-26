@@ -13,7 +13,7 @@ function AboutRMT() {
         {/* First Image */}
         <div className="relative overflow-hidden rounded-lg shadow-xl">
           <Image
-            src="/images/home/about-rmt.JPG"
+            src="/images/about/building-picture-1.jpg"
             alt="Picture of the rmt"
             width={1000}
             height={1000}
@@ -25,7 +25,7 @@ function AboutRMT() {
         {/* Second Image */}
         <div className="absolute top-0 md:top-16 left-24 md:left-10 transform translate-x-[-50%] translate-y-[-50%] bg-gray-100 p-2 rounded-lg">
           <Image
-            src="/images/home/about-rmt-1.JPG"
+            src="/images/about/building-picture.png"
             alt="Overlay Picture"
             width={1000}
             height={1000}
@@ -37,7 +37,7 @@ function AboutRMT() {
       {/* Right Section - Content */}
       <div className="w-full md:w-1/2 p-6 text-left flex flex-col justify-center items-start space-y-6">
         <motion.h1
-          className="text-2xl md:text-5xl font-bold text-[#023550] tracking-[.10em] mb-2"
+          className="text-2xl md:text-5xl font-bold text-[#023550] tracking-[.05em] mb-2"
           initial={{ opacity: 0, y: -50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1 }}
@@ -51,7 +51,7 @@ function AboutRMT() {
 
         {/* Description Paragraph */}
         <motion.p
-          className="text-lg text-[#023550] md:text-xl font-light max-w-3xl"
+          className="text-lg text-[#023550] md:text-md font-light max-w-3xl"
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 1.2 }}

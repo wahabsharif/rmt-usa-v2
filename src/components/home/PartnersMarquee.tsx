@@ -2,7 +2,6 @@ import { cn } from "@/lib/utils";
 import Marquee from "@/components/ui/marquee";
 import Image from "next/image";
 import { ourPartnersData } from "@/data/ourPartnersData";
-import Link from "next/link";
 
 const firstRow = ourPartnersData.slice(0, ourPartnersData.length / 2);
 const secondRow = ourPartnersData.slice(ourPartnersData.length / 2);
@@ -10,34 +9,31 @@ const secondRow = ourPartnersData.slice(ourPartnersData.length / 2);
 const PartnerCard = ({
   src,
   alt,
-  link,
 }: {
   src: string;
   alt: string;
   link: string;
 }) => {
   return (
-    <Link href={link} target="_blank" rel="noopener noreferrer">
-      <figure
-        className={cn(
-          "relative cursor-pointer overflow-hidden rounded-xl border p-4",
-          // light styles
-          "border-gray-950/[.1] bg-gray-950/[.01] hover:bg-gray-950/[.05]",
-          // dark styles
-          "dark:border-gray-50/[.1] dark:bg-gray-50/[.10] dark:hover:bg-gray-50/[.15]"
-        )}
-      >
-        <div className="flex items-center justify-center">
-          <Image
-            className="w-16 h-16 md:w-24 md:h-24 object-contain"
-            width={1000}
-            height={1000}
-            alt={alt}
-            src={src}
-          />
-        </div>
-      </figure>
-    </Link>
+    <figure
+      className={cn(
+        "relative cursor-pointer overflow-hidden rounded-xl border p-4",
+        // light styles
+        "border-gray-950/[.1] bg-gray-950/[.01] hover:bg-gray-950/[.05]",
+        // dark styles
+        "dark:border-gray-50/[.1] dark:bg-gray-50/[.10] dark:hover:bg-gray-50/[.15]"
+      )}
+    >
+      <div className="flex items-center justify-center">
+        <Image
+          className="w-16 h-16 md:w-24 md:h-24 object-contain"
+          width={1000}
+          height={1000}
+          alt={alt}
+          src={src}
+        />
+      </div>
+    </figure>
   );
 };
 

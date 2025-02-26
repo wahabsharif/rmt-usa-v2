@@ -8,7 +8,7 @@ import Feature from "@/components/about/Feature";
 import React from "react";
 import { generateMetadata } from "@/data/metaData";
 import type { Metadata } from "next";
-import OurPartnersGrid from "@/components/about/OurPartnersGrid";
+import { PartnersMarquee } from "@/components/home/PartnersMarquee";
 
 export const metadata: Metadata = generateMetadata({
   pageTitle: "About",
@@ -22,7 +22,7 @@ const AboutUsPage: React.FC = () => {
       <AboutCompany />
       <Feature />
       <AboutUsTwo />
-      <OurPartnersGrid />
+      <PartnersMarquee />
       <GoogleMap />
     </>
   );

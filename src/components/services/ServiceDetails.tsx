@@ -72,7 +72,7 @@ function ServiceDetails() {
     <section id="service-details" className="py-12 px-4 md:px-12">
       {service.serviceSub.map((serviceSub) => (
         <div key={serviceSub.id}>
-          <h3 className="text-2xl md:text-4xl text-center text-thLightBlue font-semibold tracking-widest">
+          <h3 className="text-2xl md:text-4xl text-center text-thLightBlue font-semibold tracking-wider">
             {serviceSub.title}
           </h3>
           <p className="my-6">{serviceSub.description}</p>

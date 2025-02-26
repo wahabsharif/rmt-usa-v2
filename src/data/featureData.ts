@@ -2,23 +2,23 @@ const featureData = [
   {
     id: 1,
     icon: "/icons/good-job-hand-svgrepo-com.svg", // Replace with your icon (e.g., from FontAwesome, Material Icons, or an emoji)
-    title: "Perfect Design",
+    title: "Holistic Solution",
     description:
-      "Every device is a unique reflection of its user's needs and personality.",
+      "Your one-stop destination for comprehensive, innovative, and sustainable answers to the world's most pressing healthcare challenges.",
   },
   {
     id: 2,
     icon: "/icons/artificial-intelligence-ai-icon.svg",
-    title: "AI Technologies",
+    title: ".⁠ ⁠Cost-Effective & Time-Efficient Solutions",
     description:
-      "Best tech is the one that empowers the user to live their life to the fullest.",
+      "Streamlining innovation under one roof, where R&D, prototyping, and regulatory approvals converge to accelerate time-to-market while optimizing costs.",
   },
   {
     id: 3,
     icon: "/icons/verified-list-of-exercises-of-a-gymnast-on-a-clipboard-svgrepo-com.svg",
-    title: "Certified Products",
+    title: "End-to-End Services",
     description:
-      "Prosthetics is the bridge that connects physical disability to ability.",
+      "Transforming visionary ideas into reality, from R&D to prototyping, and culminating in regulatory-approved, market-ready products, all under one roof.",
   },
   // {
   //   id: 4,

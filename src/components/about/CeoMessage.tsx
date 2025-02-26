@@ -1,6 +1,5 @@
 "use client";
 
-import Link from "next/link";
 import React from "react";
 import Image from "next/image"; // Import the Next.js Image component
 import { motion } from "framer-motion";
@@ -29,13 +28,13 @@ const CeoMessage: React.FC = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, delay: 0.5 }}
           >
-            <h2 className="text-3xl md:text-4xl font-bold text-thLightBlue">
+            <h2 className="text-3xl md:text-5xl font-bold text-thLightBlue">
               CEO Message
             </h2>
           </motion.div>
 
           {/* Description */}
-          <p className="mt-2 text-lg md:text-xl font-light max-w-2xl leading-relaxed">
+          <p className="mt-2 text-lg md:text-md font-light max-w-2xl leading-relaxed">
             “At Revive Medical Technologies, our mission is clear: to advance
             the healthcare sector through relentless innovation and dedicated
             research and development. Our goal is to make exceptional healthcare
@@ -57,15 +56,6 @@ const CeoMessage: React.FC = () => {
               Dr. Murtaza Najabat Ali
             </h3>
             <p className="text-lg md:text-xl">CEO & CO-FOUNDER</p>
-          </div>
-
-          <div className="my-4">
-            <Link
-              href={"/team"}
-              className="mt-8 px-6 py-3 text-lg bg-thLightBlue text-white font-semibold rounded-full transition ease-in-out shadow-md hover:bg-thDarkBlue focus:outline-none"
-            >
-              Meet Our Team
-            </Link>
           </div>
         </div>
       </div>

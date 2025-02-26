@@ -18,7 +18,7 @@ const ImageGrid: React.FC = () => {
             />
             {/* Overlay */}
             <div className="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end">
-              <div className="text-white p-4 w-full bg-black bg-opacity-70 tracking-widest">
+              <div className="text-white p-4 w-full bg-black bg-opacity-70 tracking-wider">
                 <h3 className="text-lg font-bold uppercase">{card.heading}</h3>
                 <p className="text-sm capitalize">{card.description}</p>
               </div>

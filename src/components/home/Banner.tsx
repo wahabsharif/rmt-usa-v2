@@ -31,19 +31,19 @@ const Banner: React.FC = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1 }}
           >
-            <span className="text-white tracking-[.25em] mb-4 text-sm md:text-md">
+            <span className="text-white tracking-[.15em] mb-4 text-sm md:text-md">
               END-TO-END SERVICE PROVIDER
             </span>
             <br />
-            <span className="text-thLightBlue mb-4 italic font-black text-3xl md:text-7xl">
+            <span className="text-thLightBlue mb-4 italic font-black text-3xl md:text-8xl">
               INNOVATIVE
             </span>
             <br />
-            <span className="text-white mb-4 italic font-black text-3xl md:text-7xl">
+            <span className="text-white mb-4 italic font-black text-3xl md:text-6xl">
               HEALTHCARE
             </span>
             <br />
-            <span className="text-white italic font-black text-3xl md:text-7xl">
+            <span className="text-white italic font-black text-3xl md:text-8xl">
               TECHNOLOGY
             </span>
           </motion.h1>

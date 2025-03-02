@@ -11,7 +11,7 @@ export default function NotFoundPage() {
       <MobileNavBar />
       <div className="flex items-center justify-center h-screen p-2">
         <div className="text-center">
-          <h1 className="text-2xl md:text-6xl font-bold text-thRed mb-4">
+          <h1 className="text-2xl md:text-6xl font-bold text-thDarkBlue mb-4">
             404 - Page Not Found
           </h1>
           <p className="text-sm md:text-lg text-gray-700 mb-6">

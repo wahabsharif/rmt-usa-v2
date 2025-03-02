@@ -72,7 +72,9 @@ const ProductDetails = () => {
                 <div
                   key={index}
                   className={`cursor-pointer border-2 rounded-lg overflow-hidden w-20 h-20 shadow-sm transition-transform duration-300 hover:scale-110 ${
-                    selectedImage === image ? "border-thRed" : "border-gray-300"
+                    selectedImage === image
+                      ? "border-thDarkBlue"
+                      : "border-gray-300"
                   }`}
                   onClick={() => setSelectedImage(image)}
                 >

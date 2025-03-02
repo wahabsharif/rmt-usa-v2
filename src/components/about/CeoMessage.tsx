@@ -29,7 +29,7 @@ const CeoMessage: React.FC = () => {
             transition={{ duration: 1, delay: 0.5 }}
           >
             <h2 className="text-3xl md:text-5xl font-bold text-thLightBlue">
-              CEO Message
+              CEO’s Message
             </h2>
           </motion.div>
 

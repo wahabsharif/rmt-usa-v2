@@ -39,7 +39,7 @@ const GetAQuote: React.FC = () => {
       {isModalOpen && (
         <div className="fixed inset-0 bg-gray-600 backdrop-blur-lg bg-opacity-50 flex z-50 justify-center items-center">
           <div className="bg-white p-8 rounded-lg shadow-xl max-w-lg w-full h-[98vh] ">
-            <h2 className="text-xl font-semibold mb-4 tracking-wider text-thRed">
+            <h2 className="text-xl font-semibold mb-4 tracking-wider text-thDarkBlue">
               Quotation
             </h2>
             <h3 className="text-3xl text-center font-semibold mb-4 tracking-wider text-gray-600">

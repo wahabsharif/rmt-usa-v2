@@ -130,7 +130,7 @@ const Footer: React.FC = () => {
         <div className="flex flex-col md:flex-row items-center md:space-x-2">
           <span>
             Copyright © {currentYear}{" "}
-            <Link href="/" className="text-thRed font-semibold">
+            <Link href="/" className="text-thDarkBlue font-semibold">
               Revive Medical Technologies Inc.
             </Link>
           </span>

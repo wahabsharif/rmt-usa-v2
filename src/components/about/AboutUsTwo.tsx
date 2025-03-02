@@ -34,7 +34,7 @@ const AboutUsTwo = () => {
           className="text-4xl md:text-7xl text-thLightBlue font-bold text-center"
         >
           Revive <br />
-          <span className="text-white">Medical Technologies inc. </span>
+          <span className="text-white">Medical Technologies Inc. </span>
         </motion.h2>
         <motion.div
           initial={{ opacity: 0, y: 50 }}

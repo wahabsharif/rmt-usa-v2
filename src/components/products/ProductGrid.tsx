@@ -35,7 +35,7 @@ const ProductGrid = () => {
             <p className="text-gray-600 text-sm mb-4 line-clamp-4">
               {product.description}
             </p>
-            <span className="text-thRed hover:underline">Learn more</span>
+            <span className="text-thDarkBlue hover:underline">Learn more</span>
           </Link>
         ))}
       </div>

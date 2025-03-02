@@ -78,7 +78,7 @@ export const professionals = [
   },
   {
     name: "Ahmad Maaz Ali ",
-    title: "BDM",
+    title: "business development manager",
     imageUrl: "/images/team/ahmad-maaz.webp",
     linkedinUrl: "https://www.linkedin.com/in/ahmad-maaz-ali-26b3a3aa/",
   },

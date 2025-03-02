@@ -11,9 +11,9 @@ const ContactForm: React.FC = () => {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}
       >
-        <h2 className="text-2xl text-thDarkBlue font-extrabold text-center uppercase tracking-wider mb-6">
+        {/* <h2 className="text-2xl text-thDarkBlue font-extrabold text-center uppercase tracking-wider mb-6">
           Contact Us
-        </h2>
+        </h2> */}
         <form className="space-y-4">
           <div className="flex flex-col md:flex-row md:space-x-4">
             <div className="w-full">

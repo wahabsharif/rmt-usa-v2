@@ -10,7 +10,7 @@ const ContactInfo: React.FC = () => {
       </div>
       <div className="text-thGray text-lg mt-4">
         <p className="text-lg capitalize">
-          Want to learn more about cherries medical group? our support team is
+          Want to learn more about Revive Medical Technologies Inc? our support team is
           ready to help
         </p>
       </div>

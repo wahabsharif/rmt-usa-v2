@@ -5,7 +5,7 @@ const GetStartedBanner: React.FC = () => {
   return (
     <section
       className="relative w-full min-h-screen bg-cover bg-center"
-      style={{ backgroundImage: "url(/images/home/get-started-banner.png)" }}
+      style={{ backgroundImage: "url(/images/home/building-picture.png)" }}
     >
       <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50">
         <div className="text-center text-white px-6">

@@ -17,7 +17,7 @@ const AboutUsTwo = () => {
       <motion.div
         style={{
           transform: `translateY(${y})`,
-          backgroundImage: `url('/images/about/parallax_02.jpg')`,
+          backgroundImage: `url('/images/home/building-picture.png')`,
         }}
         className="absolute top-0 left-0 w-full h-full bg-cover bg-center"
       ></motion.div>
